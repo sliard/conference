@@ -32,6 +32,21 @@
 
 <!-- Intro Section Ends -->
 
+
+<!-- Call for Proposal Section Start -->
+{% if page.CallForProposal != null %}
+  {% include call_for_proposal.html params=page.CallForProposal %}
+{% endif %}
+<!-- Call for Proposal Section End -->
+
+  <!-- Section Subscribe Newsletter Start -->
+  {% if page.Newsletter != null %}
+  {% include newsletter.html params=page.Newsletter %}
+  
+  {% endif %}
+  <!-- Section Subscribe Newsletter End -->
+
+
 <!-- Gallery Section Starts -->
 
 {% if page.Gallery != null %}
@@ -41,12 +56,6 @@
 
 <!-- Gallery Section End -->
 
-  <!-- Section Subscribe Newsletter Start -->
-  {% if page.Newsletter != null %}
-  {% include newsletter.html params=page.Newsletter %}
-  
-  {% endif %}
-  <!-- Section Subscribe Newsletter End -->
 
 
 <!-- Agenda Section Starts -->

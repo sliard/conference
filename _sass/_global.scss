@@ -1,3 +1,7 @@
+@use "sass:color";
+@use 'presets' as *;
+
+
 // Font Family
 @import url('https://fonts.googleapis.com/css?family=Lato:400|Josefin+Sans:700');
 
@@ -93,7 +97,7 @@ ol {
 .hero-sub-heading {
   font-size: 20px;
   font-weight: 400;
-  color: darken(#fff, 10%);
+  color: color.adjust(#fff, $lightness: -10%);
   line-height: 45px;
   letter-spacing: 0.1rem;
 }

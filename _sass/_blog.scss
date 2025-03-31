@@ -1,4 +1,6 @@
-	.blog-item{
+
+@use 'presets' as *;
+.blog-item{
 		background-color: #fff;
 		border-radius: 4px;
 		margin-bottom: 40px;

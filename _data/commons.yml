@@ -1,12 +1,12 @@
 logo_url: "/assets/img/logo_dark.png"
 
 menu:
-  - title: DevFest 2024
+  - title: DevFest 2025
     url: '/'
   - title: Archives
     url: '/archives'
   - title: À propos
-    url: /a-propos
+    url: ./a-propos
 
 
 Newsletter:
