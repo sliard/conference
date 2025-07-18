@@ -9,9 +9,7 @@
       </div>
       {% for speaker in page.Speakers.list %}
       <div class="row pt-5" id="{{ speaker.id }}">
-        <div class="col-2 d-none-lg">
-
-        </div>
+        <div class="col-2 d-none-lg"></div>
         <div class="col-lg-4 col-12">
           {% if speaker.photo_url!= null %}
             <img class="img-fluid mx-auto d-block" src="{{ site.baseurl }}{{ speaker.photo_url }}" alt="{{ speaker.name}}">
@@ -21,10 +19,25 @@
           <h3>{{ speaker.name }}</h3>
           <p class="organization">{{ speaker.organization }}</p>
           <p>{{ speaker.bio }}</p>
+          {% if speaker.social_links and speaker.social_links.size > 0 %}
+            <div class="speaker-social-links mt-2">
+              {% for link in speaker.social_links %}
+                <a href="{{ link.url }}" target="_blank" rel="noopener" class="mx-1" aria-label="{{ link.type }}">
+                  {% if link.type == "linkedin" %}
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  {% elsif link.type == "github" %}
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  {% elsif link.type == "blog" %}
+                    <i class="fas fa-globe" aria-hidden="true"></i>
+                  {% else %}
+                    <i class="fas fa-link" aria-hidden="true"></i>
+                  {% endif %}
+                </a>
+              {% endfor %}
+            </div>
+          {% endif %}
         </div>
-        <div class="col-2 d-none-lg">
-
-        </div>
+        <div class="col-2 d-none-lg"></div>
       </div>
       {% endfor %}
     </div>

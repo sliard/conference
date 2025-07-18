@@ -39,6 +39,21 @@
 {% endif %}
 <!-- Call for Proposal Section End -->
 
+<!-- Registration Section Starts -->
+
+{% if page.Register != null %}
+{% include register.html params=page.Register %}
+{% endif %}
+
+<!-- Registration Section End -->
+
+<!-- Speakers Section Starts -->
+
+{% if page.Speakers != null %}
+  {% include speakers.html %}
+{% endif %}
+<!-- Speakers Section Ends -->
+
   <!-- Section Subscribe Newsletter Start -->
   {% if page.Newsletter != null %}
   {% include newsletter.html params=page.Newsletter %}
@@ -72,22 +87,7 @@
 {% endif %}
 <!-- Sponsors Section Ends -->
 
-<!-- Speakers Section Starts -->
 
-{% if page.Speakers != null %}
-  {% include speakers.html %}
-{% endif %}
-<!-- Speakers Section Ends -->
-
-
-
-<!-- Registration Section Starts -->
-
-{% if page.Register != null %}
-{% include register.html params=page.Register %}
-{% endif %}
-
-<!-- Registration Section End -->
 
 
 <!-- Counter Area Start-->

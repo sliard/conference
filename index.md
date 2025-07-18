@@ -78,17 +78,114 @@ Newsletter:
     description: "Si vous souhaitez en savoir plus sur Code d'Armor et être averti des prochains événements organisés par l'association et de ses actualités 👇️"
     cta: "S'inscrire à la newsletter"
 
-# Speakers:
-#   title: Speakers
-#   list:
-#     - name: "Fulup Ar Foll"
-#       id: "fulup"
-#       organization: "IoT. Bzh"
-#       photo_url: "assets/img/photos_speakers/fulup_ar_foll.jpg"
-#       bio: >
-#         CEO et architecte en chef d'IoT.bzh depuis 2015, Fulup a dirigé la stratégie globale de l'entreprise
-#         en développant des outils open source pour sécuriser les applications embarquées, notamment dans le secteur automobile.
-#         Auparavant, il a été CTO chez Sun Microsystems et consultant indépendant pour le gouvernement français sur la sécurité internet.
+Speakers:
+  title: Speakers
+  list:
+    - name: "Alain Buzacarro"
+      id: "alain-buzacarro"
+      organization: "Instinct Pioneer"
+      photo_url: "assets/2025/photos_speakers/ABU.jpg"
+      bio: >
+        Après plusieurs expériences en tant que consultant dans des cabinets de conseil (notamment chez OCTO Technology), et un rôle de CTO chez France Télévision puis chez Les Furets, Alain Buzzacaro est resté plus de cinq ans Global CIO et membre du COMEX chez L’Occitane. Il est désormais consultant en transformation d’entreprise, Leadership Agile et Coach Exécutif chez Instinct Pionnier.
+      social_links:
+        - type: linkedin
+          url: https://www.linkedin.com/in/buzzacaro
+
+    - name: "Christophe Milon"
+      id: "christophe-milon"
+      organization: "Quanteo Group"
+      photo_url: "assets/2025/photos_speakers/107-milon-christophe-2.jpg"
+      bio: >
+        Christophe Milon, ingénieur de formation et fils d’un inventeur, crée en 1998 à Lannion l’entreprise Éco‑Compteur à 33 ans, devenue Quanteo Group, leader mondial du comptage piétons et cyclistes. Fondateur et CEO, il a structuré le groupe autour de la transparence, de l’holacratie et d’un partage de l'actionnariat pour transmettre l’entreprise à ses équipes.
+      social_links:
+        - type: linkedin
+          url: https://www.linkedin.com/in/christophe-milon-9a929571/
+
+    - name: "Stéphane Prohaszka"
+      id: "stephane-prohaszka"
+      organization: "Ledger"
+      photo_url: "assets/2025/photos_speakers/stephane-pro.jpg"
+      bio: >
+        Stéphane est Senior Staff Architect chez Ledger depuis trois ans. Fort de 25 ans d’expérience dans des secteurs variés – de l’aérospatial aux startups en passant par le conseil – il a toujours exploré les enjeux techniques avec une curiosité insatiable.
+
+        Son parcours l’a conduit de la conception d’applications desktop à celle d’applications web, en passant par les mobiles, avant de s’orienter ses dernières années dans des environnements où la sécurité est critique.
+      social_links:
+        - type: linkedin
+          url: https://www.linkedin.com/in/stephane-prohaszka-6025164/
+
+    - name: "Frédéric Bouchery"
+      id: "frederic-bouchery"
+      organization: "CCM Benchmark"
+      photo_url: "assets/2025/photos_speakers/frederic-bouchery-2024.webp"
+      bio: >
+        Architecte et lead developer pour le groupe CCMBenchmark, Frédéric gère le pôle OpenData, qui met à disposition plus de 2 milliards de données à travers les sites du Journal du Net, Linternaute, Journal des Femmes et Le Figaro. L'ensemble des sites du groupe rassemble 33 millions de visiteurs uniques chaque mois, le tout en auto-hébergement et en ... PHP. Développeur depuis plus de 42 ans et amoureux du langage PHP depuis 27 ans, Frédéric aime parler, dans ses conférences et sur les réseaux sociaux, d'architecture, de méthodologie, de pragmatisme, de complexité, de simplicité, et de tout ce qui touche de près ou de loin au développement logiciel. Si vous avez des questions, il devrait pouvoir vous répondre.
+
+        Chaque ligne de code est une opportunité d'apprendre, de partager et d'innover ...
+      social_links:
+        - type: linkedin
+          url: https://www.linkedin.com/in/bouchery/
+
+    - name: "Pierrick Blons"
+      id: "pierrick-blons"
+      organization: "Payfit"
+      photo_url: "assets/2025/photos_speakers/pierrick-blons.jpg"
+      bio: >
+        Avec plus de 15 ans d'expérience, notamment chez Microsoft, en sociétés de services et chez divers éditeurs, Pierrick est actuellement développeur chez PayFit.
+
+        Fortement impliqué dans la modernisation s'appuyant sur DDD, passionné de l’approche systémique et de open system theory, PayFit est un lieu idéal qui lui permet d’appliquer ces différents concepts avec les équipes R&D.
+      social_links:
+        - type: github
+          url: https://github.com/pierrickblons
+
+    - name: "Hannah Issermann"
+      id: "hannah-issermann"
+      organization: "Orange"
+      photo_url: "assets/2025/photos_speakers/hannah-isserman.jpg"
+      bio: >
+        Responsable d'équipe chez Orange Innovation, j'ai une formation de développeuse fullstack. Depuis 10 ans, je me suis spécialisée dans le développement web, et donc forcément dans l'accessibilité numérique. Je suis aujourd'hui Orange Expert Software et je participe au développement du design system unifié Orange. Je donne également des cours sur l'accessibilité numérique à l'IUT.
+      social_links:
+        - type: linkedin
+          url: https://www.linkedin.com/in/hannah-issermann-8873b1198/
+
+    - name: "Isabelle Chanclou"
+      id: "isabelle-chanclou"
+      organization: "Orange"
+      photo_url: "assets/2025/photos_speakers/isabelle-chanclou.jpg"
+      bio: >
+        Ergonome de formation, j’allie aujourd’hui développement web et accessibilité numérique chez Orange pour contribuer à rendre le numérique accessible à tous. Je donne notamment des cours sur l'accessibilité numérique à l'IUT.
+      social_links: []
+
+    - name: "Sébastien Ferrer"
+      id: "sebastien-ferrer"
+      organization: "OVHcloud"
+      photo_url: "assets/2025/photos_speakers/sebastien ferrer.jpg"
+      bio: >
+        Sébastien est ingénieur logiciel chez OVHcloud à Nantes, dans l'équipe SIA (Service Integration & Automation).
+        Exerçant ce métier depuis maintenant plus de 12 ans, il a toujours aimé vulgariser et partager ses connaissances en public.
+
+        Il anime actuellement des conférences autour de la cybersécurité, de la gestion d'incidents et divers autres sujets techniques.
+        Portant un grand intérêt pour l'enseignement, il intervient également régulièrement dans certaines écoles et universités.
+
+        Il est également passionné par le théâtre, ayant joué 10 ans dans une troupe en région parisienne.
+      social_links:
+        - type: linkedin
+          url: https://www.linkedin.com/in/s%C3%A9bastien-ferrer-076ba052
+        - type: github
+          url: https://github.com/sebferrer
+        - type: blog
+          url: https://blog.kimi.ovh
+
+    - name: "Cuihtlauac Alvarado"
+      id: "cuihtlauac-alvarado"
+      organization: "Tarides"
+      photo_url: "assets/2025/photos_speakers/cuihtlauac.jpg"
+      bio: >
+        Docteur en Informatique de l'Université d'Orsay. Ingénieur à France Télécom / Orange pendant 25 ans. Ingénieur pour Tarides, où je suis revenu à mon premier amour : la programmation fonctionnelle, sur laquelle j'avais travaillé pendant mon doctorat, mais qui n'avais pas d'applications à l'époque.
+      social_links:
+        - type: linkedin
+          url: https://www.linkedin.com/in/cuihtlauac-alvarado-aa7646
+
+
 
 # Agenda:
 #   title: Programme
@@ -226,20 +323,20 @@ Gallery:
       alt: Photo 9 sur 137
 
 
-# Register:
-#   title: Billetterie
-#   text: Soutenez l'événément et achetez dès à présent un billet pour la conférence 2024.
-#   button1:
-#       isPrimary: False
-#       isExternal: True
-#       isContrasted: True
-#       text: Tarifs et informations
-#       target: _blank
-#       url: https://www.billetweb.fr/devfest-perros-guirec-2024
-#   button2:
-#       isPrimary: True
-#       isExternal: True
-#       text: Acheter
-#       target: _blank
-#       url: https://www.billetweb.fr/devfest-perros-guirec-2024
+Register:
+  title: Billetterie
+  text: Soutenez l'événément et achetez dès à présent un billet pour la conférence 2025.
+  button1:
+      isPrimary: False
+      isExternal: True
+      isContrasted: True
+      text: Tarifs et informations
+      target: _blank
+      url: https://www.billetweb.fr/devfest-perros-guirec-2025
+  button2:
+      isPrimary: True
+      isExternal: True
+      text: Acheter
+      target: _blank
+      url: https://www.billetweb.fr/devfest-perros-guirec-2025
 ---
