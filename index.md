@@ -91,6 +91,17 @@ Speakers:
         - type: linkedin
           url: https://www.linkedin.com/in/buzzacaro
 
+        
+    - name: "Hannah Issermann"
+      id: "hannah-issermann"
+      organization: "Orange"
+      photo_url: "assets/2025/photos_speakers/hannah-isserman.jpg"
+      bio: >
+        Responsable d'équipe chez Orange Innovation, j'ai une formation de développeuse fullstack. Depuis 10 ans, je me suis spécialisée dans le développement web, et donc forcément dans l'accessibilité numérique. Je suis aujourd'hui Orange Expert Software et je participe au développement du design system unifié Orange. Je donne également des cours sur l'accessibilité numérique à l'IUT.
+      social_links:
+        - type: linkedin
+          url: https://www.linkedin.com/in/hannah-issermann-8873b1198/
+
     - name: "Christophe Milon"
       id: "christophe-milon"
       organization: "Quanteo Group"
@@ -136,16 +147,6 @@ Speakers:
       social_links:
         - type: github
           url: https://github.com/pierrickblons
-
-    - name: "Hannah Issermann"
-      id: "hannah-issermann"
-      organization: "Orange"
-      photo_url: "assets/2025/photos_speakers/hannah-isserman.jpg"
-      bio: >
-        Responsable d'équipe chez Orange Innovation, j'ai une formation de développeuse fullstack. Depuis 10 ans, je me suis spécialisée dans le développement web, et donc forcément dans l'accessibilité numérique. Je suis aujourd'hui Orange Expert Software et je participe au développement du design system unifié Orange. Je donne également des cours sur l'accessibilité numérique à l'IUT.
-      social_links:
-        - type: linkedin
-          url: https://www.linkedin.com/in/hannah-issermann-8873b1198/
 
     - name: "Isabelle Chanclou"
       id: "isabelle-chanclou"
