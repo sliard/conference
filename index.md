@@ -18,9 +18,9 @@ Carrousel_Slides:
        isPrimary: True
        isExternal: True
        isContrasted: True
-       text: Appel à speakers
+       text: Billeterie
        target: _blank
-       url: https://conference-hall.io/devfest-perros-guirec-2025
+       url: https://www.billetweb.fr/devfest-perros-guirec-2025
 
 Details:
   where:
@@ -45,16 +45,16 @@ Details:
       <p>Que vous soyez développeur·euse junior, confirmé·e ou en reconversion, cette édition est pensée pour vous aider à progresser, découvrir de nouveaux outils et rencontrer une communauté passionnée.</p>
       <p>📅 Rendez-vous le 3 octobre 2025 à Perros-Guirec pour une journée mémorable dans un cadre exceptionnel, entre passion tech et brise marine.</p>
 
-CallForProposal:
-  title: Appel à speakers
-  cfp_url: https://conference-hall.io/devfest-perros-guirec-2025
-  cfp_button_text: Proposez un talk ! 
-  cfp_description: |
-    Vous souhaitez partager vos connaissances ou retours d'expérience ? Soumettez un talk !<br/><br/>
-    🗓️ Date limite : 22 juin 2025<br/>
-    ✅ Talks de 45 min + Q&A ou **Démo du midi** (table + prise électrique)<br/>
-    🌟 Ouvert à tous les niveaux d’expérience<br/>
-    🎤 Accompagnement possible pour les nouveaux speakers
+# CallForProposal:
+#   title: Appel à speakers
+#   cfp_url: https://conference-hall.io/devfest-perros-guirec-2025
+#   cfp_button_text: Proposez un talk ! 
+#   cfp_description: |
+#     Vous souhaitez partager vos connaissances ou retours d'expérience ? Soumettez un talk !<br/><br/>
+#     🗓️ Date limite : 22 juin 2025<br/>
+#     ✅ Talks de 45 min + Q&A ou **Démo du midi** (table + prise électrique)<br/>
+#     🌟 Ouvert à tous les niveaux d’expérience<br/>
+#     🎤 Accompagnement possible pour les nouveaux speakers
 
 
 LastYearMovie:
