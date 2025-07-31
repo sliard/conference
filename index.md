@@ -9,7 +9,7 @@ Carrousel_Slides:
   - logo: /assets/img/slider/2025-superdev-siteweb-center-homepage@2x.png
     title: DevFest Perros-Guirec 2025
     subtitle: "Mieux développer : outils et pratiques pour du logiciel de qualité"
-    subtitle2: 3 octobre 2025 - 8h30 - Perros-Guirec
+    subtitle2: 3 octobre 2025 - 9h00 - Perros-Guirec
     image:
       url: /assets/img/slider/devfest_2024.png
       alt: "DevFest Perros-Guirec 2025"
