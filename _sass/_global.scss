@@ -65,11 +65,19 @@ ol {
   list-style: outside none none;
   margin: 0;
   padding: 0;
-
+  
   li {
     list-style: none;
   }
+
 }
+
+section li {
+    list-style: disc outside;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
 
 .btn-primary {
 

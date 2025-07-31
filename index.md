@@ -3,7 +3,6 @@ layout: home_conference
 permalink: /
 
 title: "DevFest - 03 Octobre 2025 - Perros-Guirec"
-description: Le DevFest Perros-Guirec est une conférence à destination des développeu.se.r.s organisée par l'association Code d'Armor.
 thumbnail_url: /assets/img/social-card/LinkedIn-event-superdev.png
 
 Carrousel_Slides:

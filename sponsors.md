@@ -1,0 +1,27 @@
+---
+layout: sponsors
+permalink: /sponsors
+
+title: Nous soutenir
+pageContent: >
+        Le DevFest revient le <strong>3 octobre 2025</strong> à Perros-Guirec pour sa 5<sup>e</sup> édition : une journée 100 % tech et 100 % conviviale, au cœur de la Côte de Granit Rose.<br/><br/>
+
+            Nous recherchons des partenaires prêts à soutenir l’événement :
+
+            <ul>
+                <li><strong>Sponsoring Basic – 500 € HT</strong><br />
+                Logo sur nos supports, 3 invitations, visibilité web et réseaux sociaux.</li>
+
+                <li><strong>Sponsoring Advanced – 1000 € HT</strong> <em>(places limitées)</em><br />
+                Visibilité renforcée, stand sur place, 6 invitations, communication premium.</li>
+
+                <li><strong>Soutien ponctuel sur frais réels</strong><br />
+                Impression, traiteur, location... Vous pouvez aussi prendre en charge un besoin logistique identifié.</li>
+            </ul>
+
+contact-us:
+    title: "Nous contacter"
+    description: "<p><strong>Vous souhaitez nous soutenir ?</strong><br />
+    Contactez-nous pour discuter de vos idées ! 👉 <a href=\"mailto:contact@codedarmor.fr\" target=\"_blank\">contact@codedarmor.fr</a></p>"
+
+---

@@ -1,6 +1,6 @@
 title: DevFest Perros-Guirec
 description: >- # this means to ignore newlines until "baseurl:"
-  DevFestNoz rassemble les développeu.se.r.s en soirée pour apprendre et partager ensemble lors de conférences et ateliers organisés par l'association Code d'Armor à Lannion et Perros-Guirec.
+  Le DevFest Perros-Guirec est une conférence à destination des développeu.se.r.s organisée par l'association Code d'Armor.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
