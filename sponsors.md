@@ -3,6 +3,7 @@ layout: sponsors
 permalink: /sponsors
 
 title: Nous soutenir
+header_image: /assets/img/logos_sponsors/illustration_sponsor.jpg
 pageContent: >
         Le DevFest revient le <strong>3 octobre 2025</strong> à Perros-Guirec pour sa 5<sup>e</sup> édition : une journée 100 % tech et 100 % conviviale, au cœur de la Côte de Granit Rose.<br/><br/>
 
@@ -18,6 +19,16 @@ pageContent: >
                 <li><strong>Soutien ponctuel sur frais réels</strong><br />
                 Impression, traiteur, location... Vous pouvez aussi prendre en charge un besoin logistique identifié.</li>
             </ul>
+buttonDoc:  
+       isPrimary: True
+       isExternal: True
+       isContrasted: True
+       text: Dossier de présentation
+       target: _blank
+       url: /assets/docs/Présentation Entreprises - DevFest Perros-Guirec 2025.pdf
+
+Sponsoring:
+    title : "Merci à celles et ceux qui nous soutiennent déjà "
 
 contact-us:
     title: "Nous contacter"

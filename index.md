@@ -63,13 +63,6 @@ LastYearMovie:
 
 Sponsoring:
   title : Nos Partenaires
-  sponsors:
-    - name: Lannion Tregor Communauté
-      site_url: https://www.lannion-tregor.com/
-      logo_url: "assets/img/logos_sponsors/logo_ltc.png"
-    - name: Anticipa
-      site_url: https://www.technopole-anticipa.com/
-      logo_url: "assets/img/logos_sponsors/logo_anticipa.png"
   acknowlegment: Merci à aux partenaires qui nous aident à réaliser cet événement dans les meilleures conditions. 🙏  <br/> Vous souhaitez soutenir l'événement et bénéficier de la visibilité auprès de la communauté tech trégorroise ? <a href="">Contactez-nous !</a>
 
 Newsletter:
@@ -298,33 +291,32 @@ Gallery:
   description: Toutes les photos sur <a href="https://photos.app.goo.gl/aA4LcCwWsgQE1Eqc8" target="_blank">l'album de l'événement</a>
   photos:
     - url: assets/img/photos_event/DevFest2024_108_sur_137.jpg
-      alt: Photo 108 sur 137
+      alt: photos edition 2024
     - url: assets/img/photos_event/DevFest2024_120_sur_137.jpg
-      alt: Photo 120 sur 137
+      alt: photos edition 2024
     - url: assets/img/photos_event/DevFest2024_124_sur_137.jpg
-      alt: Photo 124 sur 137
+      alt: photos edition 2024
     - url: assets/img/photos_event/DevFest2024_136_sur_137.jpg
-      alt: Photo 136 sur 137
+      alt: photos edition 2024
     - url: assets/img/photos_event/DevFest2024_13_sur_137.jpg
-      alt: Photo 13 sur 137
+      alt: photos edition 2024
     - url: assets/img/photos_event/DevFest2024_40_sur_137.jpg
-      alt: Photo 40 sur 137
+      alt: photos edition 2024
     - url: assets/img/photos_event/DevFest2024_45_sur_137.jpg
-      alt: Photo 45 sur 137
+      alt: photos edition 2024
     - url: assets/img/photos_event/DevFest2024_61_sur_137.jpg
-      alt: Photo 61 sur 137
+      alt: photos edition 2024
     - url: assets/img/photos_event/DevFest2024_67_sur_137.jpg
-      alt: Photo 67 sur 137
+      alt: photos edition 2024
     - url: assets/img/photos_event/DevFest2024_90_sur_137.jpg
-      alt: Photo 90 sur 137
+      alt: photos edition 2024
     - url: assets/img/photos_event/DevFest2024_97_sur_137.jpg
-      alt: Photo 97 sur 137
+      alt: photos edition 2024
     - url: assets/img/photos_event/DevFest2024_9_sur_137.jpg
-      alt: Photo 9 sur 137
-
+      alt: photos edition 2024
 
 Register:
-  title: Billetterie
+  title: 🎟️ Billetterie
   text: Soutenez l'événément et achetez dès à présent un billet pour la conférence 2025.
   button1:
       isPrimary: False

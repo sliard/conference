@@ -1,14 +1,8 @@
 ---
-title: Devenez sponsor du DevFest 2025
-description: Soutenez le DevFest Perros-Guirec 2025 et bénéficiez de visibilité auprès de la communauté tech locale. Plusieurs formules sont proposées ou possibilité de soutien ponctuel sur frais réels.
-photo_equipe: /assets/img/equipe-devfest-2025.jpg
-Newsletter: null
-contact-us:
-  title: Intéressé·e pour devenir sponsor ?
-  description: Écrivez-nous à <a href="mailto:contact@codedarmor.fr">contact@codedarmor.fr</a> pour en discuter ensemble !
 ---
 
 {% include header.html %}
+
 <div class="row">
   <div class="col-2 d-none-lg">
   </div>
@@ -18,6 +12,10 @@ contact-us:
       <div class="container">
         <div class="row">
           <div class="col">
+            {% if page.header_image %}
+            <img src="{{site.baseurl}}{{ page.header_image }}" alt="Sponsor header" class="img-fluid w-100 mb-4"
+              style="object-fit:cover;max-height:350px;">
+            {% endif %}
             <div class="section-title-header text-center">
               <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">{{ page.title }}</h1>
             </div>
@@ -26,9 +24,13 @@ contact-us:
         <div class="row">
           <div class="p-3 col text-lg-left text-center">
             {{ page.pageContent }}
+            {% include button.html button=page.buttonDoc %}
           </div>
         </div>
       </div>
+    </section>
+    <section id="sponsor_thanks" class="section-padding">
+    {% include sponsors.html params=page.Sponsoring %}
     </section>
 
     <!-- Section Contact Start -->

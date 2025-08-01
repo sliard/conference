@@ -54,6 +54,13 @@
 {% endif %}
 <!-- Speakers Section Ends -->
 
+<!-- Sponsors Section Starts -->
+
+{% if page.Sponsoring != null %}
+  {% include sponsors.html  params=page.Sponsoring %}
+{% endif %}
+<!-- Sponsors Section Ends -->
+
   <!-- Section Subscribe Newsletter Start -->
   {% if page.Newsletter != null %}
   {% include newsletter.html params=page.Newsletter %}
@@ -80,12 +87,7 @@
 {% endif %}
 <!-- Agenda Section Ends -->
 
-<!-- Sponsors Section Starts -->
 
-{% if page.Sponsoring != null %}
-  {% include sponsors.html %}
-{% endif %}
-<!-- Sponsors Section Ends -->
 
 
 

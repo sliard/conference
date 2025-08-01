@@ -13,3 +13,22 @@ menu:
 
 Newsletter:
   link : https://codedarmor.us7.list-manage.com/subscribe?u=05474659d9a3ff4697f4fc41c&id=cc5063773c
+
+Sponsors:
+  logos_basic:
+    - name: Lannion Trégor Communauté
+      url: /assets/img/logos_sponsors/logo_ltc.png
+      link: https://www.lannion-tregor.com/
+    - name: Anticipa
+      url: /assets/img/logos_sponsors/logo_anticipa.png
+      link: https://www.technopole-anticipa.com/
+    - name: Ville de Perros-Guirec
+      url: /assets/img/logos_sponsors/logo_perros.jpg
+      link: https://www.perros-guirec.com/
+    - name: French Tech Brest Ouest 
+      url: /assets/img/logos_sponsors/logo_ftbo.png
+      link: https://www.lafrenchtech-brestplus.bzh/
+  logos_advanced:
+    - name: Eco-compteur
+      url: /assets/img/logos_sponsors/logo_eco-compteur.png
+      link: https://www.eco-compteur.com/

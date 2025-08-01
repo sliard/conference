@@ -1,29 +1,50 @@
+{% assign sponsors = site.data.commons.Sponsors %}
+
 <section id="sponsors" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title-header text-center">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">{{ page.Sponsoring.title}}</h2>
-            <p>{{ page.Sponsoring.acknowlegment}}</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title-header text-center">
+          <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">{{ include.params.title}}</h2>
+          <p>{{ include.params.acknowlegment}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-5" id="sponsors-logos">
+      <div class="col-2 d-none-lg">
+
+      </div>
+      <div class="row my-5">
+        {% for logo in sponsors.logos_advanced %}
+        <div class="col-sm-12 col-lg-12 d-flex justify-content-center">
+          <div class="gallery-box">
+        <div class="img-thumb text-center">
+          <a href="{{ logo.link }}" target="_blank" rel="noopener">
+            <img class="img-fluid" src="{{ site.baseurl }}{{ logo.url }}" alt="{{ logo.name }}">
+          </a>
+        </div>
           </div>
         </div>
+        {% endfor %}
       </div>
-     
-      <div class="row pt-5" id="{{ speaker.id }}">
-        <div class="col-2 d-none-lg">
-
+      <div class="row my-5">
+        {% for logo in sponsors.logos_basic %}
+        <div class="col-sm-12 col-lg-2">
+          <div class="gallery-box">
+        <div class="img-thumb">
+          <a href="{{ logo.link }}" target="_blank" rel="noopener">
+            <img class="img-fluid" src="{{ site.baseurl }}{{ logo.url }}" alt="{{ logo.name }}">
+          </a>
         </div>
-        {% for sponsor in page.Sponsoring.sponsors %}
-        <div class="col-lg-3 col-12 p-3">
-          {% if sponsor.logo_url!= null %}
-            <a href="{{ sponsor.site_url }}" target="_blank"><img class="img-fluid mx-auto d-block" src="{{ site.baseurl }}{{ sponsor.logo_url }}" alt="{{ sponsor.name}}"></a>
-          {% endif %}
+          </div>
         </div>
         {% endfor %}
-        <div class="col-2 d-none-lg">
-
-        </div>
       </div>
-      
+      <div class="col-2 d-none-lg">
+
+      </div>
     </div>
-  </section>
+
+  </div>
+</section>
