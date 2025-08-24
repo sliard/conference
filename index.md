@@ -24,8 +24,9 @@ Carrousel_Slides:
       isPrimary: False
       isExternal: False
       isContrasted: False
+      target: ""
       text: Programme
-      url: "./#agenda"
+      url: "/#agenda"
 
 Details:
   where:

@@ -40,10 +40,10 @@
         {% if talk.slot_type != "break" %}
         <div class="row">
           <div class="col">
-            <hr />
+            <hr id="talk-{{ counter }}" />
             <div class="talk-box pt-3">
               <p class="slot_begin_time">{{talk.slot_begin_time}}</p>
-              <h3 id="talk-{% increment counter %}">{{ talk.title }}</h3>
+              <h3>{{ talk.title }}</h3>
               
               <div class="talk-speakers d-flex align-items-left">
                 {% for speaker in talk.speakers %}
@@ -57,7 +57,6 @@
                     <p class="speaker-name">{{ speakerObj.name }}</p>
                   </a>
                 </div>
-
                 {% endfor %}
               </div>
             </div>
@@ -65,6 +64,7 @@
           </div>
         </div>
         {% endif %}
+        {% assign counter = counter | plus: 1 %}
         {% endfor %}
       </div>
       <div class="col-2 d-none-lg">

@@ -4,9 +4,9 @@
         {% assign button_type = 'common'%}
     {% endif %}
     {% unless include.button.isExternal %}
-            {% capture base_url %}
-                {{ site.url }}{{ site.baseurl }}
-            {% endcapture %}
+            {% assign base_url = site.url | append: site.baseurl %}
+    {% else %}
+         {% assign base_url = '' %}
     {% endunless %}
 
     {% if include.button.isContrasted %}
