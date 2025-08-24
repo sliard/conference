@@ -15,7 +15,7 @@
         {% assign contrasted = '' %}
     {% endif %}
 
-    <a href="{{ base_url }}{{ include.button.url }}" class="fadeInRight {{ contrasted }} wow btn btn-{{ button_type }} btn-lg"
+    <a href="{{ base_url }}{{ include.button.url }}" class="fadeInRight {{ contrasted }} wow btn btn-{{ button_type }} btn-lg m-3"
         target="{{ include.button.target}}"
         data-wow-delay=".6s">{{ include.button.text }}</a>
 {% endif %}
