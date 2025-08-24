@@ -29,7 +29,12 @@
             {% endif %}
 
             <li class="nav-item {{ active_class }}">
-              <a class="nav-link" href="{{ site.baseurl }}{{menu_item.url}}">
+              <a class="nav-link" href="{{ site.baseurl }}{{menu_item.url}}"
+                 {% if menu_item.target %}target="{{ menu_item.target }}"{% endif %}
+                 {% if menu_item.tooltip %}title="{{ menu_item.tooltip }}"{% endif %}>
+                {% if menu_item.icon %}
+                  <i class="{{ menu_item.icon }}" aria-hidden="true"></i>
+                {% endif %}
                 {{menu_item.title}}
               </a>
             </li>
@@ -43,8 +48,14 @@
     <ul class="mobile-menu">
       {% for menu_item in site.data.commons.menu %}
       <li>
-        <a class="page-scrool" href="{{ site.baseurl }}{{menu_item.url}}">
-          {{menu_item.title}}</a>
+        <a class="page-scrool" href="{{ site.baseurl }}{{menu_item.url}}"
+           {% if menu_item.target %}target="{{ menu_item.target }}"{% endif %}
+           {% if menu_item.tooltip %}title="{{ menu_item.tooltip }}"{% endif %}>
+          {% if menu_item.icon %}
+            <i class="{{ menu_item.icon }}" aria-hidden="true"></i>
+          {% endif %}
+          {{menu_item.title}}
+        </a>
       </li>
       {% endfor %}
     </ul>

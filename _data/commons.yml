@@ -3,15 +3,24 @@ logo_url: "/assets/img/logo_dark.png"
 menu:
   - title: DevFest 2025
     url: '/'
+    tooltip: "Accueil DevFest 2025"
   - title: "Programme"
     url: '/#agenda'
+    tooltip: "Voir le programme"
   - title: Sponsoring
     url: '/sponsors'
+    tooltip: "Devenir sponsor"
   - title: Archives
     url: '/archives'
+    tooltip: "Accéder aux archives"
   - title: À propos
-    url: ./a-propos
-
+    url: './a-propos'
+    tooltip: "En savoir plus sur l'événement"
+  - title: ""
+    url: 'https://www.linkedin.com/company/code-d-armor/'
+    icon: 'fab fa-linkedin'
+    target: '_blank'
+    tooltip: "Suivre Code d'Armor sur LinkedIn"
 
 Newsletter:
   link : https://codedarmor.us7.list-manage.com/subscribe?u=05474659d9a3ff4697f4fc41c&id=cc5063773c
