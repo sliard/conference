@@ -14,7 +14,7 @@
     <div class="row pt-5" id="sponsors-logos">
       <div class="d-none-lg col-2">
       </div>
-      <div class="col-12 col-lg-8 my-5">
+      <div class="col-12 col-lg-8">
         {% for logo in sponsors.logos_advanced %}
         <p class="text-center">
           <a href="{{ logo.link }}" target="_blank" rel="noopener">
@@ -24,8 +24,7 @@
         </p>
         {% endfor %}
 
-        <div class="row my-5">
-
+        <div class="row">
           <div class="col-sm-12 col-lg-2">
             <p class="text-center">
               {% for logo in sponsors.logos_basic %}
