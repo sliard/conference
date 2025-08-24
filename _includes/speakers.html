@@ -9,8 +9,8 @@
       </div>
       {% for speaker in page.Speakers.list %}
       <div class="row pt-5" id="{{ speaker.id }}">
-        <div class="col-2 d-none-lg"></div>
-        <div class="col-lg-4 col-12">
+        <div class="col-2"></div>
+        <div class="col-lg-4 col-8 mb-4 mt-4">
           {% if speaker.photo_url!= null %}
             <img class="img-fluid mx-auto d-block" src="{{ site.baseurl }}{{ speaker.photo_url }}" alt="{{ speaker.name}}">
           {% endif %}
