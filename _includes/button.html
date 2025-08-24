@@ -10,7 +10,9 @@
     {% endunless %}
 
     {% if include.button.isContrasted %}
-    {% assign contrasted = 'contrasted'%}
+        {% assign contrasted = 'contrasted' %}
+    {% else %}
+        {% assign contrasted = '' %}
     {% endif %}
 
     <a href="{{ base_url }}{{ include.button.url }}" class="fadeInRight {{ contrasted }} wow btn btn-{{ button_type }} btn-lg"

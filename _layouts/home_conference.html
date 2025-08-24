@@ -47,6 +47,14 @@
 
 <!-- Registration Section End -->
 
+
+<!-- Agenda Section Starts -->
+
+{% if page.Agenda != null %}
+  {% include agenda.html %}
+{% endif %}
+<!-- Agenda Section Ends -->
+
 <!-- Speakers Section Starts -->
 
 {% if page.Speakers != null %}
@@ -77,19 +85,6 @@
 {% endif %}
 
 <!-- Gallery Section End -->
-
-
-
-<!-- Agenda Section Starts -->
-
-{% if page.Agenda != null %}
-  {% include agenda.html %}
-{% endif %}
-<!-- Agenda Section Ends -->
-
-
-
-
 
 
 <!-- Counter Area Start-->

@@ -279,11 +279,6 @@ $transition: all 0.3s ease-in-out;
   }
 }
 
-/* .contrasted.btn{
-  border-color: $primary;
-  color: $primary-light;
-}
- */
 .btn:focus,
 .btn:active {
   box-shadow: none;
@@ -291,11 +286,6 @@ $transition: all 0.3s ease-in-out;
   color: #fff;
 }
 
-/* 
-.contrasted.btn:focus,
-.contrasted.btn:active{
-  color: $primary;
-} */
 
 .btn-common {
   background-color: $preset;

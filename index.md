@@ -14,12 +14,18 @@ Carrousel_Slides:
       url: /assets/img/slider/devfest_2024.png
       alt: "DevFest Perros-Guirec 2025"
     button1:
-       isPrimary: True
-       isExternal: True
-       isContrasted: True
-       text: Billetterie
-       target: _blank
-       url: https://www.billetweb.fr/devfest-perros-guirec-2025
+      isPrimary: True
+      isExternal: True
+      isContrasted: True
+      text: Billetterie
+      target: _blank
+      url: https://www.billetweb.fr/devfest-perros-guirec-2025
+    button2:
+      isPrimary: False
+      isExternal: False
+      isContrasted: False
+      text: Programme
+      url: "./#agenda"
 
 Details:
   where:
@@ -55,7 +61,6 @@ Details:
 #     🌟 Ouvert à tous les niveaux d’expérience<br/>
 #     🎤 Accompagnement possible pour les nouveaux speakers
 
-
 LastYearMovie:
   title: "Souvenirs de l'édition 2023"
   text: Revivez les meilleurs moments du DevFest Perros-Guirec 2023.
@@ -66,15 +71,15 @@ Sponsoring:
   acknowlegment: Merci à aux partenaires qui nous aident à réaliser cet événement dans les meilleures conditions. 🙏  <br/> Vous souhaitez soutenir l'événement et bénéficier de la visibilité auprès de la communauté tech trégorroise ? <a href="">Contactez-nous !</a>
 
 Newsletter:
-    title: "Restez informé des prochaines actus Code d'Armor"
-    description: "Si vous souhaitez en savoir plus sur Code d'Armor et être averti des prochains événements organisés par l'association et de ses actualités 👇️"
-    cta: "S'inscrire à la newsletter"
+  title: "Restez informé des prochaines actus Code d'Armor"
+  description: "Si vous souhaitez en savoir plus sur Code d'Armor et être averti des prochains événements organisés par l'association et de ses actualités 👇️"
+  cta: "S'inscrire à la newsletter"
 
 Speakers:
   title: Speakers
   list:
     - name: "Alain Buzacarro"
-      id: "alain-buzacarro"
+      id: "alain_b"
       organization: "Instinct Pioneer"
       photo_url: "assets/2025/photos_speakers/ABU.jpg"
       bio: >
@@ -82,10 +87,8 @@ Speakers:
       social_links:
         - type: linkedin
           url: https://www.linkedin.com/in/buzzacaro
-
-        
     - name: "Hannah Issermann"
-      id: "hannah-issermann"
+      id: "hannah_issermann"
       organization: "Orange"
       photo_url: "assets/2025/photos_speakers/hannah-isserman.jpg"
       bio: >
@@ -93,9 +96,8 @@ Speakers:
       social_links:
         - type: linkedin
           url: https://www.linkedin.com/in/hannah-issermann-8873b1198/
-
     - name: "Christophe Milon"
-      id: "christophe-milon"
+      id: "christophe_milon"
       organization: "Quanteo Group"
       photo_url: "assets/2025/photos_speakers/107-milon-christophe-2.jpg"
       bio: >
@@ -103,9 +105,8 @@ Speakers:
       social_links:
         - type: linkedin
           url: https://www.linkedin.com/in/christophe-milon-9a929571/
-
     - name: "Stéphane Prohaszka"
-      id: "stephane-prohaszka"
+      id: "stephane_prohaszka"
       organization: "Ledger"
       photo_url: "assets/2025/photos_speakers/stephane-pro.jpg"
       bio: >
@@ -115,9 +116,8 @@ Speakers:
       social_links:
         - type: linkedin
           url: https://www.linkedin.com/in/stephane-prohaszka-6025164/
-
     - name: "Frédéric Bouchery"
-      id: "frederic-bouchery"
+      id: "frederic_bouchery"
       organization: "CCM Benchmark"
       photo_url: "assets/2025/photos_speakers/frederic-bouchery-2024.webp"
       bio: >
@@ -127,9 +127,8 @@ Speakers:
       social_links:
         - type: linkedin
           url: https://www.linkedin.com/in/bouchery/
-
     - name: "Pierrick Blons"
-      id: "pierrick-blons"
+      id: "pierrick_blons"
       organization: "Payfit"
       photo_url: "assets/2025/photos_speakers/pierrick-blons.jpg"
       bio: >
@@ -139,17 +138,15 @@ Speakers:
       social_links:
         - type: github
           url: https://github.com/pierrickblons
-
     - name: "Isabelle Chanclou"
-      id: "isabelle-chanclou"
+      id: "isabelle_chanclou"
       organization: "Orange"
       photo_url: "assets/2025/photos_speakers/isabelle-chanclou.jpg"
       bio: >
         Ergonome de formation, j’allie aujourd’hui développement web et accessibilité numérique chez Orange pour contribuer à rendre le numérique accessible à tous. Je donne notamment des cours sur l'accessibilité numérique à l'IUT.
       social_links: []
-
     - name: "Sébastien Ferrer"
-      id: "sebastien-ferrer"
+      id: "sebastien_ferrer"
       organization: "OVHcloud"
       photo_url: "assets/2025/photos_speakers/sebastien ferrer.jpg"
       bio: >
@@ -167,9 +164,8 @@ Speakers:
           url: https://github.com/sebferrer
         - type: blog
           url: https://blog.kimi.ovh
-
     - name: "Cuihtlauac Alvarado"
-      id: "cuihtlauac-alvarado"
+      id: "cuihtlauac"
       organization: "Tarides"
       photo_url: "assets/2025/photos_speakers/cuihtlauac.jpg"
       bio: >
@@ -178,113 +174,154 @@ Speakers:
         - type: linkedin
           url: https://www.linkedin.com/in/cuihtlauac-alvarado-aa7646
 
+Agenda:
+  title: Programme
+  schedule:
+    - slot_begin_time: "08:45"
+      slot_type: break
+      title: Ouverture des portes
 
+    - slot_begin_time: "09:00"
+      slot_type: talk
+      title: Mot d’introduction
 
-# Agenda:
-#   title: Programme
-#   schedule:
-#     - slot_begin_time: "8:30"
-#       slot_type: break
-#       title: Ouvertures des portes de la conférence
-#     - slot_begin_time: "9:15"
-#       slot_type: talk
-#       title: Mot d'introduction
-#     - speakers: 
-#       - name : "Pascal Fifre"
-#         id: pascal
-#       slot_begin_time: "9:30"
-#       slot_type: talk
-#       organization: "Eco-compteur"
-#       title: "Mise en œuvre de l’IOT chez EcoCompteur"
-#       description: "Découvrez comment EcoCompteur a intégré l'IoT dans ses systèmes de comptage et explorez l'évolution technologique qui a permis une couverture internationale.<br/><br/>
-#       Cette conférence offrira un retour d'expérience riche sur la sélection et la mise en œuvre des solutions IoT, en abordant les contraintes techniques, la législation, la sécurité et les performances des systèmes déployés. Vous plongerez dans l'histoire de l'IoT chez EcoCompteur, les défis rencontrés et les perspectives d'avenir."
-#     - slot_begin_time: "10:15"
-#       slot_type: talk
-#       speakers: 
-#       - name: "Fulup Ar Foll"
-#         id: fulup
-#       - name: "Valentin Geffroy"
-#         id: valentin
-#       organization: "IoT. Bzh"
-#       title: "Retour d'expérience sur l'utilisation de RUST/Linux dans une borne de charge véhicule electrique"
-#       description: "Plongez dans l'univers des infrastructures de charge pour voitures électriques avec cette présentation captivante. Découvrez les architectures techniques derrière les communications entre bornes de charge et véhicules électriques, à travers l'expérience du projet 'Tux-Evse'. <br/><br/>
-#       La conférence aborde les défis et solutions en matière de cybersécurité, les leçons tirées de l'utilisation de Rust par rapport à C/C++, ainsi que le modèle de cohabitation Linux/RTOS pour assurer la sûreté fonctionnelle.
-#       <br/><br/> En prime, apprenez comment construire chez vous une borne de charge intelligente de dernière génération, en utilisant des composants open source."
-#     - slot_begin_time: "11:00"
-#       slot_type: break
-#       title: Pause
-#     - speakers: 
-#         - name: "Aurélien Conte"
-#           id: aurelien_conte
-#         - name: "Tony Chouteau"
-#           id: tony_chouteau
-#       slot_begin_time: "11:20"
-#       slot_type: talk
-#       organization: "Mobil-inn & Heyliot"
-#       title: "Quickie - Combiner IoT et software pour réduire l’impact carbone des déchets"
-#       description: 
-#     - speakers: 
-#       - name : "Thomas Leseney"
-#         id: thomas
-#       slot_begin_time: "11:40"
-#       slot_type: talk
-#       organization: "Netvolt"
-#       title: "Comment connecter efficacement les applications d'IA dans les systèmes IOT industriels, de l'Edge au Cloud"
-#       description: "Les équipements d'IoT industriel génèrent un très grand volume de données qui sont indispensables à l'optimisation de l'exploitation. Qu'il s'agisse d'un site minier, d'un parc éolien ou d'une usine isolée, ces environnements sont souvent distribués et toujours soumis à de fortes contraintes techniques. <br/><br/>    
-#       Il n'est ainsi pas possible de s'appuyer sur des architectures Cloud et les modèles d'IA et les systèmes de décisions doivent s'exécuter localement. Le nouveau système de communications NATS, incubé au sein de la Cloud Native Computing Foundation, permet de construire simplement des architectures hybrides qui unifient les niveaux Edge et Cloud. <br/><br/>      
-#       Nous montrerons comment nous utilisons NATS pour mettre en oeuvre des applications d'IA dans de tels systèmes d'IOT industriel."
-#     - slot_begin_time: "12:30"
-#       slot_type: break
-#       title: Déjeuner sur place
-#     - speakers: 
-#       - name: "Pierre Renault"
-#         id: pierrer
-#       slot_begin_time: "14:00"
-#       slot_type: talk
-#       organization: "Rennes Métropole - Ville de Rennes"
-#       title: "Le réseau LoRa de Rennes Métropole, un réseau pionnier dont l'histoire ne fait que commencer"
-#       description: "Première métropole française à avoir lancer un projet de réseau LoRa en 2015-16, Rennes Métropole dispose d'un retour d'expérience de 8 ans sur le sujet. Entre problématiques techniques, maitrise des données et la recherche d'un cadre juridique adapté, Rennes Métropole a pris son temps pour expérimenter et vérifier la pertinence de ce type de réseau sur une diversité de cas d'usage (déchets, éclairage public, eau, bâtiments, qualité de l'air, îlots de chaleur urbains). 
-#       Aujourd'hui, la métropole prépare le passage à la vitesse supérieure, en structurant son offre et ses capacités techniques, afin d'assurer la pérennité de l'infrastructure et des cas d'usage qui y sont raccordés."
-#     - speakers: 
-#       - name : "Benoit Rouxel"
-#         id: benoit
-#       - name: "Erwan Duval"
-#         id: erwan
-#       slot_begin_time: "14:45"
-#       slot_type: talk
-#       organization: "Thales"
-#       title: "Où est Charlie ? (dans mes données IoT géo-référencées)"
-#       description: "Imaginez-vous en train de chercher Charlie dans l'une des célèbres illustrations du jeu. C'est amusant, mais souvent frustrant, n'est-ce pas ?<br/><br/> Maintenant, transposez ce défi au monde des données IoT géo-référencées. <br/>Lorsqu'il s'agit de traiter d'énormes volumes de données issues de capteurs radar, trouver les informations pertinentes peut s'avérer tout aussi complexe et chronophage. Cette présentation montre comment ce défi a été relevé en exploitant la puissance d'OpenSearch pour transformer cette quête en une expérience à la fois intuitive et efficace pour l'utilisateur. <br/><br/>À partir d'une base de données OpenSearch contenant des détections radar, il sera démontré comment les utilisateurs peuvent explorer et naviguer facilement dans ces données.<br/><br/> L'exploration passera par OpenSearch Dashboard, les vector tiles, l'API d'OpenSearch, et les modèles de langage naturel. Cette approche, c'est un peu comme disposer d'une loupe magique dans le jeu 'Où est Charlie ?' : elle permettrait de trouver Charlie en un clin d'œil. 
-#       <br/><br/>La solution proposée offre aux utilisateurs une exploration de leurs données IoT qui est à la fois rapide, performante et accessible."
-#     - slot_begin_time: "15:30"
-#       slot_type: break
-#       title: Pause
-#     - speakers: 
-#       - name : "Pierre Andrieux"
-#         id: pierre
-#       slot_begin_time: "15:45"
-#       slot_type: talk
-#       organization: "Capgemini"
-#       title: "Comment la domotique peut-elle vous aider à adopter une approche plus écoresponsable tout en réduisant vos factures ?"
-#       description: "La crise énergétique des dernières années a sensibilisé à la rareté de cette ressource. <br/><br/>
-#       Cette présentation démontrera comment, grâce à des logiciels open source et des appareils connectés, il est possible de suivre en temps réel la consommation de votre domicile afin de l'optimiser."
-#     - speakers: 
-#       - name: "Pierre Papin"
-#         id: pierrep
-#       - name: "Xavier Marin"
-#         id: xavier
-#       slot_begin_time: "16:30"
-#       slot_type: talk
-#       organization: "SenX"
-#       title: "Pourquoi votre IoT mérite mieux que Grafana"
-#       description: "Grafana est devenu au fil du temps un outil par défaut pour la dataviz IoT mais il n'est pas sans défaut. Nous proposons une découverte de Discovery, un framework web open source de dashboard as code permettant de combler les lacunes de Grafana et d'aller plus loin dans l'analyse de vos données IoT."
-#     - slot_begin_time: "17:15"
-#       slot_type: talk
-#       title: Le mot de la fin
-#     - slot_begin_time: "17:30"
-#       slot_type: break
-#       title: Fin de l'événement
+    - speakers:
+        - name: "Alain B"
+          id: alain_b
+      slot_begin_time: "09:10"
+      slot_type: talk
+      title: Keynote – L’ignorance, ce fléau auquel fait face le tech leader
+      description: >
+        Vous aimez les histoires absurdes ? Bienvenue dans l’univers de l’IT, où tout le monde veut tout, tout de suite, sans comprendre comment ça marche !<br/>
+        Ce talk est une plongée dans ces discussions surréalistes où "rajouter des développeurs" est censé accélérer un projet en retard, où "migrer un système" se résume à un simple copier-coller, et où l’IT est censé gérer… la machine à café.<br/>
+        Spoiler alert : ce n’est pas si simple.<br/>
+        Entre biais cognitifs, jeux de pouvoir et incompréhensions profondes, découvrons comment ne pas sombrer dans la folie et transformer ces tensions en opportunités. (Oui, c’est possible, promis !)
 
+    - speakers:
+        - name: "Stéphane Prohaszka"
+          id: stephane_prohaszka
+      slot_begin_time: "10:00"
+      slot_type: talk
+      title: Comment transformer une dette technique en opportunité ?
+      description: >
+        Chez Ledger, nous avons longtemps fait face à une dette technique sur nos modules de gestion des blockchains, limitant la rapidité et la qualité de nos intégrations.<br/>
+        Dans cette conférence, je vous raconterai – à travers un storytelling concret – comment nous avons transformé ce point de douleur en une architecture modulaire, capable de supporter efficacement l’ajout de nouvelles blockchains dans différents produits.<br/>
+        Je partagerai aussi les leçons tirées de cette refonte, des erreurs que nous avons commises en cours de route, ainsi que les bonnes pratiques que nous avons mises en place.<br/>
+        L’objectif : montrer comment faire évoluer un socle technique endetté tout en maintenant la compatibilité produit et en l’ouvrant vers de nouvelles applications.
+
+    - slot_begin_time: "10:45"
+      slot_type: break
+      title: Pause
+
+    - speakers:
+        - name: "Hannah Issermann"
+          id: hannah_issermann
+        - name: "Isabelle Chanclou"
+          id: isabelle_chanclou
+      slot_begin_time: "11:00"
+      slot_type: talk
+      title: La force de l’accessibilité numérique au bout de vos doigts
+      description: >
+        Découvrez pourquoi l'accessibilité numérique est un incontournable, comment la mettre en œuvre et de quelle façon cela améliorera la satisfaction de vos utilisateurs et la qualité de votre code.
+
+    - speakers:
+        - name: "Cuihtlauac"
+          id: cuihtlauac
+      slot_begin_time: "11:45"
+      slot_type: talk
+      organization: "Tarides"
+      title: Programmation Fonctionnelle Industrielle en Caml
+      description: >
+        Les langages fonctionnels de la famille Caml sont apparus en France dans les années 80.<br/>
+        Longtemps, ces langages n'étaient utilisés que pour l'enseignement et la recherche.<br/>
+        Ce n'est plus le cas de la version présente, OCaml, qui est utilisé dans plusieurs domaines industriels.<br/>
+        En particulier, OCaml est utilisé dans l'industrie de la finance, certains systèmes embarqués et des outils de validation d'applications critiques.<br/>
+        Je présenterai le langage et en particulier les caractéristiques qui le rendent adapté aux contextes industriels où il est utilisé.
+
+    - slot_begin_time: "12:30"
+      slot_type: break
+      title: Déjeuner
+
+    - speakers:
+        - name: "Christophe Milon"
+          id: christophe_milon
+      slot_begin_time: "14:00"
+      slot_type: quickie
+      title: "Quicky - Découverte d'Eco-Compteur"
+      description: >
+        Christophe Milon partagera son retour d’expérience sur l’holacratie, un mode de gouvernance innovant.<br/>
+        Il expliquera comment cette approche transforme la collaboration, la prise de décision et la responsabilisation des équipes.<br/>
+        Une intervention inspirante pour repenser l’organisation du travail dans les environnements tech et agiles.
+
+    - speakers:
+        - name: "Pierrick Blons"
+          id: pierrick_blons
+      slot_begin_time: "14:30"
+      slot_type: talk
+      title: DDD tactique avec Typescript
+      description: >
+        Après avoir passé du temps avec vos experts métier, vous avez réussi à développer une compréhension forte de l’espace du problème.<br/>
+        Vous avez découvert ensemble un langage commun pour faciliter la collaboration.<br/>
+        Comment transformer toute cette connaissance dans le code ?<br/>
+        Comment travailler avec des agrégats, des entités ou des value types... avec TypeScript ?<br/>
+        Faut-il utiliser des classes ou des types pour avoir un modèle métier riche ?<br/>
+        Comment s’assurer que le code contient l’ensemble des connaissances accumulées ?<br/><br/>
+        Nous allons ensemble construire avec l’aide de TDD et TypeScript un modèle métier riche.<br/>
+        En partant d’une session d’event storming et du résultat d’un example mapping, nous allons implémenter une nouvelle fonctionnalité dans une API existante.
+
+    - slot_begin_time: "15:15"
+      slot_type: break
+      title: Pause
+
+    - slot_begin_time: "15:35"
+      slot_type: talk
+      title: Présentation Ada Lovelace
+
+    - speakers:
+        - name: "Sébastien Ferrer"
+          id: sebastien_ferrer
+      slot_begin_time: "15:45"
+      slot_type: talk
+      title: "Troubleshooting en production : quand chaque incident devient une enquête !"
+      description: >
+        Saviez-vous que, derrière les coulisses de vos outils de travail, se cachent des équipes prêtes à intervenir à tout moment ?<br/>
+        Ces équipes, souvent discrètes mais essentielles, gèrent des dizaines de projets avec des effectifs réduits.<br/>
+        Mais quand une alerte survient, elles doivent réagir vite. Très vite.<br/>
+        Comment réussir à diagnostiquer et résoudre un incident en pleine production, sans perdre une précieuse seconde ?<br/><br/>
+        Dans ce talk je vous emmène au cœur de l'action, où je partage notre méthodologie pour transformer chaque crise en une enquête méthodique et efficace.<br/>
+        Nous explorerons comment des outils bien pensés, une organisation affûtée, et un soupçon d'intuition transforment la gestion d'incidents en une véritable enquête… parfois aussi palpitante qu’une partie de Cluedo.<br/><br/>
+        Au programme : bonnes pratiques de troubleshooting, logging et monitoring, pour que vous repartiez avec des clés concrètes pour dompter les incidents dans vos propres projets.<br/><br/>
+        Vous verrez qu'en production, chaque problème cache une histoire… à résoudre en équipe.
+
+    - speakers:
+        - name: "Frédéric Bouchery"
+          id: frederic_bouchery
+      slot_begin_time: "16:30"
+      slot_type: talk
+      title: Écrivez-vous du code sale ?
+      description: >
+        Java est verbeux, Python trop permissif, JavaScript... eh bien, c’est JavaScript.<br/>
+        Mais au fond, est-ce vraiment le langage le problème ? Ou bien... celui qui l’utilise ?<br/><br/>
+        On parle beaucoup de "code propre". Des livres, des articles, des vidéos, des tweets, des dogmes...<br/>
+        Tellement de dogmes qu’on ne sait parfois plus par où commencer.<br/>
+        DRY ou WET ? Un seul return ou plein de returns ? Un service par classe ou une classe par méthode ?<br/>
+        Chaque gourou y va de sa recette, souvent contradictoire.<br/><br/>
+        Alors cette fois, prenons le problème à l’envers.<br/><br/>
+        Et si on commençait par regarder ce qu’est du code sale ?<br/>
+        Oui, celui qui gratte, qui sent la démo faite à 2h du mat', qui te donne envie de tout réécrire dès que tu l’ouvres.<br/>
+        Bonne nouvelle : sur le code sale, il y a bien plus de consensus.<br/>
+        Et apprendre à l’identifier (et à le fuir), c’est déjà faire un grand pas vers un code plus propre.<br/>
+        Ou au moins, un peu moins foireux.<br/><br/>
+        Une conférence fun, instructive, un peu provoc’ mais 100 % bienveillante — parce qu’on en a tous écrit un jour.<br/>
+        Même toi.
+
+    - slot_begin_time: "17:15"
+      slot_type: talk
+      title: Conclusion
+
+    - slot_begin_time: "17:30"
+      slot_type: break
+      title: Fin de l’événement
 
 Gallery:
   title: Retour en images sur l'édition 2024
@@ -319,16 +356,16 @@ Register:
   title: 🎟️ Billetterie
   text: Soutenez l'événément et achetez dès à présent un billet pour la conférence 2025.
   button1:
-      isPrimary: False
-      isExternal: True
-      isContrasted: True
-      text: Tarifs et informations
-      target: _blank
-      url: https://www.billetweb.fr/devfest-perros-guirec-2025
+    isPrimary: False
+    isExternal: True
+    isContrasted: True
+    text: Tarifs et informations
+    target: _blank
+    url: https://www.billetweb.fr/devfest-perros-guirec-2025
   button2:
-      isPrimary: True
-      isExternal: True
-      text: Acheter
-      target: _blank
-      url: https://www.billetweb.fr/devfest-perros-guirec-2025
+    isPrimary: True
+    isExternal: True
+    text: Acheter
+    target: _blank
+    url: https://www.billetweb.fr/devfest-perros-guirec-2025
 ---
