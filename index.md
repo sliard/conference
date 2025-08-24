@@ -222,7 +222,7 @@ Agenda:
           id: isabelle_chanclou
       slot_begin_time: "11:00"
       slot_type: talk
-      title: La force de l’accessibilité numérique au bout de vos doigts
+      title: "L’accessibilité numérique : un atout incontournable"
       description: >
         Découvrez pourquoi l'accessibilité numérique est un incontournable, comment la mettre en œuvre et de quelle façon cela améliorera la satisfaction de vos utilisateurs et la qualité de votre code.
 
