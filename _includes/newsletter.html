@@ -1,4 +1,4 @@
-  <!-- Section Subscribe Newsletter Start -->
+<!-- Section Subscribe Newsletter Start -->
 <!-- Params
 
 page.Newsletter.title
@@ -8,16 +8,22 @@ page.Newsletter.cta
 site.data.commons.Newsletter.link 
 -->
 
-  <section id="newsletter" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col col-1ah2 text-lg-left text-center">
-          <h2 class="section-title wow fadeInUp">{{ page.Newsletter.title }}</h2>
-          <p>{{ page.Newsletter.description }}</p>
-          <p class="text-center m-4"><a class="btn btn-primary" href="{{ site.data.commons.Newsletter.link }}" target="_blank">{{
-              page.Newsletter.cta}}</a></p>
-        </div>
+<section id="newsletter" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col col-1ah2 text-lg-left text-center">
+        <h2 class="section-title wow fadeInUp">{{ page.Newsletter.title }}</h2>
+        <p>{{ page.Newsletter.description }}</p>
+        <p class="text-center m-4">
+          <a class="btn btn-primary" href="{{ site.data.commons.Newsletter.link }}" target="_blank">{{
+            page.Newsletter.cta}}</a>
+            <a class="btn btn-primary" href="{{ site.data.commons.Newsletter.linkLinkedIn }}" target="_blank">
+            <img src="/assets/img/icons/linkedin-square.svg" alt="LinkedIn" style="width:20px; height:20px; vertical-align:middle; margin-right:6px; background-color: #fff;">
+            {{ page.Newsletter.ctaLinkedIn }}
+            </a>
+        </p>
       </div>
     </div>
-  </section>
-  <!-- Section Subscribe Newsletter End -->
+  </div>
+</section>
+<!-- Section Subscribe Newsletter End -->

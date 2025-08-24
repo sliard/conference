@@ -75,6 +75,7 @@ Newsletter:
   title: "Restez informé des prochaines actus Code d'Armor"
   description: "Si vous souhaitez en savoir plus sur Code d'Armor et être averti des prochains événements organisés par l'association et de ses actualités 👇️"
   cta: "S'inscrire à la newsletter"
+  ctaLinkedIn: "Suivre la page LinkedIn"
 
 Speakers:
   title: Speakers
