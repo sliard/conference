@@ -12,36 +12,32 @@
     </div>
 
     <div class="row pt-5" id="sponsors-logos">
-      <div class="col-2 d-none-lg">
-
+      <div class="d-none-lg col-2">
       </div>
-      <div class="row my-5">
+      <div class="col-12 col-lg-8 my-5">
         {% for logo in sponsors.logos_advanced %}
-        <div class="col-sm-12 col-lg-12 d-flex justify-content-center">
-          <div class="gallery-box">
-        <div class="img-thumb text-center">
+        <p class="text-center">
           <a href="{{ logo.link }}" target="_blank" rel="noopener">
-            <img class="img-fluid" src="{{ site.baseurl }}{{ logo.url }}" alt="{{ logo.name }}">
+            <img class="img-fluids mx-auto d-block w-100" style="max-width:500px;"
+              src="{{ site.baseurl }}{{ logo.url }}" alt="{{ logo.name }}">
           </a>
-        </div>
+        </p>
+        {% endfor %}
+
+        <div class="row my-5">
+
+          <div class="col-sm-12 col-lg-2">
+            <p class="text-center">
+              {% for logo in sponsors.logos_basic %}
+              <a href="{{ logo.link }}" target="_blank" rel="noopener">
+                <img class="img-fluids mx-auto w-25" src="{{ site.baseurl }}{{ logo.url }}" alt="{{ logo.name }}">
+              </a>
+              {% endfor %}
+            </p>
           </div>
         </div>
-        {% endfor %}
       </div>
-      <div class="row my-5">
-        {% for logo in sponsors.logos_basic %}
-        <div class="col-sm-12 col-lg-2">
-          <div class="gallery-box">
-        <div class="img-thumb">
-          <a href="{{ logo.link }}" target="_blank" rel="noopener">
-            <img class="img-fluid" src="{{ site.baseurl }}{{ logo.url }}" alt="{{ logo.name }}">
-          </a>
-        </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-      <div class="col-2 d-none-lg">
+      <div class="d-none-lg col-2">
 
       </div>
     </div>
