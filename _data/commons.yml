@@ -7,6 +7,10 @@ menu:
   - title: "Programme"
     url: '/#agenda'
     tooltip: "Voir le programme"
+  - title: Boutique
+    target: '_blank'
+    url: 'https://devfest-perros-guirec.tpopsite.com/'
+    tooltip: "Accéder à la boutique"
   - title: Sponsoring
     url: '/sponsors'
     tooltip: "Devenir sponsor"

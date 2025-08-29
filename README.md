@@ -34,13 +34,13 @@ Les données sont réparties entre config.yml et /_data/commons.yml
     - Schedule
 
 ### Sections de données dans `_data/commons.yml`
-
 - **logo_url**
 - **menu**
 - **Newsletter**
 - **Sponsors**
     - logos_basic
     - logos_advanced
+
 
 ## Démarrage rapide
 
