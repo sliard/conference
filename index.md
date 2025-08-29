@@ -370,4 +370,27 @@ Register:
     text: Acheter
     target: _blank
     url: https://www.billetweb.fr/devfest-perros-guirec-2025
+
+Shop:
+  title: "🏪 Boutique en ligne"
+  description: "Découvrez les objets à l'image du DevFest Perros-Guirec : t-shirts, mugs, stickers et plus encore pour garder un souvenir de l'événement et soutenir l'association. Nous avons choisi de ne pas distribuer de goodies inutiles afin de conserver une empreinte environnementale raisonnable. Les articles proposés sont sélectionnés pour leur utilité et leur durabilité."
+  photos:
+    - url: assets/img/merch/hoodie-1.jpeg
+      alt: Hoodie DevFest 2025 gris
+    - url: assets/img/merch/hoodie-2.jpeg
+      alt: Hoodie DevFest 2025 noir
+    - url: assets/img/merch/tshirt-2.jpeg
+      alt: T-shirt DevFest 2025 modèle 2
+    - url: assets/img/merch/tshirt_1.jpeg
+      alt: T-shirt DevFest 2025 modèle 1
+    - url: assets/img/merch/tshirts.jpeg
+      alt: Lot de t-shirts DevFest 2025
+    - url: assets/img/merch/tasse.jpeg
+      alt: Tasse DevFest 2025
+  button:
+    text: "Accéder à la boutique"
+    isPrimary: True
+    isExternal: True
+    target: _blank
+    url: https://devfest-perros-guirec.tpopsite.com/
 ---
