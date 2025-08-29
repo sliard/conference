@@ -54,8 +54,6 @@ Les données sont réparties entre config.yml et /_data/commons.yml
 - Les données dynamiques (agenda, intervenants, partenaires) sont centralisées dans `index.md` ou `_data/`.
 - Les ressources statiques (images, CSS, JS) sont rangées dans `assets/` par année ou usage.
 
-Pour toute question, consulte le README ou demande
-
 ## Installer l'environnement
 
 ```shell
