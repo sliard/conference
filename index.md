@@ -191,7 +191,7 @@ Agenda:
         - id: alain_b
       slot_begin_time: "09:10"
       slot_type: talk
-      title: Keynote – L’ignorance, ce fléau auquel fait face le tech leader
+      title: L’ignorance, ce fléau auquel fait face le tech leader
       description: >
         Vous aimez les histoires absurdes ? Bienvenue dans l’univers de l’IT, où tout le monde veut tout, tout de suite, sans comprendre comment ça marche !<br/>
         Ce talk est une plongée dans ces discussions surréalistes où "rajouter des développeurs" est censé accélérer un projet en retard, où "migrer un système" se résume à un simple copier-coller, et où l’IT est censé gérer… la machine à café.<br/>
