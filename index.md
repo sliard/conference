@@ -166,15 +166,15 @@ Speakers:
           url: https://github.com/sebferrer
         - type: blog
           url: https://blog.kimi.ovh
-    - name: "Cuihtlauac Alvarado"
-      id: "cuihtlauac"
-      organization: "Tarides"
-      photo_url: "assets/2025/photos_speakers/cuihtlauac.jpg"
+    - name: "Cédric Clavier"
+      id: "cedric_clavier"
+      organization: "Groupe SII"
+      photo_url: "assets/2025/photos_speakers/cedric_clavier.jpg"
       bio: >
-        Docteur en Informatique de l'Université d'Orsay. Ingénieur à France Télécom / Orange pendant 25 ans. Ingénieur pour Tarides, où je suis revenu à mon premier amour : la programmation fonctionnelle, sur laquelle j'avais travaillé pendant mon doctorat, mais qui n'avais pas d'applications à l'époque.
+        Cédric Clavier est architecte logiciel au sein du Groupe SII à Lannion. Fort de plus de 15 ans d’expérience, il a évolué de développeur à chef de projet chez Saooti, avant de se spécialiser en architecture logicielle. Passionné, il enseigne également l’algorithmique et le développement web à l’ENSSAT.
       social_links:
         - type: linkedin
-          url: https://www.linkedin.com/in/cuihtlauac-alvarado-aa7646
+          url: https://www.linkedin.com/in/cédric-clavier-827604132
 
 Agenda:
   title: Programme
@@ -188,8 +188,7 @@ Agenda:
       title: Mot d’introduction
 
     - speakers:
-        - name: "Alain B"
-          id: alain_b
+        - id: alain_b
       slot_begin_time: "09:10"
       slot_type: talk
       title: Keynote – L’ignorance, ce fléau auquel fait face le tech leader
@@ -227,18 +226,20 @@ Agenda:
         Découvrez pourquoi l'accessibilité numérique est un incontournable, comment la mettre en œuvre et de quelle façon cela améliorera la satisfaction de vos utilisateurs et la qualité de votre code.
 
     - speakers:
-        - name: "Cuihtlauac"
-          id: cuihtlauac
+        - id: cedric_clavier
       slot_begin_time: "11:45"
       slot_type: talk
-      organization: "Tarides"
-      title: Programmation Fonctionnelle Industrielle en Caml
+      title: "Monolithes vs. Microservices : choisir la bonne architecture pour votre projet"
       description: >
-        Les langages fonctionnels de la famille Caml sont apparus en France dans les années 80.<br/>
-        Longtemps, ces langages n'étaient utilisés que pour l'enseignement et la recherche.<br/>
-        Ce n'est plus le cas de la version présente, OCaml, qui est utilisé dans plusieurs domaines industriels.<br/>
-        En particulier, OCaml est utilisé dans l'industrie de la finance, certains systèmes embarqués et des outils de validation d'applications critiques.<br/>
-        Je présenterai le langage et en particulier les caractéristiques qui le rendent adapté aux contextes industriels où il est utilisé.
+        Il était une fois… une équipe motivée, un nouveau projet ambitieux et dès le début la question : quelle est la meilleure architecture ? Monolithe ou microservices ?
+        <br><br>
+        Le premier, robuste, simple à déployer et éprouvé nous rassure. Le second, agile et évolutif, séduit par sa flexibilité. Mais derrière ces promesses, se cachent aussi des pièges : dette technique, complexité de gestion, difficultés d’orchestration…
+        <br><br>
+        Dans cette session, nous vous embarquons dans un voyage au cœur de deux mondes. À travers des retours d’expérience concrets, des cas d’usages, et une analyse des avantages et des inconvénients, nous vous aiderons à faire le tri entre promesses, idées reçues et réalités du terrain.
+        <br><br>
+        Pas de dogme ici, mais une boussole pour vous orienter selon votre contexte : taille d’équipe, maturité technique, enjeux business, contraintes de maintenance…
+        <br><br>
+        Que vous envisagiez une création, une refonte ou que vous soyez simplement curieux, cette présentation vous offrira des repères concrets pour prendre des décisions éclairées.
 
     - slot_begin_time: "12:30"
       slot_type: break
