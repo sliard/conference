@@ -17,16 +17,9 @@ Carrousel_Slides:
       isPrimary: True
       isExternal: True
       isContrasted: True
-      text: Billetterie
+      text: Donnez vos feedbacks
       target: _blank
-      url: https://www.billetweb.fr/devfest-perros-guirec-2025
-    button2:
-      isPrimary: False
-      isExternal: False
-      isContrasted: False
-      target: ""
-      text: Programme
-      url: "/#agenda"
+      url: https://forms.gle/jAoU8kySB9VdxbCTA
 
 Details:
   where:

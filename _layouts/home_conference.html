@@ -4,7 +4,22 @@
 
 {% include header.html %}
 {% include carrousel.html %}
-
+<section id="feedback" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <!-- Section de retour d'expérience  -->
+        <div class="feedback-section mt-4 text-center">
+          <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Donnez votre avis</h3>
+            <p>Votre avis nous aide à améliorer les prochaines éditions. <br/>Merci de prendre un instant pour remplir ce
+              court questionnaire.</p>
+            <a href="https://forms.gle/jAoU8kySB9VdxbCTA" class="btn btn-primary" target="_blank" rel="noopener">Ouvrir
+              le formulaire</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Section Intro Start -->
 <section id="program" class="section-padding">
@@ -22,12 +37,12 @@
       </div>
       <div class="col-lg-8 col-1ah2 text-lg-left text-center">
         <p>{{ page.Details.what.description }}</p>
-      </div>
-      <div class="col-2 d-none-lg">
 
+        <div class="col-2 d-none-lg">
+
+        </div>
       </div>
     </div>
-  </div>
 </section>
 
 <!-- Intro Section Ends -->
@@ -35,7 +50,7 @@
 
 <!-- Call for Proposal Section Start -->
 {% if page.CallForProposal != null %}
-  {% include call_for_proposal.html params=page.CallForProposal %}
+{% include call_for_proposal.html params=page.CallForProposal %}
 {% endif %}
 <!-- Call for Proposal Section End -->
 
@@ -51,34 +66,34 @@
 <!-- Agenda Section Starts -->
 
 {% if page.Agenda != null %}
-  {% include agenda.html %}
+{% include agenda.html %}
 {% endif %}
 <!-- Agenda Section Ends -->
 
 <!-- Speakers Section Starts -->
 
 {% if page.Speakers != null %}
-  {% include speakers.html %}
+{% include speakers.html %}
 {% endif %}
 <!-- Speakers Section Ends -->
 
 <!-- Sponsors Section Starts -->
 
 {% if page.Sponsoring != null %}
-  {% include sponsors.html  params=page.Sponsoring %}
+{% include sponsors.html params=page.Sponsoring %}
 {% endif %}
 <!-- Sponsors Section Ends -->
 
-  <!-- Section Subscribe Newsletter Start -->
-  {% if page.Newsletter != null %}
-  {% include newsletter.html params=page.Newsletter %}
-  
-  {% endif %}
-  <!-- Section Subscribe Newsletter End -->
+<!-- Section Subscribe Newsletter Start -->
+{% if page.Newsletter != null %}
+{% include newsletter.html params=page.Newsletter %}
 
-  {% if page.Shop != null %}
-    {% include shop.html params=page.Shop %}
-  {% endif %}
+{% endif %}
+<!-- Section Subscribe Newsletter End -->
+
+{% if page.Shop != null %}
+{% include shop.html params=page.Shop %}
+{% endif %}
 
 
 <!-- Gallery Section Starts -->
