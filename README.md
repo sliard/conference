@@ -1,76 +1,174 @@
-# README
+# DevFest Perros-Guirec
 
-# Organisation du dépôt DevFest Perros-Guirec
+Site web de la conférence **DevFest Perros-Guirec**, organisée par l'association Code d'Armor. Ce site est construit avec [Jekyll](https://jekyllrb.com/), un générateur de sites statiques en Ruby.
 
-Ce dépôt contient le site web de la conférence DevFest Perros-Guirec, construit avec Jekyll. Voici les principaux dossiers et fichiers pour faciliter la prise en main :
+## Prérequis
 
-## Structure principale
+- Ruby 2.5 ou supérieur
+- Bundler (gestionnaire de dépendances Ruby)
 
-- **index.md** : Page d’accueil, contient la configuration des intervenants, agenda, boutique, etc.
-- **_config.yml** : Fichier de configuration principal pour Jekyll ou Hugo, définissant l’URL du site, le thème, les paramètres de la conférence (nom, date, lieu, prix), les sections actives, les sponsors, partenaires et le programme. Modifie ce fichier pour personnaliser le contenu et la structure du site. 
-- **Gemfile / Gemfile.lock** : Liste et verrouille les dépendances Ruby nécessaires au fonctionnement de Jekyll. Assure la cohérence de l’environnement de développement et facilite l’installation des plugins.
-- **_includes/** : Fragments HTML réutilisables (header, footer, agenda, boutons, etc.).
-- **_layouts/** : Templates de pages (sponsors, home, etc.).
-- **_data/** : Fichiers YAML pour les données partagées (ex : partenaires).
-- **_sass/** : Fichiers de styles Sass pour la personnalisation CSS.
-- **assets/** : Images, feuilles de style, scripts JS, et ressources statiques pour chaque édition.
-- **archives.md** : Page d’archives des éditions précédentes.
-- **sponsors.md** : Page dédiée au sponsoring.
-- **about_ca.md** : Page “À propos” de l’association Code d’Armor.
+## Installation
 
-## Données 
-Les données sont réparties entre config.yml et /_data/commons.yml
-
-### Sections de données dans `config.yml`
-
-- **params**
-    - Conference info (Name, Description, Date, Price, Venue, Address, City, State, Images, GoogleMapsKey)
-    - Sections (about, location, speakers, schedule, sponsors, partners, contact)
-    - Titles (about, location, speakers, schedule, sponsors, partners, contact)
-    - CallToAction
-    - ForkButton
-    - Sponsors
-    - Partners
-    - Schedule
-
-### Sections de données dans `_data/commons.yml`
-- **logo_url**
-- **menu**
-- **Newsletter**
-- **Sponsors**
-    - logos_basic
-    - logos_advanced
-
-
-## Démarrage rapide
-
-1. Installe les dépendances Ruby et Jekyll (voir [README.md](README.md)).
-2. Lance le serveur local avec `bundle exec jekyll serve --trace`.
-3. Modifie le contenu dans les fichiers markdown ou HTML selon la section du site à mettre à jour.
-
-## Bonnes pratiques
-
-- Utilise les fragments dans `_includes/` pour éviter la duplication de code HTML.
-- Les données dynamiques (agenda, intervenants, partenaires) sont centralisées dans `index.md` ou `_data/`.
-- Les ressources statiques (images, CSS, JS) sont rangées dans `assets/` par année ou usage.
-
-## Installer l'environnement
+### 1. Installer Ruby et les dépendances système
 
 ```shell
 apt-get install ruby-full build-essential zlib1g-dev
+```
 
+### 2. Configurer l'environnement Ruby
+
+```shell
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
+```
 
+### 3. Installer Jekyll et les dépendances du projet
+
+```shell
 gem install jekyll bundler
 bundle install
 ```
 
-## Démarrer une instance locale
+## Démarrage rapide
+
+Lancer le serveur de développement local :
 
 ```shell
 bundle exec jekyll serve --trace
 ```
 
+Le site est accessible à l'adresse http://localhost:4000
+
+## Structure du projet
+
+```
+.
+├── index.md                 # Page d'accueil (configuration principale)
+├── _config.yml              # Configuration Jekyll
+├── Gemfile                  # Dépendances Ruby
+├── _includes/               # Fragments HTML réutilisables
+│   ├── header.html
+│   ├── footer.html
+│   ├── agenda.html
+│   └── speakers.html
+├── _layouts/                # Templates de pages
+│   ├── home_conference.html
+│   └── sponsors.html
+├── _data/
+│   └── commons.yml          # Données partagées (menu, sponsors)
+├── _sass/                   # Styles SCSS
+├── assets/                  # Ressources statiques
+│   ├── 2025/               # Édition 2025
+│   │   └── photos_speakers/
+│   └── img/
+│       └── logos_sponsors/
+├── archives.md              # Page d'archives
+├── sponsors.md              # Page sponsoring
+└── about_ca.md              # Page association Code d'Armor
+```
+
+## Architecture des données
+
+Le contenu du site est réparti entre deux sources principales :
+
+### 1. `index.md` (Front Matter YAML)
+
+Contient les données spécifiques à l'édition courante :
+- **Speakers** : Liste des intervenants avec bios et photos
+- **Agenda** : Programme, créneaux horaires et descriptions
+- **Carrousel_Slides** : Diapositives de la bannière d'accueil
+- **Details** : Informations de l'événement (date, lieu, etc.)
+- **Sponsoring** : Section partenaires
+- **Register** : Boutons d'inscription/billetterie
+- **Shop** : Section boutique (goodies)
+- **Gallery** : Galerie photos
+
+Les sections sont conditionnellement affichées dans le layout. Pour masquer une section, il suffit de la commenter ou de la supprimer du front matter.
+
+### 2. `_data/commons.yml`
+
+Contient les données partagées entre les pages :
+- **menu** : Liens de navigation
+- **Newsletter** : Configuration de l'inscription newsletter
+- **Sponsors** : Logos des sponsors (utilisés dans le footer et autres pages)
+
+## Personnaliser le contenu
+
+### Ajouter un intervenant
+
+Dans `index.md`, ajouter sous `Speakers.list` :
+
+```yaml
+Speakers:
+  list:
+    - name: "Prénom Nom"
+      id: "nom_unique"
+      organization: "Entreprise"
+      photo_url: "assets/2025/photos_speakers/nom.jpg"
+      bio: >
+        Description de l'intervenant...
+      social_links:
+        - type: linkedin
+          url: https://linkedin.com/in/...
+        - type: twitter
+          url: https://twitter.com/...
+```
+
+### Ajouter un créneau à l'agenda
+
+Dans `index.md`, ajouter sous `Agenda.schedule` :
+
+```yaml
+Agenda:
+  schedule:
+    - slot_begin_time: "09:00"
+      slot_type: talk        # talk, quickie, ou break
+      title: "Titre de la présentation"
+      speakers:
+        - id: nom_unique      # Référence le Speakers.list
+      description: >
+        Description du talk...
+      room: "Salle principale"
+```
+
+### Activer/désactiver une section
+
+Pour masquer une section (par exemple quand le CFP est fermé), commentez-la dans `index.md` :
+
+```yaml
+# CallForProposal:
+#   title: "Call for Proposal"
+#   ...
+```
+
+Ou supprimez-la complètement. Le layout vérifie la présence de la section avant de l'afficher.
+
+## Déploiement
+
+Le site est déployé automatiquement sur GitHub Pages via GitHub Actions (voir `.github/workflows/jekyll.yml`).
+
+À chaque push sur la branche `master`, le workflow :
+1. Construit le site avec Jekyll
+2. Déploie le résultat sur GitHub Pages
+
+### Build manuel
+
+Pour générer le site localement (dans `_site/`) :
+
+```shell
+# Build de développement
+bundle exec jekyll build
+
+# Build de production
+JEKYLL_ENV=production bundle exec jekyll build
+```
+
+## Bonnes pratiques
+
+- Les photos des speakers doivent être placées dans `assets/2025/photos_speakers/`
+- Les logos des sponsors vont dans `assets/img/logos_sponsors/`
+- Les éditions précédentes sont archivées dans `assets/YYYY/`
+- Utilisez les fragments dans `_includes/` pour éviter la duplication de code HTML
+- Les données dynamiques (agenda, intervenants) sont centralisées dans `index.md`
