@@ -172,3 +172,37 @@ JEKYLL_ENV=production bundle exec jekyll build
 - Les éditions précédentes sont archivées dans `assets/YYYY/`
 - Utilisez les fragments dans `_includes/` pour éviter la duplication de code HTML
 - Les données dynamiques (agenda, intervenants) sont centralisées dans `index.md`
+
+## Archivage des éditions
+
+Lorsqu'une édition est terminée, archivez le site dans `assets/<dossier>/`.
+
+### Installation
+
+```shell
+bundle install
+```
+
+### Utilisation
+
+```shell
+bundle exec archive 2025
+```
+
+Cela :
+1. Génère le site dans `_site/`
+2. Copie le contenu vers `assets/2025/`
+3. Corrige les URLs (convertit `/assets/...` en relatifs)
+4. Ajoute l'entrée dans `archives.md`
+
+### Exemples
+
+```shell
+# Archive standard
+bundle exec archive 2025
+# → Crée assets/2025/
+
+# Archive édition spéciale
+bundle exec archive 2025-devfestnoz
+# → Crée assets/2025-devfestnoz/
+```

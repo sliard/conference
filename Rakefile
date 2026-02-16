@@ -1,0 +1,208 @@
+# frozen_string_literal: true
+
+require 'yaml'
+require 'fileutils'
+
+# Default archive year detection
+def detect_year
+  # Try to get year from index.md or use current year
+  index_content = File.read('index.md') rescue nil
+  if index_content
+    # Look for date in the content
+    date_match = index_content.match(/(\d{4})/)
+    return date_match[1] if date_match
+  end
+  Time.now.year.to_s
+end
+
+# Default edition name
+def detect_edition
+  'devfest'
+end
+
+desc "Archive the current Jekyll build to assets/<year>/<edition>/"
+task :archive, [:year, :edition] do |_t, args|
+  args.with_defaults(year: detect_year, edition: detect_edition)
+
+  year = args[:year]
+  edition = args[:edition]
+  archive_path = "assets/#{year}/#{edition}"
+  build_path = '_site'
+
+  puts "Archiving #{year}/#{edition}..."
+  puts "=" * 50
+
+  # Step 1: Build the Jekyll site
+  puts "\n[1/5] Building Jekyll site..."
+  system('bundle exec jekyll build --trace') || exit(1)
+
+  # Step 2: Clean and create archive directory
+  puts "\n[2/5] Preparing archive directory: #{archive_path}/"
+  FileUtils.rm_rf(archive_path)
+  FileUtils.mkdir_p(archive_path)
+
+  # Step 3: Copy build files to archive
+  puts "\n[3/5] Copying build files..."
+  Dir.glob("#{build_path}/*").each do |file|
+    target = "#{archive_path}/#{File.basename(file)}"
+    if File.directory?(file)
+      FileUtils.cp_r(file, target)
+    else
+      FileUtils.cp(file, target)
+    end
+  end
+
+  # Step 4: Fix relative URLs in HTML files
+  puts "\n[4/5] Fixing relative URLs..."
+  fix_urls(archive_path, "/assets/#{year}/#{edition}/")
+
+  # Step 5: Add to archives menu
+  puts "\n[5/5] Adding to archives menu..."
+  add_to_archives(year, edition)
+
+  puts "\n" + "=" * 50
+  puts "Archive complete: #{archive_path}/"
+  puts "View at: http://localhost:4000/#{archive_path}/"
+end
+
+desc "Build and archive with current year (default edition: devfest)"
+task :archive_current do
+  Rake::Task[:archive].invoke(detect_year, detect_edition)
+end
+
+desc "List existing archives"
+task :list_archives do
+  puts "Existing archives:"
+  puts "-" * 40
+
+  archives_yml = YAML.load_file('_data/commons.yml') rescue nil
+  archives_md = File.read('archives.md') rescue nil
+
+  if archives_md
+    archives_md.scan(/-\s*title:\s*(.+?)\n\s*url:\s*(.+?)\n/).each do |title, url|
+      puts "  #{title.strip} => #{url.strip}"
+    end
+  end
+
+  puts "\nArchive directories:"
+  Dir.glob('assets/*').select { |f| File.directory?(f) && f.match?(/\d{4}/) }.each do |year_dir|
+    year = File.basename(year_dir)
+    Dir.glob("#{year_dir}/*").select { |f| File.directory?(f) }.each do |edition_dir|
+      edition = File.basename(edition_dir)
+      puts "  #{year}/#{edition}/"
+    end
+  end
+end
+
+# Helper method to fix URLs in HTML files
+def fix_urls(archive_path, base_path)
+  html_files = Dir.glob("#{archive_path}/**/*.html")
+  css_files = Dir.glob("#{archive_path}/**/*.css")
+  js_files = Dir.glob("#{archive_path}/**/*.js")
+
+  all_files = html_files + css_files + js_files
+
+  all_files.each do |file|
+    content = File.read(file)
+    original_content = content.dup
+
+    # Fix absolute asset paths to be relative to the archive location
+    # Pattern: href="/assets/..." or src="/assets/..."
+    # Replace with: href="assets/..." (relative)
+
+    # For href attributes
+    content.gsub!(/href="\/assets\//, 'href="assets/')
+    content.gsub!(/href='\/assets\//, "href='assets/")
+
+    # For src attributes
+    content.gsub!(/src="\/assets\//, 'src="assets/')
+    content.gsub!(/src='\/assets\//, "src='assets/")
+
+    # Fix root-relative links to site root (keep as absolute for navigation)
+    # href="/" becomes href="/" (unchanged - points to current site)
+    # href="/archives" becomes href="/archives" (unchanged)
+
+    # Fix url() references in CSS
+    content.gsub!(/url\("?\/(assets\/[^"\)]+)\)?/, 'url(\1)')
+    content.gsub!(/url\('?\/(assets\/[^'\)]+)\)?/, "url('\1')")
+
+    # Write back if changed
+    if content != original_content
+      File.write(file, content)
+      puts "    Fixed URLs in: #{file.sub(archive_path + '/', '')}"
+    end
+  end
+end
+
+# Helper method to add archive entry to archives.md
+def add_to_archives(year, edition)
+  archives_file = 'archives.md'
+
+  unless File.exist?(archives_file)
+    puts "  WARNING: #{archives_file} not found, skipping menu update"
+    return
+  end
+
+  content = File.read(archives_file)
+
+  # Check if already exists
+  archive_url = "/assets/#{year}/#{edition}/"
+  if content.include?(archive_url)
+    puts "  Archive entry already exists in #{archives_file}"
+    return
+  end
+
+  # Format edition name for display
+  display_name = edition == 'devfest' ? "DevFest #{year}" : "#{edition.capitalize} #{year}"
+
+  # Find the archives section and add the new entry at the beginning
+  new_entry = "  - title: #{display_name}\n    url: #{archive_url}"
+
+  # Insert after "archives:" line
+  if content =~ /(archives:\n)/
+    content = content.sub($1, "#{$1}#{new_entry}\n")
+    File.write(archives_file, content)
+    puts "  Added archive entry: #{display_name}"
+  else
+    puts "  WARNING: Could not find 'archives:' section in #{archives_file}"
+  end
+end
+
+desc "Show help for archive task"
+task :archive_help do
+  puts <<-HELP
+Archive Task - Usage Guide
+==========================
+
+Archive current site (auto-detects year):
+  rake archive
+
+Archive with specific year and edition:
+  rake archive[2025,devfest]
+  rake archive[2024,devfestnoz]
+  rake archive[2023,special]
+
+List existing archives:
+  rake list_archives
+
+Examples:
+---------
+# Archive 2025 DevFest
+  rake archive[2025,devfest]
+
+# Archive with current year
+  rake archive_current
+
+Archive Structure:
+------------------
+The archive will be created at: assets/<year>/<edition>/
+
+This preserves the complete built site including:
+- index.html (homepage)
+- All CSS, JS, and images
+- Speaker pages
+- Agenda
+
+The archive is automatically added to the Archives page.
+  HELP
+end

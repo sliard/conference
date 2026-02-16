@@ -1,3 +1,8 @@
+PATH
+  remote: gems/archive
+  specs:
+    archive (1.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -12,6 +17,7 @@ GEM
     ffi (1.17.2)
     ffi (1.17.2-arm64-darwin)
     ffi (1.17.2-x86_64-darwin)
+    ffi (1.17.2-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
     google-protobuf (3.25.8)
     google-protobuf (3.25.8-arm64-darwin)
@@ -79,6 +85,8 @@ GEM
       google-protobuf (~> 3.23)
     sass-embedded (1.69.5-x86_64-darwin)
       google-protobuf (~> 3.23)
+    sass-embedded (1.69.5-x86_64-linux-gnu)
+      google-protobuf (~> 3.23)
     sassc (2.4.0)
       ffi (~> 1.9)
     terminal-table (3.0.2)
@@ -93,6 +101,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  archive!
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3.3)
   jekyll-redirect-from
