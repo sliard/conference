@@ -131,3 +131,28 @@ Comment out or remove the section from `index.md` front matter to hide it. The l
 - Speaker photos should be placed in `assets/2025/photos_speakers/`
 - Sponsor logos go in `assets/img/logos_sponsors/`
 - The site uses Font Awesome icons (loaded via CDN in header)
+
+## Active Technologies
+- Ruby 2.5+, Jekyll 4.x + Jekyll static site generator, jekyll_asset_pipeline plugin (001-speaker-videos)
+- YAML front matter in Markdown files (index.md) (001-speaker-videos)
+- Jekyll 4.x (Ruby-based static site generator), YAML, Liquid templates + jekyll_asset_pipeline (existing) (002-photo-gallery)
+- N/A (static file references) (002-photo-gallery)
+
+## Recent Changes
+- 001-speaker-videos: Added Ruby 2.5+, Jekyll 4.x + Jekyll static site generator, jekyll_asset_pipeline plugin
+
+## Development Workflow
+
+### Testing with Playwright
+
+When taking screenshots during browser testing, use the dedicated `.playwright/` folder:
+
+```bash
+# Screenshots are saved to .playwright/ (gitignored)
+# Example screenshot paths:
+# - .playwright/homepage.png
+# - .playwright/mobile-view.png
+# - .playwright/archive-test.png
+```
+
+This keeps test artifacts out of version control while maintaining a consistent location for visual debugging.
