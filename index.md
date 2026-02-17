@@ -329,33 +329,41 @@ Agenda:
       title: Fin de l’événement
 
 Gallery:
-  title: Retour en images sur l'édition 2024
-  description: Toutes les photos sur <a href="https://photos.app.goo.gl/aA4LcCwWsgQE1Eqc8" target="_blank">l'album de l'événement</a>
+  title: Photos de l'événement
+  description: Revivez les meilleurs moments du DevFest Perros-Guirec 2025
   photos:
-    - url: assets/img/photos_event/DevFest2024_108_sur_137.jpg
-      alt: photos edition 2024
-    - url: assets/img/photos_event/DevFest2024_120_sur_137.jpg
-      alt: photos edition 2024
-    - url: assets/img/photos_event/DevFest2024_124_sur_137.jpg
-      alt: photos edition 2024
-    - url: assets/img/photos_event/DevFest2024_136_sur_137.jpg
-      alt: photos edition 2024
-    - url: assets/img/photos_event/DevFest2024_13_sur_137.jpg
-      alt: photos edition 2024
-    - url: assets/img/photos_event/DevFest2024_40_sur_137.jpg
-      alt: photos edition 2024
-    - url: assets/img/photos_event/DevFest2024_45_sur_137.jpg
-      alt: photos edition 2024
-    - url: assets/img/photos_event/DevFest2024_61_sur_137.jpg
-      alt: photos edition 2024
-    - url: assets/img/photos_event/DevFest2024_67_sur_137.jpg
-      alt: photos edition 2024
-    - url: assets/img/photos_event/DevFest2024_90_sur_137.jpg
-      alt: photos edition 2024
-    - url: assets/img/photos_event/DevFest2024_97_sur_137.jpg
-      alt: photos edition 2024
-    - url: assets/img/photos_event/DevFest2024_9_sur_137.jpg
-      alt: photos edition 2024
+    - url: assets/2025/photos_event/20251003_100241.jpg
+      alt: Conference attendees networking and discussing during a break
+    - url: assets/2025/photos_event/20251003_153358.jpg
+      alt: Group photo of DevFest attendees gathered together
+    - url: assets/2025/photos_event/P1030411.jpg
+      alt: Conference organizer welcoming attendees at the start of the event
+    - url: assets/2025/photos_event/P1030435.jpg
+      alt: Speaker presenting to the audience at DevFest Perros-Guirec
+    - url: assets/2025/photos_event/P1030460.jpg
+      alt: Speaker at podium with projector screen showing presentation slides
+    - url: assets/2025/photos_event/P1030566.jpg
+      alt: Speaker presenting with scenic coastal view visible through large windows
+    - url: assets/2025/photos_event/P1030612.jpg
+      alt: Attendee taking notes during a conference session
+    - url: assets/2025/photos_event/P1030723.jpg
+      alt: Speaker presenting at podium with microphone
+    - url: assets/2025/photos_event/P1030879.jpg
+      alt: Two women presenting together at the conference podium
+    - url: assets/2025/photos_event/P1030901.jpg
+      alt: Event staff member holding a "15 min" time card during a talk
+    - url: assets/2025/photos_event/P1030915.jpg
+      alt: Audience watching a presentation attentively in the conference room
+    - url: assets/2025/photos_event/P1030989.jpg
+      alt: Speaker presenting with DevFest banners visible in the background
+    - url: assets/2025/photos_event/P1040064.jpg
+      alt: Audience member asking a question using a microphone during Q&A
+    - url: assets/2025/photos_event/P1040076.jpg
+      alt: Attendees listening during the Q&A session
+    - url: assets/2025/photos_event/P1040112.jpg
+      alt: Speaker presenting in front of a large DevFest sign
+    - url: assets/2025/photos_event/P1040144.jpg
+      alt: Speaker gesturing at podium with coastal landscape visible through windows
 
 Register:
   title: 🎟️ Billetterie
