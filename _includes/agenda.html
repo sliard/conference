@@ -61,6 +61,20 @@
             </div>
           </div>
           <p>{{ talk.description }}</p>
+          {% if talk.speakers and talk.speakers.size > 0 %}
+            {% assign first_speaker = talk.speakers | first %}
+            {% assign speaker_obj = page.Speakers.list | where: 'id', first_speaker.id | first %}
+            {% if speaker_obj.video_url %}
+              <div class="talk-video mt-4">
+                <iframe
+                  src="{{ speaker_obj.video_url }}"
+                  title="{{ talk.title }}"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            {% endif %}
+          {% endif %}
         </div>
       </div>
       {% endif %}

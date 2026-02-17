@@ -78,10 +78,11 @@ Speakers:
       organization: "Instinct Pioneer"
       photo_url: "assets/2025/photos_speakers/ABU.jpg"
       bio: >
-        Après plusieurs expériences en tant que consultant dans des cabinets de conseil (notamment chez OCTO Technology), et un rôle de CTO chez France Télévision puis chez Les Furets, Alain Buzzacaro est resté plus de cinq ans Global CIO et membre du COMEX chez L’Occitane. Il est désormais consultant en transformation d’entreprise, Leadership Agile et Coach Exécutif chez Instinct Pionnier.
+        Après plusieurs expériences en tant que consultant dans des cabinets de conseil (notamment chez OCTO Technology), et un rôle de CTO chez France Télévision puis chez Les Furets, Alain Buzzacaro est resté plus de cinq ans Global CIO et membre du COMEX chez L'Occitane. Il est désormais consultant en transformation d'entreprise, Leadership Agile et Coach Exécutif chez Instinct Pionnier.
       social_links:
         - type: linkedin
           url: https://www.linkedin.com/in/buzzacaro
+      video_url: "https://www.youtube.com/embed/qkXRisXkWkQ"
     - name: "Hannah Issermann"
       id: "hannah_issermann"
       organization: "Orange"
@@ -91,6 +92,7 @@ Speakers:
       social_links:
         - type: linkedin
           url: https://www.linkedin.com/in/hannah-issermann-8873b1198/
+      video_url: "https://www.youtube.com/embed/oLStptnR4fk"
     - name: "Christophe Milon"
       id: "christophe_milon"
       organization: "Quanteo Group"
@@ -100,6 +102,7 @@ Speakers:
       social_links:
         - type: linkedin
           url: https://www.linkedin.com/in/christophe-milon-9a929571/
+      video_url: "https://www.youtube.com/embed/tJPS_zDv6cQ"
     - name: "Stéphane Prohaszka"
       id: "stephane_prohaszka"
       organization: "Ledger"
@@ -111,6 +114,7 @@ Speakers:
       social_links:
         - type: linkedin
           url: https://www.linkedin.com/in/stephane-prohaszka-6025164/
+      video_url: "https://www.youtube.com/embed/wK6P20OwoTw"
     - name: "Frédéric Bouchery"
       id: "frederic_bouchery"
       organization: "CCM Benchmark"
@@ -122,6 +126,7 @@ Speakers:
       social_links:
         - type: linkedin
           url: https://www.linkedin.com/in/bouchery/
+      video_url: "https://www.youtube.com/embed/fQPaAPiT62o"
     - name: "Pierrick Blons"
       id: "pierrick_blons"
       organization: "Payfit"
@@ -133,6 +138,7 @@ Speakers:
       social_links:
         - type: github
           url: https://github.com/pierrickblons
+      video_url: "https://www.youtube.com/embed/L8HUvUqwShI"
     - name: "Isabelle Chanclou"
       id: "isabelle_chanclou"
       organization: "Orange"
@@ -140,6 +146,7 @@ Speakers:
       bio: >
         Ergonome de formation, j’allie aujourd’hui développement web et accessibilité numérique chez Orange pour contribuer à rendre le numérique accessible à tous. Je donne notamment des cours sur l'accessibilité numérique à l'IUT.
       social_links: []
+      video_url: "https://www.youtube.com/embed/oLStptnR4fk"
     - name: "Sébastien Ferrer"
       id: "sebastien_ferrer"
       organization: "OVHcloud"
@@ -159,6 +166,7 @@ Speakers:
           url: https://github.com/sebferrer
         - type: blog
           url: https://blog.kimi.ovh
+      video_url: "https://www.youtube.com/embed/6mXvcaVCJis"
     - name: "Cédric Clavier"
       id: "cedric_clavier"
       organization: "Groupe SII"
@@ -168,6 +176,7 @@ Speakers:
       social_links:
         - type: linkedin
           url: https://www.linkedin.com/in/cédric-clavier-827604132
+      video_url: "https://www.youtube.com/embed/KzksOfS6yH8"
 
 Agenda:
   title: Programme
