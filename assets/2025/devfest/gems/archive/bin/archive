@@ -1,0 +1,65 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'fileutils'
+
+if ARGV.empty?
+  puts "Usage: bundle exec archive <folder>"
+  puts "Example: bundle exec archive 2025"
+  exit 1
+end
+
+folder = ARGV[0]
+archive_path = "assets/#{folder}"
+build_path = '_site'
+
+puts "Archiving to #{archive_path}/..."
+
+# Build Jekyll site
+puts "Building Jekyll site..."
+system('bundle exec jekyll build --trace') || exit(1)
+
+# Prepare archive directory
+puts "Preparing archive directory..."
+FileUtils.rm_rf(archive_path)
+FileUtils.mkdir_p(archive_path)
+
+# Copy build files
+puts "Copying files..."
+Dir.glob("#{build_path}/*").each do |file|
+  target = "#{archive_path}/#{File.basename(file)}"
+  File.directory?(file) ? FileUtils.cp_r(file, target) : FileUtils.cp(file, target)
+end
+
+# Fix URLs in HTML/CSS/JS files
+puts "Fixing URLs..."
+Dir.glob("#{archive_path}/**/*.{html,css,js}").each do |file|
+  content = File.read(file)
+  original = content.dup
+
+  content.gsub!(/href="\/assets\//, 'href="assets/')
+  content.gsub!(/href='\/assets\//, "href='assets/")
+  content.gsub!(/src="\/assets\//, 'src="assets/')
+  content.gsub!(/src='\/assets\//, "src='assets/")
+  content.gsub!(/url\("?\/(assets\/[^"\)]+)\)?/, 'url(\1)')
+  content.gsub!(/url\('?\/(assets\/[^'\)]+)\)?/, "url('\1')")
+
+  File.write(file, content) if content != original
+end
+
+# Add to archives menu
+puts "Updating archives menu..."
+if File.exist?('archives.md')
+  content = File.read('archives.md')
+  archive_url = "/assets/#{folder}/"
+
+  unless content.include?(archive_url)
+    display_name = "DevFest #{folder}"
+    new_entry = "  - title: #{display_name}\n    url: #{archive_url}"
+    content = content.sub(/(archives:\n)/, "\1#{new_entry}\n")
+    File.write('archives.md', content)
+    puts "Added to archives menu: #{display_name}"
+  end
+end
+
+puts "Done! Archive at: #{archive_path}/"

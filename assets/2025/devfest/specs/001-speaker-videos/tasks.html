@@ -1,0 +1,211 @@
+<h1 id="tasks-speaker-videos">Tasks: Speaker Videos</h1>
+
+<p><strong>Input</strong>: Design documents from <code class="language-plaintext highlighter-rouge">/specs/001-speaker-videos/</code>
+<strong>Prerequisites</strong>: plan.md, spec.md, data-model.md, contracts/, research.md, quickstart.md
+<strong>Feature Branch</strong>: <code class="language-plaintext highlighter-rouge">001-speaker-videos</code></p>
+
+<h2 id="format-id-p-story-description">Format: <code class="language-plaintext highlighter-rouge">[ID] [P?] [Story] Description</code></h2>
+
+<ul>
+  <li><strong>[P]</strong>: Can run in parallel (different files, no dependencies)</li>
+  <li><strong>[Story]</strong>: Which user story this task belongs to (e.g., US1, US2, US3)</li>
+  <li>Include exact file paths in descriptions</li>
+</ul>
+
+<hr />
+
+<h2 id="phase-1-setup">Phase 1: Setup</h2>
+
+<p><strong>Purpose</strong>: Project validation and preparation</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T001 Verify Jekyll development environment by running <code class="language-plaintext highlighter-rouge">bundle exec jekyll build</code> in repository root</li>
+</ul>
+
+<hr />
+
+<h2 id="phase-2-user-story-1---view-speaker-talk-video-priority-p1">Phase 2: User Story 1 - View Speaker Talk Video (Priority: P1)</h2>
+
+<p><strong>Goal</strong>: Enable visitors to watch recorded talks directly on speaker profile sections</p>
+
+<p><strong>Independent Test</strong>: Navigate to a speaker’s section and verify the embedded YouTube video loads and plays correctly</p>
+
+<h3 id="implementation-for-user-story-1">Implementation for User Story 1</h3>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T002 [P] [US1] Add <code class="language-plaintext highlighter-rouge">video_url</code> field to speaker data for Alain Buzacarro in <code class="language-plaintext highlighter-rouge">index.md</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T003 [P] [US1] Add <code class="language-plaintext highlighter-rouge">video_url</code> field to speaker data for Stéphane Prohaszka in <code class="language-plaintext highlighter-rouge">index.md</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T004 [P] [US1] Add <code class="language-plaintext highlighter-rouge">video_url</code> field to speaker data for Hannah Issermann in <code class="language-plaintext highlighter-rouge">index.md</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T005 [P] [US1] Add <code class="language-plaintext highlighter-rouge">video_url</code> field to speaker data for Isabelle Chanclou in <code class="language-plaintext highlighter-rouge">index.md</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T006 [P] [US1] Add <code class="language-plaintext highlighter-rouge">video_url</code> field to speaker data for Cédric Clavier in <code class="language-plaintext highlighter-rouge">index.md</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T007 [P] [US1] Add <code class="language-plaintext highlighter-rouge">video_url</code> field to speaker data for Christophe Milon in <code class="language-plaintext highlighter-rouge">index.md</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T008 [P] [US1] Add <code class="language-plaintext highlighter-rouge">video_url</code> field to speaker data for Pierrick Blons in <code class="language-plaintext highlighter-rouge">index.md</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T009 [P] [US1] Add <code class="language-plaintext highlighter-rouge">video_url</code> field to speaker data for Sébastien Ferrer in <code class="language-plaintext highlighter-rouge">index.md</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T010 [P] [US1] Add <code class="language-plaintext highlighter-rouge">video_url</code> field to speaker data for Frédéric Bouchery in <code class="language-plaintext highlighter-rouge">index.md</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T011 [US1] Refactor <code class="language-plaintext highlighter-rouge">_includes/speakers.html</code> to use <code class="language-plaintext highlighter-rouge">include.params</code> pattern matching <code class="language-plaintext highlighter-rouge">video.html</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T012 [US1] Add conditional video embed rendering in <code class="language-plaintext highlighter-rouge">_includes/speakers.html</code> when <code class="language-plaintext highlighter-rouge">speaker.video_url</code> is present</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T013 [US1] Add responsive iframe styling for video embeds in <code class="language-plaintext highlighter-rouge">_includes/speakers.html</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T014 [US1] Update <code class="language-plaintext highlighter-rouge">_layouts/home_conference.html</code> to pass <code class="language-plaintext highlighter-rouge">page.Speakers</code> as params to speakers include</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T015 [US1] Add <code class="language-plaintext highlighter-rouge">title</code> attribute to iframe for accessibility in <code class="language-plaintext highlighter-rouge">_includes/speakers.html</code></li>
+</ul>
+
+<p><strong>Checkpoint</strong>: At this point, User Story 1 should be fully functional - speakers with videos show embedded players, speakers without videos display correctly</p>
+
+<hr />
+
+<h2 id="phase-3-user-story-2---access-videos-from-agenda-talks-priority-p1">Phase 3: User Story 2 - Access Videos from Agenda Talks (Priority: P1)</h2>
+
+<p><strong>Goal</strong>: Enable visitors to watch recorded talks directly from the agenda section</p>
+
+<p><strong>Independent Test</strong>: Scroll to the agenda section, find a talk with speakers, and verify the video appears below the talk description (via speaker link)</p>
+
+<h3 id="implementation-for-user-story-2">Implementation for User Story 2</h3>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T016 [US2] Verify agenda speaker IDs match speaker section IDs for video linking in <code class="language-plaintext highlighter-rouge">index.md</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T017 [US2] Add anchor links from agenda items to corresponding speaker sections in <code class="language-plaintext highlighter-rouge">_includes/agenda.html</code></li>
+</ul>
+
+<p><strong>Checkpoint</strong>: At this point, User Stories 1 AND 2 should both work - agenda links to speakers with videos</p>
+
+<hr />
+
+<h2 id="phase-4-user-story-3---consistent-video-presentation-priority-p2">Phase 4: User Story 3 - Consistent Video Presentation (Priority: P2)</h2>
+
+<p><strong>Goal</strong>: Ensure all videos have consistent look and feel for a professional viewing experience</p>
+
+<p><strong>Independent Test</strong>: Verify all video players use the same styling, dimensions, and follow the include template pattern</p>
+
+<h3 id="implementation-for-user-story-3">Implementation for User Story 3</h3>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T018 [US3] Add CSS for responsive video wrapper with 16:9 aspect ratio in <code class="language-plaintext highlighter-rouge">_includes/speakers.html</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T019 [US3] Ensure iframe styling matches existing <code class="language-plaintext highlighter-rouge">video.html</code> implementation</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T020 [US3] Verify all 9 speaker videos display consistently across desktop and mobile viewports</li>
+</ul>
+
+<p><strong>Checkpoint</strong>: All user stories should now be independently functional with consistent presentation</p>
+
+<hr />
+
+<h2 id="phase-5-polish--cross-cutting-concerns">Phase 5: Polish &amp; Cross-Cutting Concerns</h2>
+
+<p><strong>Purpose</strong>: Final validation and quality assurance</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T021 Run Jekyll build validation: <code class="language-plaintext highlighter-rouge">bundle exec jekyll build</code> completes without Liquid errors</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T022 Verify responsive behavior on mobile viewport (iframe scales correctly)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T023 Verify speakers without <code class="language-plaintext highlighter-rouge">video_url</code> display cleanly without empty player placeholders</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T024 Validate YouTube embed URLs are in correct format (<code class="language-plaintext highlighter-rouge">/embed/</code> not <code class="language-plaintext highlighter-rouge">/watch?v=</code>)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />T025 Run quickstart.md validation steps from feature documentation</li>
+</ul>
+
+<hr />
+
+<h2 id="dependencies--execution-order">Dependencies &amp; Execution Order</h2>
+
+<h3 id="phase-dependencies">Phase Dependencies</h3>
+
+<ul>
+  <li><strong>Setup (Phase 1)</strong>: No dependencies - can start immediately</li>
+  <li><strong>User Story 1 (Phase 2)</strong>: Depends on Setup completion</li>
+  <li><strong>User Story 2 (Phase 3)</strong>: Depends on User Story 1 completion (requires working speaker videos to link to)</li>
+  <li><strong>User Story 3 (Phase 4)</strong>: Depends on User Story 1 completion (requires videos to be styled consistently)</li>
+  <li><strong>Polish (Phase 5)</strong>: Depends on all user stories being complete</li>
+</ul>
+
+<h3 id="user-story-dependencies">User Story Dependencies</h3>
+
+<ul>
+  <li><strong>User Story 1 (P1)</strong>: Can start after Setup - Foundation for all video functionality</li>
+  <li><strong>User Story 2 (P1)</strong>: Can start after US1 - Extends video access to agenda section</li>
+  <li><strong>User Story 3 (P2)</strong>: Can start after US1 - Quality/consistency improvements</li>
+</ul>
+
+<h3 id="within-each-user-story">Within Each User Story</h3>
+
+<ul>
+  <li>Data updates (video_url additions) can happen in parallel</li>
+  <li>Template refactoring must happen before conditional rendering logic</li>
+  <li>Styling must be added after template structure is complete</li>
+</ul>
+
+<h3 id="parallel-opportunities">Parallel Opportunities</h3>
+
+<ul>
+  <li>All 9 speaker <code class="language-plaintext highlighter-rouge">video_url</code> additions (T002-T010) can run in parallel</li>
+  <li>US2 and US3 can proceed in parallel once US1 is complete</li>
+  <li>Polish phase tasks marked [P] can run in parallel</li>
+</ul>
+
+<hr />
+
+<h2 id="parallel-example-user-story-1">Parallel Example: User Story 1</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Launch all video URL additions together:</span>
+Task: <span class="s2">"Add video_url field to speaker data for Alain Buzacarro in index.md"</span>
+Task: <span class="s2">"Add video_url field to speaker data for Stéphane Prohaszka in index.md"</span>
+Task: <span class="s2">"Add video_url field to speaker data for Hannah Issermann in index.md"</span>
+Task: <span class="s2">"Add video_url field to speaker data for Isabelle Chanclou in index.md"</span>
+Task: <span class="s2">"Add video_url field to speaker data for Cédric Clavier in index.md"</span>
+Task: <span class="s2">"Add video_url field to speaker data for Christophe Milon in index.md"</span>
+Task: <span class="s2">"Add video_url field to speaker data for Pierrick Blons in index.md"</span>
+Task: <span class="s2">"Add video_url field to speaker data for Sébastien Ferrer in index.md"</span>
+Task: <span class="s2">"Add video_url field to speaker data for Frédéric Bouchery in index.md"</span>
+
+<span class="c"># Then template work (depends on data being ready):</span>
+Task: <span class="s2">"Refactor _includes/speakers.html to use include.params pattern"</span>
+Task: <span class="s2">"Add conditional video embed rendering in _includes/speakers.html"</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="implementation-strategy">Implementation Strategy</h2>
+
+<h3 id="mvp-first-user-story-1-only">MVP First (User Story 1 Only)</h3>
+
+<ol>
+  <li>Complete Phase 1: Setup</li>
+  <li>Complete Phase 2: User Story 1 - Add all 9 speaker videos and template support</li>
+  <li><strong>STOP and VALIDATE</strong>: Test that videos display correctly for all speakers</li>
+  <li>Verify Jekyll build succeeds</li>
+</ol>
+
+<h3 id="incremental-delivery">Incremental Delivery</h3>
+
+<ol>
+  <li>Complete Setup + US1 → Foundation with working speaker videos</li>
+  <li>Add US2 → Agenda links to speakers with videos</li>
+  <li>Add US3 → Consistent styling across all videos</li>
+  <li>Each phase adds value without breaking previous functionality</li>
+</ol>
+
+<h3 id="parallel-team-strategy">Parallel Team Strategy</h3>
+
+<p>With multiple developers:</p>
+
+<ol>
+  <li>One developer: Add all video_url fields to index.md (T002-T010)</li>
+  <li>Another developer: Refactor speakers.html template (T011-T015)</li>
+  <li>Once US1 complete:
+    <ul>
+      <li>Developer A: Agenda linking (US2)</li>
+      <li>Developer B: Styling consistency (US3)</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+  <li>[P] tasks = different files, no dependencies</li>
+  <li>[Story] label maps task to specific user story for traceability</li>
+  <li>Each user story should be independently completable and testable</li>
+  <li>Commit after each task or logical group</li>
+  <li>Stop at any checkpoint to validate story independently</li>
+  <li>Video URLs must use embed format: <code class="language-plaintext highlighter-rouge">https://www.youtube.com/embed/VIDEO_ID</code></li>
+  <li>Hannah Issermann and Isabelle Chanclou share the same video (co-presenters)</li>
+  <li>“Mot d’introduction” and “Présentation Ada Lovelace” are special segments without dedicated speaker profiles</li>
+</ul>
