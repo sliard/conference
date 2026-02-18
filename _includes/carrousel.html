@@ -25,7 +25,7 @@
       {% for slide in page.Carrousel_Slides %}
 
       <div class="carousel-item {{ active_class }}">
-        <img class="carousel-item-bg" class="d-block w-100" src="{{ site.baseurl }}{{ slide.image.url }}" alt="{{ slide.image.alt }}">
+        <img class="carousel-item-bg" class="d-block w-100" src="{{ site.baseurl }}{{ slide.image.url }}" alt="{{ slide.image.alt }}" style="filter: brightness(0.6);">
         <div class="carousel-caption">
           <img class="wow fadeIn logo" data-wow-delay=".3s" src="{{ site.baseurl }}{{ slide.logo }}" />
           <h1 class="wow fadeInDown heading" data-wow-delay=".4s">{{ slide.title }}</h1>

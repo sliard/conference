@@ -1,7 +1,10 @@
 logo_url: "/assets/img/logo_dark.png"
 
 menu:
-  - title: DevFest 2025
+  - title: "2026"
+    url: '/devfestnoz-2026'
+    tooltip: "DevFestNoz 2026 à Lannion"
+  - title: "2025"
     url: '/'
     tooltip: "Accueil DevFest 2025"
   - title: "Programme"

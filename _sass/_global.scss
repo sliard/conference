@@ -310,9 +310,11 @@ $transition: all 0.3s ease-in-out;
 .contrasted.btn-border {
   border-color: $primary;
   color: $primary;
+  background-color: #fff;
 
   &:hover {
-    color: $primary;
+    color: #fff;
+    background-color: $primary;
     border-color: $primary;
   }
 }

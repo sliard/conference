@@ -5,7 +5,11 @@
       <div class="navbar-header">
 
         <a href="{{ site.baseurl }}/" class="navbar-brand">
-          <img class="logo_dark" src="{{ site.baseurl }}{{ site.data.commons.logo_url }}" alt="logo">
+          {% if page.logo_url %}
+            <img class="logo_dark" src="{{ site.baseurl }}{{ page.logo_url }}" alt="logo">
+          {% else %}
+            <img class="logo_dark" src="{{ site.baseurl }}{{ site.data.commons.logo_url }}" alt="logo">
+          {% endif %}
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
