@@ -12,24 +12,51 @@ plugins:
 
 # Exclude from processing.
 # The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
+# Any item listed under the `exclude:` key here will not be copied to _site.
 exclude:
-   - .sass-cache/
-   - Gemfile
-   - .github/
-   - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - .github/
+  - README.md
+  - scripts/
+  # Performance: Exclude old event assets from build (kept in repo for reference)
+  # These large directories significantly slow down build time
+  - assets/2021/
+  - assets/2022/
+  - assets/2023/
+  - assets/2024/
+  - assets/slidedecks/
+  # Exclude development/test files
+  - .playwright/
+  - "*.log"
+  - node_modules/
+  - vendor/
+  - Dockerfile
+  - docker-compose.yml
+
+# Include only current year assets for faster builds
+# Note: Previous year assets can be served from external storage/CDN
 
 sass:
-  style: compressed # or expanded, depending on your preference
+  style: compressed # Minify CSS output
 
 asset_pipeline:
   bundle: true
   compress: true
   output_path: assets
   display_path: nil
-  gzip: false
+  gzip: true # Enable gzip compression for assets
+
+# Compression settings for Jekyll
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  startings: [html, head, body]
+
+# Performance: Lazy loading settings
+lazy_loading:
+  enabled: true
+  placeholder: data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E

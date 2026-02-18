@@ -12,7 +12,13 @@
         <div class="col-2"></div>
         <div class="col-lg-4 col-8 mb-4 mt-4">
           {% if speaker.photo_url!= null %}
-            <img class="img-fluid mx-auto d-block" src="{{ site.baseurl }}{{ speaker.photo_url }}" alt="{{ speaker.name}}">
+            <img class="img-fluid mx-auto d-block"
+                 src="{{ site.baseurl }}{{ speaker.photo_url }}"
+                 alt="{{ speaker.name }}"
+                 loading="lazy"
+                 decoding="async"
+                 width="400"
+                 height="400">
           {% endif %}
         </div>
         <div class="col-lg-4 col-12 text-lg-left text-center">

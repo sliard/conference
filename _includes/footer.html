@@ -4,9 +4,9 @@
       <div class="row">
         <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp short-description" data-wow-delay="0.2s">
           {% if page.footer_logo_url %}
-          <img src="{{ site.baseurl }}{{ page.footer_logo_url }}" alt="DevFestNoz logo">
+          <img src="{{ site.baseurl }}{{ page.footer_logo_url }}" alt="DevFestNoz logo" loading="lazy">
           {% else %}
-          <img src="{{ site.baseurl }}/assets/img/logo_light.png" alt="DevFest logo">
+          <img src="{{ site.baseurl }}/assets/img/logo_light.png" alt="DevFest logo" loading="lazy">
           {% endif %}
           <p>
             {{ site.description }}
@@ -20,7 +20,7 @@
         </div>
         <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.8s">
 
-          <!-- /.widget 
+          <!-- /.widget
             <div class="widget">
               <h5 class="widget-title">FOLLOW US ON</h5>
               <ul class="footer-social">
@@ -37,7 +37,7 @@
 <!-- Footer Section End -->
 
 <!-- Go to Top Link -->
-<a href="#" class="back-to-top">
+<a href="#" class="back-to-top" aria-label="Retour en haut">
   <i class="lni-chevron-up"></i>
 </a>
 
@@ -58,19 +58,28 @@
   </div>
 </div>
 
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="{{ site.baseurl }}/assets/js/jquery-min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/popper.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
-<!--     <script src="assets/js/jquery.countdown.min.js"></script> -->
-<script src="{{ site.baseurl }}/assets/js/jquery.nav.js"></script>
-<script src="{{ site.baseurl }}/assets/js/jquery.easing.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/wow.js"></script>
-<script src="{{ site.baseurl }}/assets/js/jquery.slicknav.js"></script>
-<script src="{{ site.baseurl }}/assets/js/nivo-lightbox.js"></script>
-<script src="{{ site.baseurl }}/assets/js/main.js"></script>
-<!--    <script src="assets/js/form-validator.min.js"></script>
---><!--     <script src="assets/js/contact-form-script.min.js"></script> -->
+<!-- jQuery and Bootstrap - Deferred for performance -->
+<script defer src="{{ site.baseurl }}/assets/js/jquery-min.js"></script>
+<script defer src="{{ site.baseurl }}/assets/js/popper.min.js"></script>
+<script defer src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+
+<!-- Navigation and UI - Deferred -->
+<script defer src="{{ site.baseurl }}/assets/js/jquery.nav.js"></script>
+<script defer src="{{ site.baseurl }}/assets/js/jquery.easing.min.js"></script>
+<script defer src="{{ site.baseurl }}/assets/js/wow.js"></script>
+<script defer src="{{ site.baseurl }}/assets/js/jquery.slicknav.js"></script>
+<script defer src="{{ site.baseurl }}/assets/js/nivo-lightbox.js"></script>
+<script defer src="{{ site.baseurl }}/assets/js/main.js"></script>
+
+<!-- Countdown - Only load if needed -->
+{% if page.Carrousel_Slides and page.Carrousel_Slides.size > 0 %}
+<!--     <script defer src="{{ site.baseurl }}/assets/js/jquery.countdown.min.js"></script> -->
+{% endif %}
+
+<!-- Form validators - Only load if contact forms exist -->
+<!--    <script defer src="{{ site.baseurl }}/assets/js/form-validator.min.js"></script> -->
+<!--     <script defer src="{{ site.baseurl }}/assets/js/contact-form-script.min.js"></script> -->
+
 </body>
 
 </html>

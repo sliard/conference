@@ -21,8 +21,14 @@
             {% for logo in sponsors.logos_advanced %}
             <p class="text-center">
               <a href="{{ logo.link }}" target="_blank" rel="noopener">
-                <img class="img-fluids mx-auto d-block w-100" style="max-width:500px;"
-                  src="{{ site.baseurl }}{{ logo.url }}" alt="{{ logo.name }}">
+                <img class="img-fluids mx-auto d-block w-100"
+                     style="max-width:500px;"
+                     src="{{ site.baseurl }}{{ logo.url }}"
+                     alt="{{ logo.name }}"
+                     loading="lazy"
+                     decoding="async"
+                     width="500"
+                     height="auto">
               </a>
             </p>
             {% endfor %}
@@ -35,7 +41,13 @@
             <p class="text-center">
               {% for logo in sponsors.logos_basic %}
               <a href="{{ logo.link }}" target="_blank" rel="noopener">
-                <img class="img-fluids mx-auto w-25" src="{{ site.baseurl }}{{ logo.url }}" alt="{{ logo.name }}">
+                <img class="img-fluids mx-auto w-25"
+                     src="{{ site.baseurl }}{{ logo.url }}"
+                     alt="{{ logo.name }}"
+                     loading="lazy"
+                     decoding="async"
+                     width="200"
+                     height="auto">
               </a>
               {% endfor %}
             </p>

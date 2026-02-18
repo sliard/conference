@@ -25,13 +25,28 @@
       {% for slide in page.Carrousel_Slides %}
 
       <div class="carousel-item {{ active_class }}">
-        <img class="carousel-item-bg" class="d-block w-100" src="{{ site.baseurl }}{{ slide.image.url }}" alt="{{ slide.image.alt }}" style="filter: brightness(0.6);">
+        <!-- First carousel image is LCP critical - use fetchpriority="high" -->
+        <img class="carousel-item-bg d-block w-100"
+             src="{{ site.baseurl }}{{ slide.image.url }}"
+             alt="{{ slide.image.alt }}"
+             style="filter: brightness(0.6);"
+             {% if active_class == 'active' %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
+             decoding="async"
+             width="1920"
+             height="1080">
         <div class="carousel-caption">
-          <img class="wow fadeIn logo" data-wow-delay=".3s" src="{{ site.baseurl }}{{ slide.logo }}" />
+          <img class="wow fadeIn logo"
+               data-wow-delay=".3s"
+               src="{{ site.baseurl }}{{ slide.logo }}"
+               alt=""
+               loading="eager"
+               decoding="async"
+               width="200"
+               height="auto">
           <h1 class="wow fadeInDown heading" data-wow-delay=".4s">{{ slide.title }}</h1>
           <p class="fadeInUp wow" data-wow-delay=".6s">{{ slide.subtitle }}</p>
           <p class="fadeInUp wow" data-wow-delay=".6s">{{ slide.subtitle2 }}</p>
-          
+
           {% include button.html button=slide.button1 %}
           {% include button.html button=slide.button2 %}
         </div>
@@ -44,14 +59,15 @@
       {% endfor %}
 
       {% if page.Carrousel_Slides.size > 1 %}
-      <a class="carousel-control-prev" href="#main-slide" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#main-slide" role="button" data-slide="prev" aria-label="Slide précédent">
         <span class="carousel-control" aria-hidden="true"><i class="lni-chevron-left"></i></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#main-slide" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#main-slide" role="button" data-slide="next" aria-label="Slide suivant">
         <span class="carousel-control" aria-hidden="true"><i class="lni-chevron-right"></i></span>
         <span class="sr-only">Next</span>
       </a>
       {% endif %}
     </div>
     <!-- Main Carousel Section End -->
+</div>

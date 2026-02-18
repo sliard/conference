@@ -1,4 +1,4 @@
- <!-- Gallary Section Start -->
+ <!-- Gallery Section Start -->
  <section id="gallery" class="section-padding">
     <div class="container">
       <div class="row">
@@ -6,14 +6,14 @@
           <div class="section-title-header text-center">
             <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">{{ include.params.title }}</h2>
           </div>
-        </div> 
+        </div>
       </div>
       <div class="row">
         <div class="col-12">
           <div class="text-center">
             <p class="" data-wow-delay="0.2s">{{ include.params.description }}</p>
           </div>
-        </div> 
+        </div>
       </div>
 
       <div class="row">
@@ -21,10 +21,14 @@
         <div class="col-sm-12 col-lg-6">
           <div class="gallery-box">
             <div class="img-thumb">
-              <img class="img-fluid" src="{{ site.baseurl }}{{ photo.url }}" alt="{{ photo.alt }}">
+              <img class="img-fluid"
+                   src="{{ site.baseurl }}{{ photo.url }}"
+                   alt="{{ photo.alt }}"
+                   loading="lazy"
+                   decoding="async">
             </div>
             <div class="overlay-box text-center">
-              <a class="lightbox" href="{{ site.baseurl }}{{ photo.url }}">
+              <a class="lightbox" href="{{ site.baseurl }}{{ photo.url }}" aria-label="Voir l'image en grand">
                 <i class="lni-plus"></i>
               </a>
             </div>
