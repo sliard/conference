@@ -41,7 +41,7 @@ Details:
     description: |
       <p>Cette année, le DevFest Perros-Guirec se donne pour mission d'explorer les outils, méthodologies et pratiques qui permettent de produire du logiciel de qualité.</p>
       <p>Au programme : des conférences inspirantes, des démos techniques, et surtout des partages d’expériences concrets sur la qualité logicielle, l'architecture, les outils de développement, la performance, l'accessibilité, la culture tech et plus encore !</p>
-      <p>Que vous soyez développeur·euse junior, confirmé·e ou en reconversion, cette édition est pensée pour vous aider à progresser, découvrir de nouveaux outils et rencontrer une communauté passionnée.</p>
+      <p>Que vous soyez développeuse ou développeur, quel que soit votre niveau d'expérience ou votre parcours, cette édition est pensée pour vous aider à progresser, découvrir de nouveaux outils et rencontrer une communauté passionnée.</p>
       <p>📅 Rendez-vous le 3 octobre 2025 à Perros-Guirec pour une journée mémorable dans un cadre exceptionnel, entre passion tech et brise marine.</p>
 
 # CallForProposal:
@@ -65,8 +65,8 @@ Sponsoring:
   acknowlegment: Merci à aux partenaires qui nous aident à réaliser cet événement dans les meilleures conditions. 🙏  <br/> Vous souhaitez soutenir l'événement et bénéficier de la visibilité auprès de la communauté tech trégorroise ? <a href="">Contactez-nous !</a>
 
 Newsletter:
-  title: "Restez informé des prochaines actus Code d'Armor"
-  description: "Si vous souhaitez en savoir plus sur Code d'Armor et être averti des prochains événements organisés par l'association et de ses actualités 👇️"
+  title: "Restez informés des prochaines actus Code d'Armor"
+  description: "Pour en savoir plus sur Code d'Armor et recevoir les informations sur les prochains événements organisés par l'association 👇️"
   cta: "S'inscrire à la newsletter"
   ctaLinkedIn: "Suivre la page LinkedIn"
 

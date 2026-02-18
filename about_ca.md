@@ -6,15 +6,15 @@ permalink: /a-propos
 title: "À propos de Code D'Armor"
 description: >-
     Code d'Armor a pour but de construire une communauté de développeurs sur la région de Lannion et des Côtes d'Armor. <br/> <br/> Nous organisons et participons à des événements autour du développement informatique.
-    Nous sommes aussi un des Google Developers Groups les plus actif de France ! <br/> <br/>Passionnés, Intéressés, Motivés, Interloqués, vous êtes toutes et touss les bienvenu.e.s !
+    Nous sommes aussi un des Google Developers Groups les plus actif de France ! <br/> <br/>Passionnés, Intéressés, Motivés, Interloqués, vous êtes toutes et tous les bienvenus !
 
 thumbnail_url: ""
 
 #content
 photo_equipe: "/assets/img/about/team_devfest.jpeg"
 Newsletter:
-    title: "Restez informé des prochaines actus Code d'Armor"
-    description: "Si vous souhaitez en savoir plus sur Code d'Armor et être averti des prochains événements organisés par l'association et de ses actualités 👇️"
+    title: "Restez informés des prochaines actus Code d'Armor"
+    description: "Pour en savoir plus sur Code d'Armor et recevoir les informations sur les prochains événements organisés par l'association 👇️"
     cta: "S'inscrire à la newsletter"
 
 contact-us:

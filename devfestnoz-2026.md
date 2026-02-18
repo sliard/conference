@@ -70,7 +70,7 @@ Agenda:
     - slot_begin_time: "18h00"
       slot_type: break
       title: Accueil et networking
-      description: Arrivée des participants, café et discussions informelles
+      description: Arrivée des participant·es, café et discussions informelles
       speakers: []
     - slot_begin_time: "18h30"
       slot_type: talk
@@ -121,8 +121,8 @@ Speakers:
       social_links: []
 
 Newsletter:
-  title: "Restez informé des prochaines actus Code d'Armor"
-  description: "Si vous souhaitez en savoir plus sur Code d'Armor et être averti des prochains événements organisés par l'association et de ses actualités 👇️"
+  title: "Restez informés des prochaines actus Code d'Armor"
+  description: "Pour en savoir plus sur Code d'Armor et recevoir les informations sur les prochains événements organisés par l'association 👇️"
   cta: "S'inscrire à la newsletter"
   ctaLinkedIn: "Suivre la page LinkedIn"
 ---
