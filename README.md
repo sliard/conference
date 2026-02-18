@@ -173,6 +173,58 @@ JEKYLL_ENV=production bundle exec jekyll build
 - Utilisez les fragments dans `_includes/` pour éviter la duplication de code HTML
 - Les données dynamiques (agenda, intervenants) sont centralisées dans `index.md`
 
+## Optimisations de performance
+
+Le site intègre plusieurs optimisations pour améliorer les temps de chargement et les scores Core Web Vitals :
+
+### Optimisations implémentées
+
+| Technique | Impact | Fichiers concernés |
+|-----------|--------|-------------------|
+| **CSS critique inline** | Réduction du First Contentful Paint | `_includes/header.html` |
+| **Chargement async CSS** | Non-bloquant pour le rendu | `_includes/header.html` |
+| **JavaScript différé** | Meilleur Time to Interactive | `_includes/footer.html` |
+| **Lazy loading images** | Réduction de la bande passante | `_includes/speakers.html`, `_includes/gallery.html` |
+| **Resource hints** | Préconnexion aux CDN | `_includes/header.html` |
+| **Compression gzip** | Réduction de la taille des assets | `_config.yml` |
+| **Exclusion des anciens assets** | Build plus rapide | `_config.yml` |
+
+### Résultats
+
+- **Taille du site** : 1.7 GB → 988 MB (42% de réduction)
+- **Temps de build** : ~11s → ~7s (36% plus rapide)
+- **Premier affichage** : Amélioré avec le CSS critique inline
+- **Images** : Chargement paresseux pour les images hors écran
+
+### Optimisation des images
+
+Pour convertir automatiquement les images en WebP et créer des tailles responsives :
+
+```shell
+# Installer les dépendances
+sudo apt-get install webp imagemagick
+
+# Exécuter le script d'optimisation
+./scripts/optimize-images.sh
+```
+
+Ce script convertit les JPEG/PNG en WebP (qualité 85%) et génère des tailles responsives (400w, 800w, 1200w) pour la galerie.
+
+### Chargement des ressources
+
+- **CSS** : Le CSS critique est inline dans le `<head>`. Le reste est chargé de manière asynchrone.
+- **JavaScript** : Tous les scripts sont placés en fin de page avec l'attribut `defer`.
+- **Images** : Les images utilisent `loading="lazy"` et `decoding="async"`.
+- **Polices** : Les polices Google Fonts sont chargées avec `display=swap`.
+
+### Maintenance
+
+Lors de l'ajout de nouvelles sections avec des images :
+1. Ajouter `loading="lazy"` pour les images hors écran
+2. Ajouter `decoding="async"` pour le décodage non-bloquant
+3. Spécifier les dimensions (`width`, `height`) pour éviter les décalages de layout
+4. Utiliser `fetchpriority="high"` pour l'image LCP (largest contentful paint)
+
 ## Archivage des éditions
 
 Lorsqu'une édition est terminée, archivez le site dans `assets/<dossier>/`.
