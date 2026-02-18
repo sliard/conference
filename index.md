@@ -1,6 +1,6 @@
 ---
 layout: home_conference
-permalink: /
+permalink: /devfest-2025
 
 title: "DevFest - 03 Octobre 2025 - Perros-Guirec"
 thumbnail_url: /assets/img/social-card/LinkedIn-event-superdev.png

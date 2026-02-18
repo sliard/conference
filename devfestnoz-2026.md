@@ -1,6 +1,6 @@
 ---
 layout: devfestnoz_conference
-permalink: /devfestnoz-2026
+permalink: /
 url: https://devfestnoz.codedarmor.fr/
 logo_url: "/assets/2026/devfestnoz/logo_dark.png"
 footer_logo_url: "/assets/2026/devfestnoz/logo_light.png"
