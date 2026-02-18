@@ -121,7 +121,7 @@ Speakers:
       social_links: []
 
 Newsletter:
-  title: "Restez informés des prochaines actus Code d'Armor"
+  title: "Restez informé.e.s des prochaines actus Code d'Armor"
   description: "Pour en savoir plus sur Code d'Armor et recevoir les informations sur les prochains événements organisés par l'association 👇️"
   cta: "S'inscrire à la newsletter"
   ctaLinkedIn: "Suivre la page LinkedIn"
