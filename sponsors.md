@@ -25,7 +25,7 @@ buttonDoc:
        isContrasted: True
        text: Dossier de présentation
        target: _blank
-       url: /assets/docs/Présentation Entreprises - DevFest Perros-Guirec 2025.pdf
+       url: /assets/docs/Presentation Entreprises - DevFest Perros-Guirec 2025.pdf
 
 Sponsoring:
     title : "Merci à celles et ceux qui nous soutiennent déjà "
