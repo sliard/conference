@@ -100,7 +100,7 @@ Add to `index.md` under `Speakers.list`:
 - name: "Speaker Name"
   id: "unique_id"
   organization: "Company"
-  photo_url: "assets/2025/photos_speakers/filename.jpg"
+  photo_url: "assets/2025/photos_speakers/filename.webp"
   bio: >
     Speaker bio here...
   social_links:
@@ -150,9 +150,9 @@ When taking screenshots during browser testing, use the dedicated `.playwright/`
 ```bash
 # Screenshots are saved to .playwright/ (gitignored)
 # Example screenshot paths:
-# - .playwright/homepage.png
-# - .playwright/mobile-view.png
-# - .playwright/archive-test.png
+# - .playwright/homepage.webp
+# - .playwright/mobile-view.webp
+# - .playwright/archive-test.webp
 ```
 
 This keeps test artifacts out of version control while maintaining a consistent location for visual debugging.

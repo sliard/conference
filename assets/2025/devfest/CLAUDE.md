@@ -100,7 +100,7 @@ Add to `index.md` under `Speakers.list`:
 - name: "Speaker Name"
   id: "unique_id"
   organization: "Company"
-  photo_url: "assets/2025/photos_speakers/filename.jpg"
+  photo_url: "assets/2025/photos_speakers/filename.webp"
   bio: >
     Speaker bio here...
   social_links:

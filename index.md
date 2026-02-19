@@ -3,15 +3,15 @@ layout: home_conference
 permalink: /devfest-2025
 
 title: "DevFest - 03 Octobre 2025 - Perros-Guirec"
-thumbnail_url: /assets/img/social-card/LinkedIn-event-superdev.png
+thumbnail_url: /assets/img/social-card/LinkedIn-event-superdev.webp
 
 Carrousel_Slides:
-  - logo: /assets/img/slider/2025-superdev-siteweb-center-homepage@2x.png
+  - logo: /assets/img/slider/2025-superdev-siteweb-center-homepage@2x.webp
     title: DevFest Perros-Guirec 2025
     subtitle: "Mieux développer : outils et pratiques pour du logiciel de qualité"
     subtitle2: 3 octobre 2025 - 9h00 - Perros-Guirec
     image:
-      url: /assets/img/slider/devfest_2024.png
+      url: /assets/img/slider/devfest_2024.webp
       alt: "DevFest Perros-Guirec 2025"
     button1:
       isPrimary: True
@@ -76,7 +76,7 @@ Speakers:
     - name: "Alain Buzacarro"
       id: "alain_b"
       organization: "Instinct Pioneer"
-      photo_url: "assets/2025/photos_speakers/ABU.jpg"
+      photo_url: "assets/2025/photos_speakers/ABU.webp"
       bio: >
         Après plusieurs expériences en tant que consultant dans des cabinets de conseil (notamment chez OCTO Technology), et un rôle de CTO chez France Télévision puis chez Les Furets, Alain Buzzacaro est resté plus de cinq ans Global CIO et membre du COMEX chez L'Occitane. Il est désormais consultant en transformation d'entreprise, Leadership Agile et Coach Exécutif chez Instinct Pionnier.
       social_links:
@@ -86,7 +86,7 @@ Speakers:
     - name: "Hannah Issermann"
       id: "hannah_issermann"
       organization: "Orange"
-      photo_url: "assets/2025/photos_speakers/hannah-isserman.jpg"
+      photo_url: "assets/2025/photos_speakers/hannah-isserman.webp"
       bio: >
         Responsable d'équipe chez Orange Innovation, j'ai une formation de développeuse fullstack. Depuis 10 ans, je me suis spécialisée dans le développement web, et donc forcément dans l'accessibilité numérique. Je suis aujourd'hui Orange Expert Software et je participe au développement du design system unifié Orange. Je donne également des cours sur l'accessibilité numérique à l'IUT.
       social_links:
@@ -96,7 +96,7 @@ Speakers:
     - name: "Christophe Milon"
       id: "christophe_milon"
       organization: "Quanteo Group"
-      photo_url: "assets/2025/photos_speakers/107-milon-christophe-2.jpg"
+      photo_url: "assets/2025/photos_speakers/107-milon-christophe-2.webp"
       bio: >
         Christophe Milon, ingénieur de formation et fils d’un inventeur, crée en 1998 à Lannion l’entreprise Éco‑Compteur à 33 ans, devenue Quanteo Group, leader mondial du comptage piétons et cyclistes. Fondateur et CEO, il a structuré le groupe autour de la transparence, de l’holacratie et d’un partage de l'actionnariat pour transmettre l’entreprise à ses équipes.
       social_links:
@@ -106,7 +106,7 @@ Speakers:
     - name: "Stéphane Prohaszka"
       id: "stephane_prohaszka"
       organization: "Ledger"
-      photo_url: "assets/2025/photos_speakers/stephane-pro.jpg"
+      photo_url: "assets/2025/photos_speakers/stephane-pro.webp"
       bio: >
         Stéphane est Senior Staff Architect chez Ledger depuis trois ans. Fort de 25 ans d’expérience dans des secteurs variés – de l’aérospatial aux startups en passant par le conseil – il a toujours exploré les enjeux techniques avec une curiosité insatiable.
 
@@ -130,7 +130,7 @@ Speakers:
     - name: "Pierrick Blons"
       id: "pierrick_blons"
       organization: "Payfit"
-      photo_url: "assets/2025/photos_speakers/pierrick-blons.jpg"
+      photo_url: "assets/2025/photos_speakers/pierrick-blons.webp"
       bio: >
         Avec plus de 15 ans d'expérience, notamment chez Microsoft, en sociétés de services et chez divers éditeurs, Pierrick est actuellement développeur chez PayFit.
 
@@ -142,7 +142,7 @@ Speakers:
     - name: "Isabelle Chanclou"
       id: "isabelle_chanclou"
       organization: "Orange"
-      photo_url: "assets/2025/photos_speakers/isabelle-chanclou.jpg"
+      photo_url: "assets/2025/photos_speakers/isabelle-chanclou.webp"
       bio: >
         Ergonome de formation, j’allie aujourd’hui développement web et accessibilité numérique chez Orange pour contribuer à rendre le numérique accessible à tous. Je donne notamment des cours sur l'accessibilité numérique à l'IUT.
       social_links: []
@@ -150,7 +150,7 @@ Speakers:
     - name: "Sébastien Ferrer"
       id: "sebastien_ferrer"
       organization: "OVHcloud"
-      photo_url: "assets/2025/photos_speakers/sebastien ferrer.jpg"
+      photo_url: "assets/2025/photos_speakers/sebastien ferrer.webp"
       bio: >
         Sébastien est ingénieur logiciel chez OVHcloud à Nantes, dans l'équipe SIA (Service Integration & Automation).
         Exerçant ce métier depuis maintenant plus de 12 ans, il a toujours aimé vulgariser et partager ses connaissances en public.
@@ -170,7 +170,7 @@ Speakers:
     - name: "Cédric Clavier"
       id: "cedric_clavier"
       organization: "Groupe SII"
-      photo_url: "assets/2025/photos_speakers/cedric_clavier.jpg"
+      photo_url: "assets/2025/photos_speakers/cedric_clavier.webp"
       bio: >
         Cédric Clavier est architecte logiciel au sein du Groupe SII à Lannion. Fort de plus de 15 ans d’expérience, il a évolué de développeur à chef de projet chez Saooti, avant de se spécialiser en architecture logicielle. Passionné, il enseigne également l’algorithmique et le développement web à l’ENSSAT.
       social_links:
@@ -332,37 +332,37 @@ Gallery:
   title: Photos de l'événement
   description: Revivez les meilleurs moments du DevFest Perros-Guirec 2025
   photos:
-    - url: assets/2025/photos_event/20251003_100241.jpg
+    - url: assets/2025/photos_event/20251003_100241.webp
       alt: Conference attendees networking and discussing during a break
-    - url: assets/2025/photos_event/20251003_153358.jpg
+    - url: assets/2025/photos_event/20251003_153358.webp
       alt: Group photo of DevFest attendees gathered together
-    - url: assets/2025/photos_event/P1030411.jpg
+    - url: assets/2025/photos_event/P1030411.webp
       alt: Conference organizer welcoming attendees at the start of the event
-    - url: assets/2025/photos_event/P1030435.jpg
+    - url: assets/2025/photos_event/P1030435.webp
       alt: Speaker presenting to the audience at DevFest Perros-Guirec
-    - url: assets/2025/photos_event/P1030460.jpg
+    - url: assets/2025/photos_event/P1030460.webp
       alt: Speaker at podium with projector screen showing presentation slides
-    - url: assets/2025/photos_event/P1030566.jpg
+    - url: assets/2025/photos_event/P1030566.webp
       alt: Speaker presenting with scenic coastal view visible through large windows
-    - url: assets/2025/photos_event/P1030612.jpg
+    - url: assets/2025/photos_event/P1030612.webp
       alt: Attendee taking notes during a conference session
-    - url: assets/2025/photos_event/P1030723.jpg
+    - url: assets/2025/photos_event/P1030723.webp
       alt: Speaker presenting at podium with microphone
-    - url: assets/2025/photos_event/P1030879.jpg
+    - url: assets/2025/photos_event/P1030879.webp
       alt: Two women presenting together at the conference podium
-    - url: assets/2025/photos_event/P1030901.jpg
+    - url: assets/2025/photos_event/P1030901.webp
       alt: Event staff member holding a "15 min" time card during a talk
-    - url: assets/2025/photos_event/P1030915.jpg
+    - url: assets/2025/photos_event/P1030915.webp
       alt: Audience watching a presentation attentively in the conference room
-    - url: assets/2025/photos_event/P1030989.jpg
+    - url: assets/2025/photos_event/P1030989.webp
       alt: Speaker presenting with DevFest banners visible in the background
-    - url: assets/2025/photos_event/P1040064.jpg
+    - url: assets/2025/photos_event/P1040064.webp
       alt: Audience member asking a question using a microphone during Q&A
-    - url: assets/2025/photos_event/P1040076.jpg
+    - url: assets/2025/photos_event/P1040076.webp
       alt: Attendees listening during the Q&A session
-    - url: assets/2025/photos_event/P1040112.jpg
+    - url: assets/2025/photos_event/P1040112.webp
       alt: Speaker presenting in front of a large DevFest sign
-    - url: assets/2025/photos_event/P1040144.jpg
+    - url: assets/2025/photos_event/P1040144.webp
       alt: Speaker gesturing at podium with coastal landscape visible through windows
 
 Register:
@@ -386,17 +386,17 @@ Shop:
   title: "🏪 Boutique en ligne"
   description: "Découvrez les objets à l'image du DevFest Perros-Guirec : t-shirts, mugs, stickers et plus encore pour garder un souvenir de l'événement et soutenir l'association. Nous avons choisi de ne pas distribuer de goodies inutiles afin de conserver une empreinte environnementale raisonnable. Les articles proposés sont sélectionnés pour leur utilité et leur durabilité."
   photos:
-    - url: assets/img/merch/hoodie-1.jpeg
+    - url: assets/img/merch/hoodie-1.webp
       alt: Hoodie DevFest 2025 gris
-    - url: assets/img/merch/hoodie-2.jpeg
+    - url: assets/img/merch/hoodie-2.webp
       alt: Hoodie DevFest 2025 noir
-    - url: assets/img/merch/tshirt-2.jpeg
+    - url: assets/img/merch/tshirt-2.webp
       alt: T-shirt DevFest 2025 modèle 2
-    - url: assets/img/merch/tshirt_1.jpeg
+    - url: assets/img/merch/tshirt_1.webp
       alt: T-shirt DevFest 2025 modèle 1
-    - url: assets/img/merch/tshirts.jpeg
+    - url: assets/img/merch/tshirts.webp
       alt: Lot de t-shirts DevFest 2025
-    - url: assets/img/merch/tasse.jpeg
+    - url: assets/img/merch/tasse.webp
       alt: Tasse DevFest 2025
   button:
     text: "Accéder à la boutique"

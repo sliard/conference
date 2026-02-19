@@ -63,22 +63,22 @@ The following 16 photos must be included with their respective alt text:
 
 | Filename | Alt Text |
 |----------|----------|
-| 20251003_100241.jpg | Conference attendees networking and discussing during a break |
-| 20251003_153358.jpg | Group photo of DevFest attendees gathered together |
-| P1030411.jpg | Conference organizer welcoming attendees at the start of the event |
-| P1030435.jpg | Speaker presenting to the audience at DevFest Perros-Guirec |
-| P1030460.jpg | Speaker at podium with projector screen showing presentation slides |
-| P1030566.jpg | Speaker presenting with scenic coastal view visible through large windows |
-| P1030612.jpg | Attendee taking notes during a conference session |
-| P1030723.jpg | Speaker presenting at podium with microphone |
-| P1030879.jpg | Two women presenting together at the conference podium |
-| P1030901.jpg | Event staff member holding a "15 min" time card during a talk |
-| P1030915.jpg | Audience watching a presentation attentively in the conference room |
-| P1030989.jpg | Speaker presenting with DevFest banners visible in the background |
-| P1040064.jpg | Audience member asking a question using a microphone during Q&A |
-| P1040076.jpg | Attendees listening during the Q&A session |
-| P1040112.jpg | Speaker presenting in front of a large DevFest sign |
-| P1040144.jpg | Speaker gesturing at podium with coastal landscape visible through windows |
+| 20251003_100241.webp | Conference attendees networking and discussing during a break |
+| 20251003_153358.webp | Group photo of DevFest attendees gathered together |
+| P1030411.webp | Conference organizer welcoming attendees at the start of the event |
+| P1030435.webp | Speaker presenting to the audience at DevFest Perros-Guirec |
+| P1030460.webp | Speaker at podium with projector screen showing presentation slides |
+| P1030566.webp | Speaker presenting with scenic coastal view visible through large windows |
+| P1030612.webp | Attendee taking notes during a conference session |
+| P1030723.webp | Speaker presenting at podium with microphone |
+| P1030879.webp | Two women presenting together at the conference podium |
+| P1030901.webp | Event staff member holding a "15 min" time card during a talk |
+| P1030915.webp | Audience watching a presentation attentively in the conference room |
+| P1030989.webp | Speaker presenting with DevFest banners visible in the background |
+| P1040064.webp | Audience member asking a question using a microphone during Q&A |
+| P1040076.webp | Attendees listening during the Q&A session |
+| P1040112.webp | Speaker presenting in front of a large DevFest sign |
+| P1040144.webp | Speaker gesturing at podium with coastal landscape visible through windows |
 
 ## Success Criteria *(mandatory)*
 

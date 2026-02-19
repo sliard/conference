@@ -38,7 +38,7 @@ The Jekyll build (`bundle exec jekyll build`) MUST pass without errors or unhand
 
 ### V. Convention Over Configuration
 File naming and location MUST follow established conventions:
-- Speaker photos: `assets/YYYY/photos_speakers/filename.jpg`
+- Speaker photos: `assets/YYYY/photos_speakers/filename.webp`
 - Sponsor logos: `assets/img/logos_sponsors/`
 - Layouts: `_layouts/` with names matching `layout:` front matter
 - Includes: `_includes/` referenced by `{% include %}`

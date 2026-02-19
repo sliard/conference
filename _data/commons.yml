@@ -1,4 +1,4 @@
-logo_url: "/assets/img/logo_dark.png"
+logo_url: "/assets/img/logo_dark.webp"
 
 menu:
   - title: "DevFestNoz 2026"
@@ -31,18 +31,18 @@ Newsletter:
 Sponsors:
   logos_basic:
     - name: Lannion Trégor Communauté
-      url: /assets/img/logos_sponsors/logo_ltc.png
+      url: /assets/img/logos_sponsors/logo_ltc.webp
       link: https://www.lannion-tregor.com/
     - name: Anticipa
-      url: /assets/img/logos_sponsors/logo_anticipa.png
+      url: /assets/img/logos_sponsors/logo_anticipa.webp
       link: https://www.technopole-anticipa.com/
     - name: Ville de Perros-Guirec
-      url: /assets/img/logos_sponsors/logo_perros.jpg
+      url: /assets/img/logos_sponsors/logo_perros.webp
       link: https://www.perros-guirec.com/
     - name: French Tech Brest Ouest 
-      url: /assets/img/logos_sponsors/logo_ftbo.png
+      url: /assets/img/logos_sponsors/logo_ftbo.webp
       link: https://www.lafrenchtech-brestplus.bzh/
   logos_advanced:
     - name: Eco-compteur
-      url: /assets/img/logos_sponsors/logo_eco-compteur.png
+      url: /assets/img/logos_sponsors/logo_eco-compteur.webp
       link: https://www.eco-compteur.com/

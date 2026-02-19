@@ -27,7 +27,7 @@ Speakers:
     - name: "Alain Buzacarro"
       id: "alain_b"
       organization: "Instinct Pioneer"
-      photo_url: "assets/2025/photos_speakers/ABU.jpg"
+      photo_url: "assets/2025/photos_speakers/ABU.webp"
       bio: >
         Après plusieurs expériences en tant que consultant...
       social_links:

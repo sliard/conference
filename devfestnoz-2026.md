@@ -2,19 +2,19 @@
 layout: devfestnoz_conference
 permalink: /
 url: https://devfestnoz.codedarmor.fr/
-logo_url: "/assets/2026/devfestnoz/logo_dark.png"
-footer_logo_url: "/assets/2026/devfestnoz/logo_light.png"
+logo_url: "/assets/img/logo_devfestnoz_dark.webp"
+footer_logo_url: "/assets/img/logo_devfestnoz_light.webp"
 
 title: "DevFestNoz - 12 Mars 2026 - Lannion"
-thumbnail_url: /assets/2024/devfestnoz/assets/img/social-card/social-card-devfestnoz-2023.png
+thumbnail_url: /assets/2024/devfestnoz/assets/img/social-card/social-card-devfestnoz-2023.webp
 
 Carrousel_Slides:
-  - logo: /assets/2024/devfestnoz/assets/img/logo_light.png
+  - logo: /assets/2024/devfestnoz/assets/img/logo_light.webp
     title: DevFestNoz 2026
     subtitle: "OCaml - CI/CD"
     subtitle2: 12 mars 2026 - 18h00 - Lannion
     image:
-      url: /assets/2026/devfestnoz/carousel-bg.jpg
+      url: /assets/2026/devfestnoz/carousel-bg.webp
       alt: "DevFestNoz 2026"
     button1:
       isPrimary: True

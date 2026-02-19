@@ -11,7 +11,7 @@ description: >-
 thumbnail_url: ""
 
 #content
-photo_equipe: "/assets/img/about/team_devfest.jpeg"
+photo_equipe: "/assets/img/about/team_devfest.webp"
 Newsletter:
     title: "Restez informés des prochaines actus Code d'Armor"
     description: "Pour en savoir plus sur Code d'Armor et recevoir les informations sur les prochains événements organisés par l'association 👇️"

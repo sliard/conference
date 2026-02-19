@@ -15,7 +15,7 @@ params:
   Address: "Boulevard Kukulcan, 30"
   City:  "Cancún"
   State: "Quintana"
-  Images: ["/img/badge.jpg"]
+  Images: ["/img/badge.webp"]
   GoogleMapsKey: "my-secret-maps-key"
 
   # Active sections on the website to deactivate comment out with '#'
@@ -52,16 +52,16 @@ params:
   # List of Sponsors
   Sponsors:
     - name: "Hugo"
-      logo: "/img/hugo.png"
+      logo: "/img/hugo.webp"
       url: "http://gohugo.io"
 
   # List of Partners
   Partners:
     - name: "Hugo"
-      logo: "/img/hugo.jpg"
+      logo: "/img/hugo.webp"
       url: "https://gohugo.io"
     - name: "BrazilJS"
-      logo: "/img/partner.png"
+      logo: "/img/partner.webp"
       url: "http://braziljs.org"
 
   # The entire schedule
@@ -70,7 +70,7 @@ params:
       time: "9h00"
 
     - name: "Linus Torvalds"
-      photo: "/img/speaker.jpg"
+      photo: "/img/speaker.webp"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Linux Foundation"
       link:
@@ -82,7 +82,7 @@ params:
         time: "10h00"
 
     - name: "Bill Gates"
-      photo: "/img/speaker.jpg"
+      photo: "/img/speaker.webp"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Microsoft"
       link:
@@ -97,7 +97,7 @@ params:
       time: "12h00"
 
     - name: "Chuck Norris"
-      photo: "/img/speaker.jpg"
+      photo: "/img/speaker.webp"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Delta Command"
       link:
@@ -109,7 +109,7 @@ params:
         time: "13h00"
 
     - name: "Steve Jobs"
-      photo: "/img/speaker.jpg"
+      photo: "/img/speaker.webp"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Apple, Inc."
       link:
@@ -124,7 +124,7 @@ params:
       time: "15h00"
 
     - name: "Mark Zuckerberg"
-      photo: "/img/speaker.jpg"
+      photo: "/img/speaker.webp"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Facebook"
       link:
@@ -136,7 +136,7 @@ params:
         time: "16h00"
 
     - name: "Steve Wozniak"
-      photo: "/img/speaker.jpg"
+      photo: "/img/speaker.webp"
       bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
       company: "Apple, Inc."
       link:

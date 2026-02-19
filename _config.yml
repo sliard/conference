@@ -21,21 +21,18 @@ exclude:
   - .github/
   - README.md
   - scripts/
-  # Performance: Exclude old event assets from build (kept in repo for reference)
-  # These large directories significantly slow down build time
-  - assets/2021/
-  - assets/2022/
-  - assets/2023/
-  - assets/2024/
-  - assets/slidedecks/
+  # Note: Archive directories (assets/2021/, assets/2022/, etc.) are included
+  # in the build so that the archives page links work correctly
   # Exclude development/test files
   - .playwright/
+  - .playwright-mcp/
   - "*.log"
   - node_modules/
   - vendor/
   - Dockerfile
   - docker-compose.yml
-
+  - .claude/
+  - .gitignore
 # Include only current year assets for faster builds
 # Note: Previous year assets can be served from external storage/CDN
 
