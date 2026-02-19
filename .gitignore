@@ -8,3 +8,5 @@ vendor
 .playwright-mcp/
 specs/
 *.log
+.playwright-mcp/
+.playwright/
