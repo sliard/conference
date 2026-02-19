@@ -12,17 +12,17 @@ thumbnail_url: ""
 archives_title: Evénements passés
 archives:
   - title: DevFest 2025
-    url: /assets/2025/devfest/
+    url: /archives/2025/devfest/
   - title: DevFest 2024
-    url: /assets/2024/devfest/
+    url: /archives/2024/devfest/
   - title: DevFestNoz 2024
-    url: /assets/2024/devfestnoz/
+    url: /archives/2024/devfestnoz/
   - title: DevFest 2023
-    url: /assets/2023/
+    url: /archives/2023/
   - title: DevFest 2022
-    url: /assets/2022/
+    url: /archives/2022/
   - title: DevFest 2021
-    url: /assets/2021/
+    url: /archives/2021/
 
 slidedecks_title: Ateliers passés
 slidedecks:

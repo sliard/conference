@@ -6,10 +6,10 @@ logo_url: "/assets/img/logo_devfestnoz_dark.webp"
 footer_logo_url: "/assets/img/logo_devfestnoz_light.webp"
 
 title: "DevFestNoz - 12 Mars 2026 - Lannion"
-thumbnail_url: /assets/2024/devfestnoz/assets/img/social-card/social-card-devfestnoz-2023.webp
+thumbnail_url: /archives/2024/devfestnoz/assets/img/social-card/social-card-devfestnoz-2023.webp
 
 Carrousel_Slides:
-  - logo: /assets/2024/devfestnoz/assets/img/logo_light.webp
+  - logo: /archives/2024/devfestnoz/assets/img/logo_light.webp
     title: DevFestNoz 2026
     subtitle: "OCaml - CI/CD"
     subtitle2: 12 mars 2026 - 18h00 - Lannion
