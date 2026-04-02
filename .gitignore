@@ -10,3 +10,6 @@ specs/
 *.log
 core
 .serena
+
+.idea
+*.iml
