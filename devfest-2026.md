@@ -76,20 +76,20 @@ Newsletter:
 
 Register:
   title: 🎟️ Billetterie
-  text: Soutenez l'événément et achetez dès à présent un billet pour la conférence 2025.
+  text: Soutenez l'événément et achetez dès à présent un billet pour la conférence 2026.
   button1:
     isPrimary: False
     isExternal: True
     isContrasted: True
     text: Tarifs et informations
     target: _blank
-    url: https://www.billetweb.fr/devfest-perros-guirec-2025
+    url: https://www.billetweb.fr/devfest-perros-guirec-2026
   button2:
     isPrimary: True
     isExternal: True
     text: Acheter
     target: _blank
-    url: https://www.billetweb.fr/devfest-perros-guirec-2025
+    url: https://www.billetweb.fr/devfest-perros-guirec-2026
 
 Shop:
   title: "🏪 Boutique en ligne"
