@@ -6,12 +6,11 @@ title: "DevFest - 02 Octobre 2026 - Perros-Guirec"
 thumbnail_url: /assets/img/social-card/LinkedIn-event-superdev.webp
 
 Carrousel_Slides:
-  - logo: /assets/img/slider/2025-superdev-siteweb-center-homepage@2x.webp
-    title: DevFest Perros-Guirec 2026
+  - title: DevFest Perros-Guirec 2026
     subtitle: "Coder moins, penser plus : quand l'IA change les règles du jeu"
     subtitle2: 2 octobre 2026 - 9h00 - Perros-Guirec
     image:
-      url: /assets/img/slider/devfest_2024.webp
+      url: /assets/img/slider/devfest_2026.jpg
       alt: "DevFest Perros-Guirec 2026"
     button1:
       isPrimary: True
