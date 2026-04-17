@@ -10,7 +10,7 @@ Carrousel_Slides:
     subtitle: "Coder moins, penser plus : quand l'IA change les règles du jeu"
     subtitle2: 2 octobre 2026 - 9h00 - Perros-Guirec
     image:
-      url: /assets/img/slider/devfest_2026.jpg
+      url: /assets/img/slider/devfest_2026_2.jpg
       alt: "DevFest Perros-Guirec 2026"
     button1:
       isPrimary: True
