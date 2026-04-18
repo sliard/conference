@@ -1,0 +1,22 @@
+.ticket-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 40px; }
+.ticket {
+  border: 1px solid var(--rule); border-radius: var(--r-lg); padding: 36px 28px;
+  display: flex; flex-direction: column; transition: box-shadow .3s, transform .3s;
+}
+.ticket:hover { box-shadow: var(--sh-lg); transform: translateY(-4px); }
+.ticket--featured {
+  background: var(--grad-hero); color: #fff; border-color: transparent;
+  box-shadow: var(--sh-card);
+}
+.ticket__label { font-size: 12px; text-transform: uppercase; letter-spacing: .12em; font-weight: 600; color: var(--fg-3); margin-bottom: 8px; }
+.ticket--featured .ticket__label { color: rgba(255,255,255,.7); }
+.ticket__price { font-family: var(--font-d); font-weight: 700; font-size: 56px; line-height: 1; margin-bottom: 4px; }
+.ticket__price span { font-size: 28px; }
+.ticket__until { font-size: 13px; color: var(--fg-3); margin-bottom: 24px; }
+.ticket--featured .ticket__until { color: rgba(255,255,255,.7); }
+.ticket__features { list-style: none; margin-bottom: 32px; flex: 1; }
+.ticket__features li { font-size: 14px; padding: 6px 0; border-bottom: 1px solid var(--rule); }
+.ticket--featured .ticket__features li { border-bottom-color: rgba(255,255,255,.2); }
+.ticket__features li::before { content: '\2713\0020'; color: var(--primary); font-weight: 700; }
+.ticket--featured .ticket__features li::before { color: var(--sky); }
+.ticket .btn { width: 100%; justify-content: center; }

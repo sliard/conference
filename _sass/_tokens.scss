@@ -1,0 +1,30 @@
+:root {
+  --violet-900: #161F6E;
+  --violet-800: #2E217A;
+  --violet-700: #602392;
+  --violet-500: #633DB7;
+  --violet-300: #A668C8;
+  --magenta:    #FF2E83;
+  --teal:       #15768F;
+  --sky:        #6BC6DF;
+  --white:      #FFFFFF;
+  --fg-1:       #212121;
+  --fg-2:       #333333;
+  --fg-3:       #777777;
+  --rule:       #DDDDDD;
+  --surface-2:  #F3F4F3;
+  --primary:    #633DB7;
+  --primary-h:  #544479;
+  --grad-hero:  linear-gradient(180deg, #602392 0%, #161F6E 100%);
+  --font-d:     'Ubuntu', sans-serif;
+  --font-b:     'Inter', sans-serif;
+  --font-m:     'Ubuntu Mono', monospace;
+  --font-h:     'Josefin Sans', sans-serif;
+  --r-xs: 4px; --r-sm: 8px; --r-md: 14px; --r-lg: 22px; --r-pill: 999px;
+  --sh-sm: 0 1px 4px rgba(0,0,0,.12);
+  --sh-md: 0 0 5px rgba(0,0,0,.17);
+  --sh-lg: 0 25px 35px -12px rgba(0,0,0,.35);
+  --sh-card: 0 4px 4px rgba(0,0,0,.25);
+  --sh-btn: 0 2px 2.7px rgba(0,0,0,.24);
+  --ease: cubic-bezier(.4,0,.2,1);
+}

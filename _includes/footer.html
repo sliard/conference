@@ -1,85 +1,33 @@
-<!-- Footer Section Start -->
-<footer class="footer-area section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp short-description" data-wow-delay="0.2s">
-          {% if page.footer_logo_url %}
-          <img src="{{ site.baseurl }}{{ page.footer_logo_url }}" alt="DevFestNoz logo" loading="lazy">
-          {% else %}
-          <img src="{{ site.baseurl }}/assets/img/logo_light.webp" alt="DevFest logo" loading="lazy">
-          {% endif %}
-          <p>
-            {{ site.description }}
-          </p>
-        </div>
-        <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
-
-        </div>
-        <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
-
-        </div>
-        <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.8s">
-
-          <!-- /.widget
-            <div class="widget">
-              <h5 class="widget-title">FOLLOW US ON</h5>
-              <ul class="footer-social">
-                <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
-                <li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>
-                <li><a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a></li>
-                <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
-              </ul>
-            </div> -->
-        </div>
-      </div>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <img src="{{site.baseurl}}/assets/img/devfest-logo.svg" alt="DevFest Perros-Guirec">
+      <p>La conférence tech bretonne, par et pour des développeur·euses passionné·es. Organisée par l'association Code d'Armor à Lannion.</p>
     </div>
-</footer>
-<!-- Footer Section End -->
-
-<!-- Go to Top Link -->
-<a href="#" class="back-to-top" aria-label="Retour en haut">
-  <i class="lni-chevron-up"></i>
-</a>
-
-<div id="preloader">
-  <div class="sk-circle">
-    <div class="sk-circle1 sk-child"></div>
-    <div class="sk-circle2 sk-child"></div>
-    <div class="sk-circle3 sk-child"></div>
-    <div class="sk-circle4 sk-child"></div>
-    <div class="sk-circle5 sk-child"></div>
-    <div class="sk-circle6 sk-child"></div>
-    <div class="sk-circle7 sk-child"></div>
-    <div class="sk-circle8 sk-child"></div>
-    <div class="sk-circle9 sk-child"></div>
-    <div class="sk-circle10 sk-child"></div>
-    <div class="sk-circle11 sk-child"></div>
-    <div class="sk-circle12 sk-child"></div>
+    <div class="site-footer__col">
+      <h4>Événement</h4>
+      <a href="#programme">Programme</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#billetterie">Billetterie</a>
+      <a href="#partenaires">Partenaires</a>
+    </div>
+    <div class="site-footer__col">
+      <h4>Association</h4>
+      <a href="https://codedarmor.fr" target="_blank" rel="noopener">Code d'Armor</a>
+      <a href="{{site.baseurl}}/archives">Éditions précédentes</a>
+      <a href="mailto:contact@codedarmor.fr">Contact</a>
+    </div>
   </div>
-</div>
+  <div class="site-footer__bottom">
+    <span>© 2026 Code d'Armor · DevFest Perros-Guirec</span>
+    <span>
+      <a href="https://www.linkedin.com/company/code-d-armor/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.youtube.com/@codedarmor8738" target="_blank" rel="noopener">YouTube</a>
+    </span>
+  </div>
+</footer>
 
-<!-- jQuery and Bootstrap - Deferred for performance -->
-<script defer src="{{ site.baseurl }}/assets/js/jquery-min.js"></script>
-<script defer src="{{ site.baseurl }}/assets/js/popper.min.js"></script>
-<script defer src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
-
-<!-- Navigation and UI - Deferred -->
-<script defer src="{{ site.baseurl }}/assets/js/jquery.nav.js"></script>
-<script defer src="{{ site.baseurl }}/assets/js/jquery.easing.min.js"></script>
-<script defer src="{{ site.baseurl }}/assets/js/wow.js"></script>
-<script defer src="{{ site.baseurl }}/assets/js/jquery.slicknav.js"></script>
-<script defer src="{{ site.baseurl }}/assets/js/nivo-lightbox.js"></script>
-<script defer src="{{ site.baseurl }}/assets/js/main.js"></script>
-
-<!-- Countdown - Only load if needed -->
-{% if page.Carrousel_Slides and page.Carrousel_Slides.size > 0 %}
-<!--     <script defer src="{{ site.baseurl }}/assets/js/jquery.countdown.min.js"></script> -->
-{% endif %}
-
-<!-- Form validators - Only load if contact forms exist -->
-<!--    <script defer src="{{ site.baseurl }}/assets/js/form-validator.min.js"></script> -->
-<!--     <script defer src="{{ site.baseurl }}/assets/js/contact-form-script.min.js"></script> -->
-
+<script src="{{site.baseurl}}/assets/js/app.js" defer></script>
 </body>
-
 </html>

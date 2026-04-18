@@ -1,0 +1,58 @@
+.inner { max-width: 1200px; margin: 0 auto; padding: 0 48px; }
+.band  { padding: 80px 0; }
+.band--grey { background: var(--surface-2); }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+.eyebrow {
+  font-family: var(--font-d); font-weight: 500; font-size: 12px;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--magenta);
+  margin-bottom: 12px; display: block;
+}
+.section-title {
+  font-family: var(--font-h); font-weight: 700; font-size: 36px;
+  line-height: 1.2; color: var(--fg-1); margin-bottom: 12px;
+}
+.section-intro {
+  font-size: 16px; color: var(--fg-3); max-width: 620px; line-height: 1.7;
+  margin-bottom: 40px;
+}
+.section-head { margin-bottom: 40px; }
+.section-head--center { text-align: center; }
+.section-head--center .section-intro { margin-left: auto; margin-right: auto; }
+
+// Buttons
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-b); font-size: 14px; font-weight: 500;
+  padding: 12px 24px; border-radius: var(--r-xs);
+  text-transform: uppercase; letter-spacing: .03em;
+  text-decoration: none; transition: all .2s; cursor: pointer;
+  border: 1px solid transparent; box-shadow: var(--sh-btn);
+}
+.btn-primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.btn-primary:hover { background: var(--primary-h); }
+.btn-magenta { background: var(--magenta); color: #fff; border-color: var(--magenta); }
+.btn-magenta:hover { background: #dd1867; }
+.btn-outline  { background: transparent; color: #fff; border-color: #fff; }
+.btn-outline:hover { background: rgba(255,255,255,.18); }
+.btn-contrast { background: #fff; color: var(--primary); border-color: var(--primary); }
+.btn-contrast:hover { background: var(--primary); color: #fff; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
+
+// Chips
+.chip {
+  display: inline-block; font-size: 11px; font-weight: 600;
+  padding: 4px 10px; border-radius: var(--r-pill);
+  text-transform: uppercase; letter-spacing: .06em;
+}
+.chip--talk    { background: #EDE6F8; color: var(--primary); }
+.chip--quicky  { background: var(--teal); color: #fff; }
+.chip--keynote { background: var(--violet-900); color: #fff; }
+.chip--pause   { background: var(--surface-2); color: var(--fg-3); }
+.chip--super   { background: var(--magenta); color: #fff; font-family: var(--font-m); letter-spacing: .14em; }
+
+// Scroll animations
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
+.reveal.visible { opacity: 1; transform: none; }

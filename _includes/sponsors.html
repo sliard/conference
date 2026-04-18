@@ -1,62 +1,35 @@
-{% assign sponsors = site.data.commons.Sponsors %}
-
-<section id="sponsors" class="section-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="section-title-header text-center">
-          <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">{{ include.params.title}}</h2>
-          <p>{{ include.params.acknowlegment}}</p>
-        </div>
-      </div>
+<!-- Partenaires -->
+<section class="band" id="partenaires">
+  <div class="inner">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{ include.params.eyebrow | default: "Ils soutiennent DevFest 2026" }}</span>
+      <h2 class="section-title">{{ include.params.title | default: "Partenaires." }}</h2>
+      {% if include.params.acknowlegment %}
+      <p class="section-intro">{{ include.params.acknowlegment }}</p>
+      {% endif %}
     </div>
-
-    <div class="row pt-5" id="sponsors-logos">
-      <div class="d-none-lg col-2">
-      </div>
-      <div class="col-12">
-        <div class="row">
-          <div class="d-none-lg col-2"></div>
-          <div class="col-12 col-lg-8">
-            {% for logo in sponsors.logos_advanced %}
-            <p class="text-center">
-              <a href="{{ logo.link }}" target="_blank" rel="noopener">
-                <img class="img-fluids mx-auto d-block w-100"
-                     style="max-width:500px;"
-                     src="{{ site.baseurl }}{{ logo.url }}"
-                     alt="{{ logo.name }}"
-                     loading="lazy"
-                     decoding="async"
-                     width="500"
-                     height="auto">
-              </a>
-            </p>
-            {% endfor %}
+    <div class="reveal">
+      {% for tier in include.params.tiers %}
+      <div class="sponsor-tier">
+        <div class="sponsor-tier__name" style="color:{{ tier.color | default: 'var(--primary)' }};">{{ tier.name }}</div>
+        <div class="sponsor-tier__logos">
+          {% for sponsor in tier.sponsors %}
+          <div class="sponsor-slot" style="width:{{ tier.slot_width | default: '144px' }};height:{{ tier.slot_height | default: '54px' }};{% if tier.font_size %}font-size:{{ tier.font_size }};{% endif %}">
+            {% if sponsor.logo %}
+            <img src="{{site.baseurl}}/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+            {% else %}
+            {{ sponsor.name }}
+            {% endif %}
           </div>
-          <div class="d-none-lg col-2"></div>
-        </div>
-        <div class="row">
-          <div class="d-none-lg col-2"></div>
-          <div class="col-12 col-lg-8">
-            <p class="text-center">
-              {% for logo in sponsors.logos_basic %}
-              <a href="{{ logo.link }}" target="_blank" rel="noopener">
-                <img class="img-fluids mx-auto w-25"
-                     src="{{ site.baseurl }}{{ logo.url }}"
-                     alt="{{ logo.name }}"
-                     loading="lazy"
-                     decoding="async"
-                     width="200"
-                     height="auto">
-              </a>
-              {% endfor %}
-            </p>
-          </div>
-          <div class="d-none-lg col-2"></div>
+          {% endfor %}
         </div>
       </div>
+      {% endfor %}
     </div>
-  </div>
-  <div class="d-none-lg col-2">
+    {% if include.params.contact_url %}
+    <div style="text-align:center;margin-top:40px;" class="reveal">
+      <a href="{{ include.params.contact_url }}" class="btn btn-contrast">Devenir partenaire</a>
+    </div>
+    {% endif %}
   </div>
 </section>

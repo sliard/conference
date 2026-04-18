@@ -1,0 +1,31 @@
+.hero {
+  background: var(--grad-hero);
+  color: #fff; padding: 64px 48px 80px;
+  position: relative; overflow: hidden;
+}
+.hero__digits {
+  position: absolute; inset: 0;
+  font-family: var(--font-d); font-size: 14px; color: rgba(255,255,255,.08);
+  letter-spacing: 1.4em; line-height: 2.2; padding: 30px 40px;
+  word-spacing: .9em; pointer-events: none; user-select: none;
+}
+.hero__inner {
+  position: relative; z-index: 2; max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 160px 1fr 340px; gap: 40px; align-items: center;
+}
+.hero__date {
+  background: #fff; color: var(--violet-800); border-radius: var(--r-lg);
+  padding: 22px 18px; text-align: center; box-shadow: var(--sh-card);
+  font-family: var(--font-d); font-weight: 700; line-height: 1;
+  flex-shrink: 0;
+}
+.hero__date-day   { font-size: 64px; }
+.hero__date-month { font-size: 20px; margin: 10px 0 4px; }
+.hero__date-year  { font-size: 36px; }
+.hero__h {
+  font-family: var(--font-d); font-weight: 700;
+  font-size: clamp(48px, 5vw, 72px); line-height: 1;
+  letter-spacing: -.02em; color: #fff; margin: 12px 0 16px;
+}
+.hero__sub { font-size: 17px; line-height: 1.55; max-width: 520px; opacity: .9; margin-bottom: 28px; }
+.hero__keyart { width: 100%; border-radius: 16px; box-shadow: var(--sh-card); }

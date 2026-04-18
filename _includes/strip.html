@@ -1,0 +1,9 @@
+<!-- Chiffres clés -->
+<section class="strip" aria-label="Chiffres clés">
+  {% for item in page.Strip %}
+  <div class="strip__cell">
+    <div class="strip__num">{{ item.num }}</div>
+    <div class="strip__lab">{{ item.label }}</div>
+  </div>
+  {% endfor %}
+</section>

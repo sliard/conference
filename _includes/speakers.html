@@ -1,50 +1,36 @@
-<section id="speakers" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title-header text-center">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">{{ include.params.title}}</h2>
-          </div>
-        </div>
-      </div>
+<!-- Speakers -->
+<section class="band" id="speakers">
+  <div class="inner">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">{{ include.params.eyebrow | default: "Les speakers" }}</span>
+      <h2 class="section-title">{{ include.params.title | default: "Nos intervenant·es" }}</h2>
+      {% if include.params.description %}
+      <p class="section-intro">{{ include.params.description }}</p>
+      {% endif %}
+    </div>
+    <div class="grid-4">
       {% for speaker in include.params.list %}
-      <div class="row pt-5" id="{{ speaker.id }}">
-        <div class="col-2"></div>
-        <div class="col-lg-4 col-8 mb-4 mt-4">
-          {% if speaker.photo_url!= null %}
-            <img class="img-fluid mx-auto d-block"
-                 src="{{ site.baseurl }}{{ speaker.photo_url }}"
-                 alt="{{ speaker.name }}"
-                 loading="lazy"
-                 decoding="async"
-                 width="400"
-                 height="400">
+      <div class="speaker-card reveal">
+        <div class="speaker-card__img" style="background:{{ speaker.gradient | default: 'linear-gradient(135deg,#2E217A,#602392)' }}">
+          {% if speaker.photo_url %}
+          <img class="speaker-card__photo" src="{{site.baseurl}}/{{ speaker.photo_url }}" alt="{{ speaker.name }}">
+          {% endif %}
+          <div class="speaker-card__initials">{{ speaker.initials }}</div>
+          <div class="speaker-card__info">
+            <p class="speaker-card__name">{{ speaker.name }}</p>
+            <p class="speaker-card__co">{{ speaker.organization }}</p>
+          </div>
+          {% if speaker.tag %}
+          <span class="speaker-card__tag">{{ speaker.tag }}</span>
           {% endif %}
         </div>
-        <div class="col-lg-4 col-12 text-lg-left text-center">
-          <h3>{{ speaker.name }}</h3>
-          <p class="organization">{{ speaker.organization }}</p>
-          <p>{{ speaker.bio }}</p>
-          {% if speaker.social_links and speaker.social_links.size > 0 %}
-            <div class="speaker-social-links mt-2">
-              {% for link in speaker.social_links %}
-                <a href="{{ link.url }}" target="_blank" rel="noopener" class="mx-1" aria-label="{{ link.type }}">
-                  {% if link.type == "linkedin" %}
-                    <i class="fab fa-linkedin" aria-hidden="true"></i>
-                  {% elsif link.type == "github" %}
-                    <i class="fab fa-github" aria-hidden="true"></i>
-                  {% elsif link.type == "blog" %}
-                    <i class="fas fa-globe" aria-hidden="true"></i>
-                  {% else %}
-                    <i class="fas fa-link" aria-hidden="true"></i>
-                  {% endif %}
-                </a>
-              {% endfor %}
-            </div>
-          {% endif %}
-        </div>
-        <div class="col-2 d-none-lg"></div>
       </div>
       {% endfor %}
     </div>
-  </section>
+    {% if page.CallForProposal %}
+    <div style="display:flex;justify-content:center;margin-top:40px;" class="reveal">
+      <a href="{{ page.CallForProposal.cfp_url }}" class="btn btn-primary" target="_blank" rel="noopener">Proposer un talk 🎤</a>
+    </div>
+    {% endif %}
+  </div>
+</section>

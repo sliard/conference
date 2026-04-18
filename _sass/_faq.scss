@@ -1,0 +1,12 @@
+.faq-item { border-bottom: 1px solid var(--rule); }
+.faq-q {
+  width: 100%; background: none; border: none; text-align: left; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 22px 0; font-family: var(--font-h); font-weight: 700; font-size: 17px;
+  color: var(--fg-1); transition: color .2s;
+}
+.faq-q:hover { color: var(--primary); }
+.faq-q svg { flex-shrink: 0; transition: transform .3s; }
+.faq-q[aria-expanded="true"] svg { transform: rotate(180deg); }
+.faq-a { display: none; padding-bottom: 20px; font-size: 15px; line-height: 1.7; color: var(--fg-2); }
+.faq-a.open { display: block; }

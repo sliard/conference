@@ -1,0 +1,28 @@
+<!-- À propos -->
+<section class="band" id="apropos">
+  <div class="inner">
+    <div class="grid-2">
+      <div class="reveal">
+        <span class="eyebrow">{{ page.About.eyebrow | default: "Qui sommes-nous" }}</span>
+        <h2 class="section-title">{{ page.About.title }}</h2>
+        <p class="section-intro">{{ page.About.description }}</p>
+        <div class="btn-row">
+          {% if page.About.association_url %}
+          <a href="{{ page.About.association_url }}" class="btn btn-primary" target="_blank" rel="noopener">Notre association</a>
+          {% endif %}
+          {% if page.About.archives_url %}
+          <a href="{{ page.About.archives_url }}" class="btn btn-contrast">Éditions précédentes</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="about__card reveal">
+        <div class="about__card-tag">&lt;code-darmor/&gt;</div>
+        <div>
+          <span class="eyebrow" style="color:#FF2E83;">Édition {{ page.About.card.edition }}</span>
+          <div class="about__card-num">{{ page.About.card.participants }}<br>participant·es attendu·es</div>
+          <div class="about__card-sub">{{ page.About.card.subtitle }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

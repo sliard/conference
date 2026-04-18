@@ -1,0 +1,13 @@
+.newsletter { background: var(--grad-hero); color: #fff; padding: 80px 48px; }
+.newsletter__inner { max-width: 600px; margin: 0 auto; text-align: center; }
+.newsletter h2 { font-family: var(--font-d); font-weight: 700; font-size: 36px; margin-bottom: 12px; line-height: 1.2; }
+.newsletter p { font-size: 16px; opacity: .85; margin-bottom: 32px; }
+.newsletter__form { display: flex; gap: 12px; max-width: 480px; margin: 0 auto; }
+.newsletter__input {
+  flex: 1; padding: 14px 20px; border: 1px solid rgba(255,255,255,.3);
+  border-radius: var(--r-xs); background: rgba(255,255,255,.12);
+  color: #fff; font-family: var(--font-b); font-size: 15px;
+}
+.newsletter__input::placeholder { color: rgba(255,255,255,.55); }
+.newsletter__input:focus { outline: none; border-color: rgba(255,255,255,.7); }
+.newsletter__note { font-size: 12px; opacity: .6; margin-top: 14px; }

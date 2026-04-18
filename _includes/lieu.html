@@ -1,0 +1,30 @@
+<!-- Infos pratiques -->
+<section class="band band--grey" id="infos">
+  <div class="inner">
+    <div class="section-head reveal">
+      <span class="eyebrow">Infos pratiques</span>
+      <h2 class="section-title">Comment venir ?</h2>
+    </div>
+    <div class="lieu-grid">
+      <div class="reveal">
+        {% for card in page.Lieu.cards %}
+        <div class="lieu-card" {% if forloop.last == false %}style="margin-bottom:20px;"{% endif %}>
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.content }}</p>
+          {% if card.link %}
+          <p><a href="{{ card.link }}" target="_blank" rel="noopener">{{ card.link_text | default: "Voir sur Google Maps →" }}</a></p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      <div class="lieu-map reveal">
+        <div class="lieu-map__placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-8-5.4-8-11a8 8 0 0116 0c0 5.6-8 11-8 11z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>{{ page.Details.where.venue }}</p>
+          <p style="font-size:12px;font-weight:400;color:var(--fg-3);">{{ page.Details.where.city }}, Côtes d'Armor</p>
+          <a href="{{ page.Details.where.linkToMap }}" class="btn btn-primary" target="_blank" rel="noopener" style="margin-top:8px;">Ouvrir dans Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

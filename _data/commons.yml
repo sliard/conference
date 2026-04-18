@@ -1,33 +1,21 @@
-logo_url: "/assets/img/logo_dark.png"
+logo_url: "/assets/img/devfest-logo-violet.svg"
 
 menu:
-  - title: "DevFestNoz 2026"
-    url: '/'
   - title: "Programme"
-    url: '/#agenda'
-    tooltip: "Voir le programme"
-  - title: Boutique
-    target: '_blank'
-    url: 'https://devfest-perros-guirec.tpopsite.com/'
-    tooltip: "Accéder à la boutique"
-  - title: Sponsoring
-    url: '/sponsors'
-    tooltip: "Devenir sponsor"
-  - title: Archives
-    url: '/archives'
-    tooltip: "Accéder aux archives"
-  - title: À propos
-    url: './a-propos'
-    tooltip: "En savoir plus sur l'événement"
-  - title: ""
-    url: 'https://www.linkedin.com/company/code-d-armor/'
-    icon: 'fab fa-linkedin'
-    target: '_blank'
-    tooltip: "Suivre Code d'Armor sur LinkedIn"
+    url: '#programme'
+  - title: "Speakers"
+    url: '#speakers'
+  - title: "Partenaires"
+    url: '#partenaires'
+  - title: "Infos pratiques"
+    url: '#infos'
+  - title: "FAQ"
+    url: '#faq'
 
-Newsletter:
-  link : https://codedarmor.us7.list-manage.com/subscribe?u=05474659d9a3ff4697f4fc41c&id=cc5063773c
-  linkLinkedIn: https://www.linkedin.com/company/code-d-armor/
+newsletter:
+  subscribe_url: https://codedarmor.us7.list-manage.com/subscribe?u=05474659d9a3ff4697f4fc41c&id=cc5063773c
+  linkedin_url: https://www.linkedin.com/company/code-d-armor/
+
 Sponsors:
   logos_basic:
     - name: Lannion Trégor Communauté
@@ -39,7 +27,7 @@ Sponsors:
     - name: Ville de Perros-Guirec
       url: /assets/img/logos_sponsors/logo_perros.webp
       link: https://www.perros-guirec.com/
-    - name: French Tech Brest Ouest 
+    - name: French Tech Brest Ouest
       url: /assets/img/logos_sponsors/logo_ftbo.webp
       link: https://www.lafrenchtech-brestplus.bzh/
   logos_advanced:
