@@ -1,0 +1,35 @@
+.archives-section { text-align: center; }
+
+.archives-list {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  margin-top: 20px;
+}
+.archives-link {
+  display: inline-block; font-size: 16px; font-weight: 500;
+  color: var(--primary); text-decoration: none;
+  padding: 8px 20px; border-radius: var(--r-xs);
+  transition: background .2s, color .2s;
+}
+.archives-link:hover {
+  background: var(--primary); color: #fff;
+}
+
+.archives-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px; margin-top: 24px;
+}
+.archives-card {
+  border-radius: var(--r-sm); overflow: hidden;
+  box-shadow: var(--sh-card); background: #fff;
+  transition: box-shadow .3s, transform .3s;
+}
+.archives-card:hover { box-shadow: var(--sh-lg); transform: translateY(-4px); }
+.archives-card__img {
+  width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;
+}
+.archives-card__dl {
+  display: block; padding: 12px 16px; font-size: 14px; font-weight: 500;
+  color: var(--primary); text-decoration: none; text-align: center;
+  border-top: 1px solid var(--rule); transition: background .2s;
+}
+.archives-card__dl:hover { background: var(--surface-2); }

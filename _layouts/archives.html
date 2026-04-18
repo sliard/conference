@@ -3,67 +3,45 @@
 ---
 
 {% include header.html %}
-<div class="row">
-  <div class="col-2 d-none-lg">
+{% include nav.html %}
 
-  </div>
-  <div class="col-12 col-lg-8">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="section-title-header text-center">
-            <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">{{ page.title}}</h1>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col text-center">
-          <p>{{ page.description }}</p>
-        </div>
-      </div>
-      <!-- Section About Start -->
-      <section id="archives" class="section-padding">
-        <div class="row">
-          <div class="col text-center">
-            <h2 class="p-3">{{ page.archives_title }}</h2>
-            {% for archive in page.archives %}
-            <p><a href="{{ site.baseurl }}{{ archive.url }}" alt="Archive {{ archive.title }}">{{ archive.title }}</a>
-            </p>
-            {% endfor %}
-          </div>
-        </div>
-      </section>
-      <!-- Section About Start -->
-      <section id="gallery" class="section-padding">
-        <div class="row">
-          <div class="col text-center">
-            <h2>{{ page.slidedecks_title }}</h2>
-          </div>
-        </div>
-        <div class="row">
-          {% for slidedeck in page.slidedecks %}
-          <div class="col-sm-12 col-lg-6">
-            <a class="text-center" href="{{ site.baseurl }}{{ slidedeck.file }}"><p>Télécharger la présentation</p></a>
-            <div class="gallery-box">
-              <div class="img-thumb">
-               <img class="img-fluid"
-                    src="{{ site.baseurl }}{{ slidedeck.thumbnail }}">
-              </div>
-              <div class="overlay-box text-center">
-                <a class="lightbox" href="{{ site.baseurl }}{{ slidedeck.thumbnail }}">
-                  <i class="lni-plus"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </section>
+<section class="band">
+  <div class="inner">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Code d'Armor</span>
+      <h1 class="section-title">{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="section-intro">{{ page.description }}</p>
+      {% endif %}
     </div>
-  </div>
-  <div class="col-2 d-none-lg">
 
+    <!-- Événements passés -->
+    <div class="archives-section reveal">
+      <h2 class="section-title" style="font-size:28px;">{{ page.archives_title }}</h2>
+      <div class="archives-list">
+        {% for archive in page.archives %}
+        <a href="{{ site.baseurl }}{{ archive.url }}" class="archives-link">{{ archive.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Slidedecks -->
+    {% if page.slidedecks %}
+    <div class="archives-section reveal" style="margin-top:60px;">
+      <h2 class="section-title" style="font-size:28px;">{{ page.slidedecks_title }}</h2>
+      <div class="archives-grid">
+        {% for slidedeck in page.slidedecks %}
+        <div class="archives-card">
+          <a href="{{ site.baseurl }}{{ slidedeck.file }}">
+            <img class="archives-card__img" src="{{ site.baseurl }}{{ slidedeck.thumbnail }}" alt="{{ slidedeck.title | default: 'Présentation' }}" loading="lazy">
+          </a>
+          <a href="{{ site.baseurl }}{{ slidedeck.file }}" class="archives-card__dl">Télécharger la présentation</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
   </div>
-</div>
+</section>
 
 {% include footer.html %}
