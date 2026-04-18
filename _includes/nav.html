@@ -1,16 +1,28 @@
 <!-- Navigation -->
 <nav class="site-nav" id="main-nav" role="navigation" aria-label="Navigation principale">
-  <a href="#accueil" class="site-nav__logo" aria-label="DevFest Perros-Guirec">
+  <a href="{{site.baseurl}}/" class="site-nav__logo" aria-label="DevFest Perros-Guirec">
     <img src="{{site.baseurl}}/assets/img/devfest-logo-violet.svg" alt="DevFest Perros-Guirec">
   </a>
   <div class="site-nav__links" id="nav-links">
-    {% for item in site.data.commons.menu %}
-    <a href="{{ item.url }}">{{ item.title }}</a>
-    {% endfor %}
+    {% assign home = site.pages | where: "permalink", "/" | first %}
+    {% if home.Agenda %}
+    <a href="{{site.baseurl}}/#programme">Programme</a>
+    {% endif %}
+    {% if home.Speakers %}
+    <a href="{{site.baseurl}}/#speakers">Speakers</a>
+    {% endif %}
+    {% if home.Sponsoring %}
+    <a href="{{site.baseurl}}/#partenaires">Partenaires</a>
+    {% endif %}
+    <a href="{{site.baseurl}}/#infos">Infos pratiques</a>
+    {% if home.FAQ %}
+    <a href="{{site.baseurl}}/#faq">FAQ</a>
+    {% endif %}
+    <a href="{{site.baseurl}}/archives">Archives</a>
   </div>
   <div style="display:flex;gap:12px;align-items:center;">
     {% if page.Register %}
-    <a href="#billetterie" class="site-nav__cta">🎟️ Billetterie</a>
+    <a href="{{site.baseurl}}/#billetterie" class="site-nav__cta">🎟️ Billetterie</a>
     {% endif %}
     <button class="site-nav__burger" id="burger-btn" aria-label="Menu" aria-expanded="false">
       <span></span><span></span><span></span>
