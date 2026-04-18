@@ -227,7 +227,7 @@ About:
 Register:
   title: 🎟️ Billetterie
   subtitle: "Tarifs & informations"
-  description: "Places limitées. Réservez tôt pour profiter du tarif early bird."
+  description: "Places limitées. Réservez tôt !"
   buy_url: https://www.billetweb.fr/devfest-perros-guirec-2026
   note: "Tarif groupe (5+) disponible — contactez-nous à <a href='mailto:contact@codedarmor.fr'>contact@codedarmor.fr</a>"
   tickets:
