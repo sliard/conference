@@ -1,5 +1,6 @@
-.ticket-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 40px; }
+.ticket-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; margin-bottom: 40px; }
 .ticket {
+  width: 340px; max-width: 100%;
   border: 1px solid var(--rule); border-radius: var(--r-lg); padding: 36px 28px;
   display: flex; flex-direction: column; transition: box-shadow .3s, transform .3s;
 }
