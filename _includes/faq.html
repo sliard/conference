@@ -1,0 +1,20 @@
+<!-- FAQ -->
+<section class="band" id="faq">
+  <div class="inner" style="max-width:800px;">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Questions fréquentes</span>
+      <h2 class="section-title">FAQ</h2>
+    </div>
+    <div class="reveal">
+      {% for item in page.FAQ.questions %}
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+          {{ item.q }}
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">{{ item.a }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

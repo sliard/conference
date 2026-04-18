@@ -1,40 +1,20 @@
 ---
 ---
 
-// Preset Color Styles
-@use "presets";
-
-// Global Styles
-@use "global";
-
-// Navbar
-@use "navbar";
-
-// About US Area
+@use "tokens";
+@use "reset";
+@use "utilities";
+@use "nav";
+@use "hero";
+@use "strip";
 @use "about";
-
-// Schedule Area
 @use "schedule";
-
-// Service Area
-@use "service";
-
-// Portfolio Area
-@use "portfolio";
-
-// Team Area
-@use "team";
-
-// Blog Area
-@use "blog";
-
-// Contact Area
-@use "contact";
-
-// Contact Area
+@use "speakers";
+@use "tickets";
+@use "sponsors";
+@use "lieu";
+@use "faq";
+@use "newsletter";
+@use "cta";
 @use "footer";
-
-// Shortcode
-@use "shortcode";
-
-
+@use "responsive";

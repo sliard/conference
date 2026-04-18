@@ -1,0 +1,18 @@
+.lieu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.lieu-card { background: var(--surface-2); border-radius: var(--r-lg); padding: 32px; }
+.lieu-card h3 { font-family: var(--font-h); font-size: 20px; margin-bottom: 16px; }
+.lieu-card p { font-size: 15px; line-height: 1.7; color: var(--fg-2); margin-bottom: 8px; }
+.lieu-card a { color: var(--primary); font-size: 14px; }
+.lieu-map {
+  border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--sh-card);
+  aspect-ratio: 4/3; background: #e8e4f0; position: relative;
+}
+.lieu-map iframe { width: 100%; height: 100%; border: 0; }
+.lieu-map__placeholder {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 12px;
+  background: linear-gradient(135deg, #e8e4f0, #d5cef0);
+  color: var(--primary);
+}
+.lieu-map__placeholder svg { width: 40px; height: 40px; opacity: .6; }
+.lieu-map__placeholder p { font-size: 14px; font-weight: 600; margin: 0; }

@@ -1,0 +1,27 @@
+@media (max-width: 900px) {
+  .inner { padding: 0 24px; }
+  .hero { padding: 48px 24px 64px; }
+  .hero__inner { grid-template-columns: 1fr; gap: 28px; }
+  .hero__date { display: none; }
+  .hero__keyart { max-width: 280px; margin: 0 auto; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .strip { grid-template-columns: repeat(2, 1fr); }
+  .site-nav__links { display: none; }
+  .site-nav__links.open {
+    display: flex; flex-direction: column; position: absolute;
+    top: 64px; left: 0; right: 0; background: #fff;
+    padding: 16px 24px 20px; border-bottom: 1px solid var(--rule);
+    box-shadow: var(--sh-md); z-index: 99;
+  }
+  .site-nav__burger { display: block; }
+  .ticket-grid { grid-template-columns: 1fr; }
+  .lieu-grid { grid-template-columns: 1fr; }
+  .sponsor-tier { grid-template-columns: 1fr; gap: 16px; }
+  .newsletter { padding: 60px 24px; }
+  .newsletter__form { flex-direction: column; }
+  .site-footer__inner { grid-template-columns: 1fr; gap: 28px; }
+  .cta-finale { padding: 72px 24px; }
+  .tabs { flex-direction: column; }
+  .session { grid-template-columns: 80px 1fr; gap: 16px; padding: 18px 20px; }
+  .band { padding: 60px 0; }
+}

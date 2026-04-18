@@ -1,0 +1,48 @@
+<!-- Programme -->
+<section class="band band--grey" id="programme">
+  <div class="inner">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{ page.Agenda.eyebrow | default: "Programme" }}</span>
+      <h2 class="section-title">{{ page.Agenda.title | default: "Une journée, trois moments." }}</h2>
+      {% if page.Agenda.description %}
+      <p class="section-intro">{{ page.Agenda.description }}</p>
+      {% endif %}
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Programme de la journée">
+      {% for tab in page.Agenda.tabs %}
+      <button class="tab{% if forloop.first %} active{% endif %}" role="tab" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="panel-{{ tab.id }}" id="tab-{{ tab.id }}" onclick="switchTab('{{ tab.id }}')">
+        <span class="tab__label">{{ tab.label }}</span>
+        <span class="tab__range">{{ tab.range }}</span>
+      </button>
+      {% endfor %}
+    </div>
+
+    <div class="sessions">
+      {% for tab in page.Agenda.tabs %}
+      <div class="tab-panel{% if forloop.first %} active{% endif %}" id="panel-{{ tab.id }}" role="tabpanel" aria-labelledby="tab-{{ tab.id }}">
+        {% for session in tab.sessions %}
+        <div class="session{% if session.highlight %} session--hl{% endif %}">
+          <div class="session__time">
+            <div class="session__hh">{{ session.time }}</div>
+            <div class="session__dur">{{ session.duration }}</div>
+          </div>
+          <div class="session__body">
+            <div class="session__chips">
+              {% for chip in session.chips %}
+              <span class="chip chip--{{ chip.type }}">{{ chip.label }}</span>
+              {% endfor %}
+            </div>
+            <h3 class="session__title">{{ session.title }}</h3>
+            <div class="session__spk">
+              {% if session.speaker %}<strong>{{ session.speaker }}</strong>{% endif %}
+              {% if session.company %} <span>· {{ session.company }}</span>{% endif %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<!-- Navigation -->
+<nav class="site-nav" id="main-nav" role="navigation" aria-label="Navigation principale">
+  <a href="#accueil" class="site-nav__logo" aria-label="DevFest Perros-Guirec">
+    <img src="{{site.baseurl}}/assets/img/devfest-logo-violet.svg" alt="DevFest Perros-Guirec">
+  </a>
+  <div class="site-nav__links" id="nav-links">
+    {% for item in site.data.commons.menu %}
+    <a href="{{ item.url }}">{{ item.title }}</a>
+    {% endfor %}
+  </div>
+  <div style="display:flex;gap:12px;align-items:center;">
+    {% if page.Register %}
+    <a href="#billetterie" class="site-nav__cta">🎟️ Billetterie</a>
+    {% endif %}
+    <button class="site-nav__burger" id="burger-btn" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>

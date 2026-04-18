@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  
+  <g fill="currentColor">
+    
+    <rect x="28" y="65" width="72" height="26" rx="13" transform="rotate(-42 64 78)"></rect>
+    <rect x="28" y="109" width="72" height="26" rx="13" transform="rotate(42 64 122)"></rect>
+    
+    <rect x="100" y="65" width="72" height="26" rx="13" transform="rotate(42 136 78)"></rect>
+    <rect x="100" y="109" width="72" height="26" rx="13" transform="rotate(-42 136 122)"></rect>
+  </g>
+</svg>

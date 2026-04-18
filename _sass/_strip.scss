@@ -1,0 +1,11 @@
+.strip {
+  background: var(--surface-2);
+  display: grid; grid-template-columns: repeat(4, 1fr);
+}
+.strip__cell {
+  text-align: center; padding: 40px 12px;
+  border-right: 1px solid var(--rule);
+}
+.strip__cell:last-child { border-right: none; }
+.strip__num { font-family: var(--font-d); font-weight: 700; font-size: 48px; color: var(--violet-700); line-height: 1; }
+.strip__lab { font-size: 12px; color: var(--fg-3); text-transform: uppercase; letter-spacing: .12em; margin-top: 6px; }

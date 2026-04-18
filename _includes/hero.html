@@ -1,0 +1,35 @@
+<!-- Hero Section -->
+<section class="hero" id="accueil" aria-label="Section principale">
+  <div class="hero__digits" aria-hidden="true">
+    9 4 7 3 2 1 8 5 6 9 4 7 3 2 6 5 8 1 9 4 7 2 3 6 5 8 4 7 1 9 3 2 6 8 5 4 9 7 2 1 3 6 8 5 4 9 7 3 2 1 6 8 5 4 7 9 3 2 6 1 4 7 2 3 6 5 8 1 9 4 7 2 3 6 5 8 4 7 1 9 3 2 6 8 5 4 9 7 2 1 3 6 8 5 4 9 7 3 2 1 6 8 5 4 7 9 3 2 6 1 9 4 7 3 2 1 8 5 6 9 4 7 3 2 6 5 8 1 9 4 7 2 3 6 5 8 4
+  </div>
+  <div class="hero__inner">
+    {% assign slide = page.Carrousel_Slides[0] %}
+    <div class="hero__date" aria-label="Date de l'événement">
+      <div class="hero__date-day">{{ page.Hero.date_day | default: "02" }}</div>
+      <div class="hero__date-month">{{ page.Hero.date_month | default: "Octobre" }}</div>
+      <div class="hero__date-year">{{ page.Hero.date_year | default: "2026" }}</div>
+    </div>
+    <div class="hero__copy">
+      <span class="eyebrow" style="color:#FF2E83;">{{ page.Hero.eyebrow | default: slide.subtitle2 }}</span>
+      <h1 class="hero__h">{{ page.Hero.title | default: "Coder moins,<br>penser plus." }}</h1>
+      <p class="hero__sub">{{ page.Hero.subtitle | default: slide.subtitle }}</p>
+      <div class="btn-row">
+        {% if page.Register %}
+        <a href="#billetterie" class="btn btn-magenta">Acheter mon billet</a>
+        {% endif %}
+        {% if page.Register %}
+        <a href="https://conference-hall.io/devfest-perros-guirec-2026" class="btn btn-outline">Call For Paper</a>
+        {% endif %}
+        {% if page.Agenda %}
+        <a href="#programme" class="btn btn-outline">Voir le programme</a>
+        {% endif %}
+      </div>
+    </div>
+    {% if page.Hero.keyart %}
+    <img src="{{site.baseurl}}/{{ page.Hero.keyart }}" alt="Illustration DevFest 2026" class="hero__keyart">
+    {% else %}
+    <img src="{{site.baseurl}}/assets/img/devfest-2026-hero.png" alt="Illustration DevFest 2026" class="hero__keyart">
+    {% endif %}
+  </div>
+</section>

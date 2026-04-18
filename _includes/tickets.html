@@ -1,0 +1,38 @@
+<!-- Billetterie -->
+<section class="band band--grey" id="billetterie">
+  <div class="inner">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">{{ include.params.title | default: "🎟️ Billetterie" }}</span>
+      <h2 class="section-title">{{ include.params.subtitle | default: "Tarifs & informations" }}</h2>
+      {% if include.params.description %}
+      <p class="section-intro">{{ include.params.description }}</p>
+      {% endif %}
+    </div>
+    {% if include.params.tickets %}
+    <div class="ticket-grid reveal">
+      {% for ticket in include.params.tickets %}
+      <div class="ticket{% if ticket.featured %} ticket--featured{% endif %}">
+        <div class="ticket__label">{{ ticket.label }}</div>
+        <div class="ticket__price">{{ ticket.price }}<span>€</span></div>
+        <div class="ticket__until">{{ ticket.until }}</div>
+        <ul class="ticket__features">
+          {% for feature in ticket.features %}
+          <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+        {% if ticket.featured %}
+        <a href="{{ ticket.url | default: include.params.buy_url }}" class="btn btn-magenta" target="_blank" rel="noopener">{{ ticket.cta | default: "Profiter de l'offre" }}</a>
+        {% else %}
+        <a href="{{ ticket.url | default: include.params.buy_url }}" class="btn btn-primary" target="_blank" rel="noopener">{{ ticket.cta | default: "S'inscrire" }}</a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if include.params.note %}
+    <p style="text-align:center;font-size:13px;color:var(--fg-3);margin-top:16px;" class="reveal">
+      {{ include.params.note }}
+    </p>
+    {% endif %}
+  </div>
+</section>

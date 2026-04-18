@@ -1,0 +1,17 @@
+.sponsor-tier {
+  display: grid; grid-template-columns: 140px 1fr; gap: 32px;
+  padding: 28px 0; border-bottom: 1px solid var(--rule); align-items: center;
+}
+.sponsor-tier:last-child { border-bottom: none; }
+.sponsor-tier__name { font-family: var(--font-h); font-weight: 700; font-size: 24px; text-transform: uppercase; }
+.sponsor-tier__logos { display: flex; gap: 20px; flex-wrap: wrap; align-items: center; }
+.sponsor-slot {
+  display: flex; align-items: center; justify-content: center;
+  background: var(--surface-2); border-radius: var(--r-sm);
+  font-family: var(--font-d); font-weight: 500; font-size: 13px;
+  color: var(--fg-3); letter-spacing: .08em; text-transform: uppercase;
+  overflow: hidden;
+}
+.sponsor-slot img {
+  max-width: 100%; max-height: 100%; object-fit: contain;
+}
