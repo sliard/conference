@@ -2,51 +2,46 @@
 ---
 
 {% include header.html %}
+{% include nav.html %}
 
-<div class="row">
-  <div class="col-2 d-none-lg">
-  </div>
-  <div class="col-12 col-lg-8">
-    <!-- Section About Start -->
-    <section id="sponsor" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            {% if page.header_image %}
-            <img src="{{site.baseurl}}{{ page.header_image }}" alt="Sponsor header" class="img-fluid w-100 mb-4"
-              style="object-fit:cover;max-height:350px;">
-            {% endif %}
-            <div class="section-title-header text-center">
-              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">{{ page.title }}</h1>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="p-3 col text-lg-left text-center">
-            {{ page.pageContent }}
-            {% include button.html button=page.buttonDoc %}
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="sponsor_thanks" class="section-padding">
-    {% include sponsors.html params=page.Sponsoring %}
-    </section>
+<section class="band">
+  <div class="inner">
+    {% if page.header_image %}
+    <div class="reveal" style="margin-bottom:40px;">
+      <img src="{{site.baseurl}}{{ page.header_image }}" alt="Sponsor header" style="width:100%;max-height:350px;object-fit:cover;border-radius:var(--r-lg);box-shadow:var(--sh-card);">
+    </div>
+    {% endif %}
 
-    <!-- Section Contact Start -->
-    <section id="contact" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col col-1ah2 text-lg-left text-center">
-            <h2 class="section-title wow fadeInUp">{{ page.contact-us.title }}</h2>
-            <p>{{ page.contact-us.description }}</p>
-          </div>
-        </div>
+    <div class="section-head section-head--center reveal">
+      <h1 class="section-title">{{ page.title }}</h1>
+    </div>
+
+    {% if page.pageContent %}
+    <div class="reveal" style="max-width:800px;margin:0 auto 40px;font-size:15px;line-height:1.7;color:var(--fg-2);">
+      {{ page.pageContent }}
+      {% if page.buttonDoc %}
+      <div style="margin-top:20px;">
+        <a href="{{ page.buttonDoc.url }}" class="btn btn-primary" {% if page.buttonDoc.isExternal %}target="_blank" rel="noopener"{% endif %}>{{ page.buttonDoc.text }}</a>
       </div>
-    </section>
-    <!-- Section Contact End -->
+      {% endif %}
+    </div>
+    {% endif %}
   </div>
-  <div class="col-2 d-none-lg">
+</section>
+
+{% if page.Sponsoring %}
+{% include sponsors.html params=page.Sponsoring %}
+{% endif %}
+
+{% if page.contact-us %}
+<section class="band band--grey">
+  <div class="inner">
+    <div class="section-head reveal">
+      <h2 class="section-title">{{ page.contact-us.title }}</h2>
+      <p class="section-intro">{{ page.contact-us.description }}</p>
+    </div>
   </div>
-</div>
+</section>
+{% endif %}
+
 {% include footer.html %}
